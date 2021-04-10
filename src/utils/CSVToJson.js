@@ -1,4 +1,9 @@
 const csv = require("csvtojson");
+const fs = require('fs')
+
+csv.fromFile('./dispositivos.json').then((source)=>{
+  console.log(source)
+})
 
 const phaAddList = (json) => {
 

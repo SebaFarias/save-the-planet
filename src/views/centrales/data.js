@@ -1,4 +1,4 @@
-module.exports = {
+const centrales = {
   '000001': {
     id:'000001',
     name:'Fábrica Lunar',
@@ -13,7 +13,7 @@ module.exports = {
     id:'000002',
     name:'Laboratorio Lunar',
     icon:'cil-beaker',
-    img: 'https://img.17qq.com/images/kmplknkchlv.jpeg',
+    img: 'https://services.meteored.com/img/article/crean-oxigeno-a-partir-del-polvo-lunar-podremos-habita-la-luna-231471-1_768.jpg',
     devices:[],
     zones:[],
     tasks:[],
@@ -30,3 +30,12 @@ module.exports = {
     users:[],
   },
 }
+const centralesMethods = {
+  getCentralNameById : id => {
+    return centrales[`00000${id}`]?.name
+  },
+  getCentralDataById: id => {
+    return centrales[id]
+  },
+}
+export default centralesMethods

@@ -1,6 +1,4 @@
-import centralesMethods from '../centrales/data'
-
-const devicesData = [
+[
   {
     "id": 1,
     "tipo": "Flujometro",
@@ -7001,22 +6999,4 @@ const devicesData = [
     "zona": "Andalax",
     "status": "durmiendo"
   }
-]
-
-const devicesMethods = {
-  getDevicesByCentralId : id => {
-    const devices = devicesData.filter( device => {
-      return device.central === parseInt(id)
-    })
-    const newDevices = devices.map( device => {
-      return {
-        ...device,
-        central: centralesMethods.getCentralNameById(device.central),
-        centralId: device.central,
-      }
-    })
-    console.log(newDevices)
-    return newDevices
-  },
-}
-export default devicesMethods
+ ]
