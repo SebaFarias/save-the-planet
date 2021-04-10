@@ -3,7 +3,9 @@ import { createStore } from 'redux'
 const initialState = {
   sidebarShow: 'responsive'
 }
+//Action
 
+//Reducer
 const changeState = (state = initialState, { type, ...rest }) => {
   switch (type) {
     case 'set':

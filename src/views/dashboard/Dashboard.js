@@ -27,8 +27,8 @@ const Dashboard = () => {
         <CCardBody>
           <CRow>
             <CCol sm="5">
-              <h4 id="traffic" className="card-title mb-0">Traffic</h4>
-              <div className="small text-muted">November 2017</div>
+              <h4 id="traffic" className="card-title mb-0">Consumos</h4>
+              <div className="small text-muted">Noviembre 2021</div>
             </CCol>
             <CCol sm="7" className="d-none d-md-block">
               <CButton color="primary" className="float-right">
@@ -36,12 +36,12 @@ const Dashboard = () => {
               </CButton>
               <CButtonGroup className="float-right mr-3">
                 {
-                  ['Day', 'Month', 'Year'].map(value => (
+                  ['Día', 'Mes', 'Año'].map(value => (
                     <CButton
                       color="outline-secondary"
                       key={value}
                       className="mx-0"
-                      active={value === 'Month'}
+                      active={value === 'Mes'}
                     >
                       {value}
                     </CButton>
@@ -55,18 +55,18 @@ const Dashboard = () => {
         <CCardFooter>
           <CRow className="text-center">
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">Visits</div>
-              <strong>29.703 Users (40%)</strong>
+              <div className="text-muted">Almacén</div>
+              <strong>Espacio (17%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
                 color="success"
-                value={40}
+                value={17}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0 d-md-down-none">
-              <div className="text-muted">Unique</div>
-              <strong>24.093 Users (20%)</strong>
+              <div className="text-muted">Agua</div>
+              <strong>Estanque (40%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -75,32 +75,32 @@ const Dashboard = () => {
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">Pageviews</div>
-              <strong>78.706 Views (60%)</strong>
+              <div className="text-muted">Baterías</div>
+              <strong>Carga (85%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
                 color="warning"
-                value={40}
+                value={85}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">New Users</div>
-              <strong>22.123 Users (80%)</strong>
+              <div className="text-muted">GLP</div>
+              <strong>Tanques (22%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
                 color="danger"
-                value={40}
+                value={22}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0 d-md-down-none">
-              <div className="text-muted">Bounce Rate</div>
-              <strong>Average Rate (40.15%)</strong>
+              <div className="text-muted">Refrigeración</div>
+              <strong>Potencia (73%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
-                value={40}
+                value={73}
               />
             </CCol>
           </CRow>
@@ -113,7 +113,7 @@ const Dashboard = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              Traffic {' & '} Sales
+              Consumo por Sistema
             </CCardHeader>
             <CCardBody>
               <CRow>
@@ -122,14 +122,14 @@ const Dashboard = () => {
                   <CRow>
                     <CCol sm="6">
                       <CCallout color="info">
-                        <small className="text-muted">New Clients</small>
+                        <small className="text-muted">Refrigeración</small>
                         <br />
                         <strong className="h4">9,123</strong>
                       </CCallout>
                     </CCol>
                     <CCol sm="6">
                       <CCallout color="danger">
-                        <small className="text-muted">Recurring Clients</small>
+                        <small className="text-muted">Calefacción</small>
                         <br />
                         <strong className="h4">22,643</strong>
                       </CCallout>
@@ -141,87 +141,56 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                        Monday
+                        Fábrica Lunar
                       </span>
                     </div>
                     <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="info" value="34" />
-                      <CProgress className="progress-xs" color="danger" value="78" />
+                      <CProgress className="progress-xs" color="danger" value="38" />
+                      <CProgress className="progress-xs" color="warning" value="81" />
+                      <CProgress className="progress-xs" color="success" value="34" />
                     </div>
                   </div>
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Tuesday
+                      Laboratorio Lunar
                       </span>
                     </div>
                     <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="info" value="56" />
-                      <CProgress className="progress-xs" color="danger" value="94" />
+                      <CProgress className="progress-xs" color="info" value="94" />
+                      <CProgress className="progress-xs" color="danger" value="44" />
+                      <CProgress className="progress-xs" color="warning" value="68" />
+                      <CProgress className="progress-xs" color="success" value="23" />
                     </div>
                   </div>
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Wednesday
+                      Dormitorios Estación
                       </span>
                     </div>
                     <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="info" value="12" />
                       <CProgress className="progress-xs" color="danger" value="67" />
-                    </div>
-                  </div>
-                  <div className="progress-group mb-4">
-                    <div className="progress-group-prepend">
-                      <span className="progress-group-text">
-                      Thursday
-                      </span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="info" value="43" />
-                      <CProgress className="progress-xs" color="danger" value="91" />
-                    </div>
-                  </div>
-                  <div className="progress-group mb-4">
-                    <div className="progress-group-prepend">
-                      <span className="progress-group-text">
-                      Friday
-                      </span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="info" value="22" />
-                      <CProgress className="progress-xs" color="danger" value="73" />
-                    </div>
-                  </div>
-                  <div className="progress-group mb-4">
-                    <div className="progress-group-prepend">
-                      <span className="progress-group-text">
-                      Saturday
-                      </span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="info" value="53" />
-                      <CProgress className="progress-xs" color="danger" value="82" />
-                    </div>
-                  </div>
-                  <div className="progress-group mb-4">
-                    <div className="progress-group-prepend">
-                      <span className="progress-group-text">
-                      Sunday
-                      </span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="info" value="9" />
-                      <CProgress className="progress-xs" color="danger" value="69" />
-                    </div>
+                      <CProgress className="progress-xs" color="warning" value="40" />
+                      <CProgress className="progress-xs" color="success" value="78" />
+                    </div>               
                   </div>
                   <div className="legend text-center">
                     <small>
                       <sup className="px-1"><CBadge shape="pill" color="info">&nbsp;</CBadge></sup>
-                      New clients
+                      Refrigeración
                       &nbsp;
                       <sup className="px-1"><CBadge shape="pill" color="danger">&nbsp;</CBadge></sup>
-                      Recurring clients
+                      Calefacción
+                    </small>
+                    <small>
+                      <sup className="px-1"><CBadge shape="pill" color="warning">&nbsp;</CBadge></sup>
+                      Iluminación
+                      &nbsp;
+                      <sup className="px-1"><CBadge shape="pill" color="success">&nbsp;</CBadge></sup>
+                      Ventilación
                     </small>
                   </div>
                 </CCol>
@@ -231,14 +200,14 @@ const Dashboard = () => {
                   <CRow>
                     <CCol sm="6">
                       <CCallout color="warning">
-                        <small className="text-muted">Pageviews</small>
+                        <small className="text-muted">Iluminación</small>
                         <br />
                         <strong className="h4">78,623</strong>
                       </CCallout>
                     </CCol>
                     <CCol sm="6">
                       <CCallout color="success">
-                        <small className="text-muted">Organic</small>
+                        <small className="text-muted">Ventilación</small>
                         <br />
                         <strong className="h4">49,123</strong>
                       </CCallout>
@@ -249,8 +218,8 @@ const Dashboard = () => {
 
                   <div className="progress-group mb-4">
                     <div className="progress-group-header">
-                      <CIcon className="progress-group-icon" name="cil-user" />
-                      <span className="title">Male</span>
+                      <CIcon className="progress-group-icon" name="cil-sun" />
+                      <span className="title">Fotovoltáica</span>
                       <span className="ml-auto font-weight-bold">43%</span>
                     </div>
                     <div className="progress-group-bars">
@@ -259,56 +228,15 @@ const Dashboard = () => {
                   </div>
                   <div className="progress-group mb-5">
                     <div className="progress-group-header">
-                      <CIcon className="progress-group-icon" name="cil-user-female" />
-                      <span className="title">Female</span>
+                      <CIcon className="progress-group-icon" name="cil-bolt" />
+                      <span className="title">Térmica</span>
                       <span className="ml-auto font-weight-bold">37%</span>
                     </div>
                     <div className="progress-group-bars">
                       <CProgress className="progress-xs" color="warning" value="37" />
                     </div>
                   </div>
-                  <div className="progress-group">
-                    <div className="progress-group-header">
-                      <CIcon className="progress-group-icon" name="cil-globe-alt" />
-                      <span className="title">Organic Search</span>
-                      <span className="ml-auto font-weight-bold">191,235 <span className="text-muted small">(56%)</span></span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="success" value="56" />
-                    </div>
-                  </div>
-
-
-                  <div className="progress-group">
-                    <div className="progress-group-header">
-                      <CIcon name="cib-facebook" className="progress-group-icon" />
-                      <span className="title">Facebook</span>
-                      <span className="ml-auto font-weight-bold">51,223 <span className="text-muted small">(15%)</span></span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="success" value="15" />
-                    </div>
-                  </div>
-                  <div className="progress-group">
-                    <div className="progress-group-header">
-                      <CIcon name="cib-twitter" className="progress-group-icon" />
-                      <span className="title">Twitter</span>
-                      <span className="ml-auto font-weight-bold">37,564 <span className="text-muted small">(11%)</span></span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="success" value="11" />
-                    </div>
-                  </div>
-                  <div className="progress-group">
-                    <div className="progress-group-header">
-                      <CIcon name="cib-linkedin" className="progress-group-icon" />
-                      <span className="title">LinkedIn</span>
-                      <span className="ml-auto font-weight-bold">27,319 <span className="text-muted small">(8%)</span></span>
-                    </div>
-                    <div className="progress-group-bars">
-                      <CProgress className="progress-xs" color="success" value="8" />
-                    </div>
-                  </div>
+                  
                   <div className="divider text-center">
                     <CButton color="link" size="sm" className="text-muted">
                       <CIcon name="cil-options" />
@@ -320,7 +248,7 @@ const Dashboard = () => {
 
               <br />
 
-              <table className="table table-hover table-outline mb-0 d-none d-sm-table">
+              {/* <table className="table table-hover table-outline mb-0 d-none d-sm-table">
                 <thead className="thead-light">
                   <tr>
                     <th className="text-center"><CIcon name="cil-people" /></th>
@@ -544,7 +472,7 @@ const Dashboard = () => {
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> */}
 
             </CCardBody>
           </CCard>

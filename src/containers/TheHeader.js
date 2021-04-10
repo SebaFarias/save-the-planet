@@ -78,8 +78,8 @@ const TheHeader = () => {
           routes={routes} 
         />
           <div className="d-md-down-none mfe-2 c-subheader-nav">
-            <CLink className="c-subheader-nav-link"href="#">
-              <CIcon name="cil-speech" alt="Settings" />
+            <CLink className="c-subheader-nav-link"href="">
+              <CIcon name="cil-speech" alt="Messages" />&nbsp;Hello
             </CLink>
             <CLink 
               className="c-subheader-nav-link" 

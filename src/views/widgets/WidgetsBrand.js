@@ -12,14 +12,14 @@ const WidgetsBrand = ({withCharts})=>{
   <CRow>
     <CCol sm="6" lg="3">
       <CWidgetBrand
-        color="facebook"
+        color="twitter"
         rightHeader="89k"
-        rightFooter="friends"
-        leftHeader="459"
-        leftFooter="feeds"
+        rightFooter="Litros"
+        leftHeader="+ 45k"
+        leftFooter="meta"
       >
         <CIcon
-          name="cib-facebook"
+          name="cil-drop"
           height="52"
           className="my-4"
         />
@@ -27,7 +27,7 @@ const WidgetsBrand = ({withCharts})=>{
           className="position-absolute w-100 h-100"
           backgroundColor="rgba(255,255,255,.1)"
           dataPoints={[65, 59, 84, 84, 51, 55, 40]}
-          label="Friends"
+          label="Litros"
           labels="months"
         />
       </CWidgetBrand>
@@ -35,14 +35,14 @@ const WidgetsBrand = ({withCharts})=>{
 
     <CCol sm="6" lg="3">
       <CWidgetBrand
-        color="twitter"
-        rightHeader="973k"
-        rightFooter="followers"
-        leftHeader="1.792"
-        leftFooter="tweets"
+        color="gradient-success"
+        rightHeader="93k"
+        rightFooter="vegetales"
+        leftHeader="- 3k"
+        leftFooter="meta"
       >
         <CIcon
-          name="cib-twitter"
+          name="cil-spa"
           height="52"
           className="my-4"
         />
@@ -50,7 +50,7 @@ const WidgetsBrand = ({withCharts})=>{
           className="position-absolute w-100 h-100"
           backgroundColor="rgba(255,255,255,.1)"
           dataPoints={[1, 13, 9, 17, 34, 41, 38]}
-          label="Followers"
+          label="Kilos"
           labels="months"
         />
       </CWidgetBrand>
@@ -58,22 +58,22 @@ const WidgetsBrand = ({withCharts})=>{
 
     <CCol sm="6" lg="3">
       <CWidgetBrand
-        color="linkedin"
-        rightHeader="500+"
-        rightFooter="contracts"
-        leftHeader="292"
-        leftFooter="feeds"
+        color="gradient-danger"
+        rightHeader="24k"
+        rightFooter="m3"
+        leftHeader="+ 2k"
+        leftFooter="meta"
       >
         <CIcon
-          name="cib-linkedin"
+          name="cil-burn"
           height="52"
           className="my-4"
         />
         <ChartLineSimple
           className="position-absolute w-100 h-100"
-          backgroundColor="rgba(255,255,255,.1)"
+          backgroundColor="rgba(230,255,255,.1)"  
           dataPoints={[78, 81, 80, 45, 34, 12, 40]}
-          label="Contracts"
+          label="m3"
           labels="months"
         />
       </CWidgetBrand>
@@ -81,14 +81,14 @@ const WidgetsBrand = ({withCharts})=>{
 
     <CCol sm="6" lg="3">
       <CWidgetBrand
-        rightHeader="12"
-        rightFooter="events"
-        leftHeader="4"
-        leftFooter="meetings"
+        rightHeader="32k"
+        rightFooter="KW / H"
+        leftHeader="- 6k"
+        leftFooter="meta"
         color="gradient-warning"
       >
         <CIcon
-          name="cil-calendar"
+          name="cil-bolt"
           height="52"
           className="my-4"
         />
@@ -96,7 +96,7 @@ const WidgetsBrand = ({withCharts})=>{
           className="position-absolute w-100 h-100"
           backgroundColor="rgba(255,255,255,.1)"
           dataPoints={[35, 23, 56, 22, 97, 23, 64]}
-          label="Followers"
+          label="KiloWatts"
           labels="months"
         />
       </CWidgetBrand>
@@ -138,7 +138,7 @@ const WidgetsBrand = ({withCharts})=>{
 
     <CCol sm="6" lg="3">
       <CWidgetBrand
-        color="linkedin"
+        color="success"
         rightHeader="500+"
         rightFooter="contracts"
         leftHeader="292"

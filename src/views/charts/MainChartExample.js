@@ -2,7 +2,7 @@ import React from 'react'
 import { CChartLine } from '@coreui/react-chartjs'
 import { getStyle, hexToRgba } from '@coreui/utils'
 
-const brandSuccess = getStyle('success') || '#4dbd74'
+const brandWarning = getStyle('warning') || '#F9B115'
 const brandInfo = getStyle('info') || '#20a8d8'
 const brandDanger = getStyle('danger') || '#f86c6b'
 
@@ -19,11 +19,11 @@ const MainChartExample = attributes => {
     for (let i = 0; i <= elements; i++) {
       data1.push(random(50, 200))
       data2.push(random(80, 100))
-      data3.push(65)
+      data3.push(135)
     }
     return [
       {
-        label: 'My First dataset',
+        label: 'Consumo Agua',
         backgroundColor: hexToRgba(brandInfo, 10),
         borderColor: brandInfo,
         pointHoverBackgroundColor: brandInfo,
@@ -31,15 +31,15 @@ const MainChartExample = attributes => {
         data: data1
       },
       {
-        label: 'My Second dataset',
+        label: 'Consumo Eléctrico',
         backgroundColor: 'transparent',
-        borderColor: brandSuccess,
-        pointHoverBackgroundColor: brandSuccess,
+        borderColor: brandWarning,
+        pointHoverBackgroundColor: brandWarning,
         borderWidth: 2,
         data: data2
       },
       {
-        label: 'My Third dataset',
+        label: 'Meta diaria',
         backgroundColor: 'transparent',
         borderColor: brandDanger,
         pointHoverBackgroundColor: brandDanger,
@@ -54,7 +54,7 @@ const MainChartExample = attributes => {
     return {
         maintainAspectRatio: false,
         legend: {
-          display: false
+          display: true
         },
         scales: {
           xAxes: [{
@@ -92,7 +92,7 @@ const MainChartExample = attributes => {
       {...attributes}
       datasets={defaultDatasets}
       options={defaultOptions}
-      labels={['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']}
+      labels={['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa', 'Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa', 'Do','Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa', 'Do','Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa', 'Do',]}
     />
   )
 }

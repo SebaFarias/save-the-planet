@@ -29,8 +29,11 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/icons/flags/Flags'));
 const Brands = React.lazy(() => import('./views/icons/brands/Brands'));
+const Alertas = React.lazy(() => import('./views/alertas/Alertas'))
 const Alerts = React.lazy(() => import('./views/notifications/alerts/Alerts'));
 const Badges = React.lazy(() => import('./views/notifications/badges/Badges'));
+const Centrales = React.lazy(() => import('./views/centrales/Centrales'));
+const Dispositivos = React.lazy(()=> import('./views/dispositivos/Dispositivos'))
 const Modals = React.lazy(() => import('./views/notifications/modals/Modals'));
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'));
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'));
@@ -41,6 +44,7 @@ const User = React.lazy(() => import('./views/users/User'));
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/alertas', name: 'Alertas' , component: Alertas , exact: true },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
@@ -66,7 +70,9 @@ const routes = [
   { path: '/buttons/button-dropdowns', name: 'Dropdowns', component: ButtonDropdowns },
   { path: '/buttons/button-groups', name: 'Button Groups', component: ButtonGroups },
   { path: '/buttons/brand-buttons', name: 'Brand Buttons', component: BrandButtons },
+  { path: '/centrales/:id', exact: true, name: 'Centrales', component: Centrales },
   { path: '/charts', name: 'Charts', component: Charts },
+  { path: '/dispositivos/:id', exact: true, name: 'Dispositivos', component: Dispositivos },
   { path: '/icons', exact: true, name: 'Icons', component: CoreUIIcons },
   { path: '/icons/coreui-icons', name: 'CoreUI Icons', component: CoreUIIcons },
   { path: '/icons/flags', name: 'Flags', component: Flags },
