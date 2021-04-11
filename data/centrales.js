@@ -1,7 +1,32 @@
-module.exports = [
-  {
-    id: '000001',
-    nombre:"Fábrica Lunar",
-    
-  }
-]
+module.exports = {
+  '000001': {
+    id:'000001',
+    name:'Fábrica Lunar',
+    icon:'cil-factory',
+    img: 'https://www.stirworld.com/images/article_gallery/the-pod-imagined-on-the-moon-s-surface-the-biopod-interstellar-lab-stirworld-210128022444.jpg',
+    devices:[],
+    zones:[],
+    tasks:[],
+    users:[],
+  },
+  '000002': {
+    id:'000002',
+    name:'Laboratorio Lunar',
+    icon:'cil-beaker',
+    img: 'https://img.17qq.com/images/kmplknkchlv.jpeg',
+    devices:[],
+    zones:[],
+    tasks:[],
+    users:[],
+  },
+  '000003':{
+    id:'000003',
+    name:'Dormitorios Estación',
+    icon:'cil-bed',
+    img: 'https://www.spaceconnectonline.com.au/images/resize/3D-Printed-Lunar-Base_f2f5.jpg',
+    devices:[],
+    zones:[],
+    tasks:[],
+    users:[],
+  },
+}

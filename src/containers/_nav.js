@@ -51,57 +51,68 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Termómetros',
-        to: '/dispositivos/001000',
+        to: '/dispositivos/Termometro',
         icon: 'cil-burn',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Niveles',
-        to: '/dispositivos/002000',
+        to: '/dispositivos/Nivel',
         icon: 'cil-speedometer',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Flujómetros',
-        to: '/dispositivos/003000',
+        to: '/dispositivos/Flujometro',
         icon: 'cil-sync',
       },
     ]
   },
   {
-    _tag: 'CSidebarNavItem',
-    name: 'Alertas',
-    to: '/alertas',
-    icon: 'cil-bullhorn',
-  },
-  {
     _tag: 'CSidebarNavTitle',
-    _children: ['Contrato']
+    _children: ['Análisis'],
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Mi Plan',
-    route: '/base',
-    icon: 'cil-briefcase',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Mis Pagos',
-    route: '/buttons',
-    icon: 'cil-wallet',
+    name: 'Predecir',
+    route: '/Predecir',
+    icon: 'cil-audio-spectrum',
+    badge:{
+      color: 'success',
+      text: 'BETA',
+    },
   },
   {
     _tag: 'CSidebarNavDivider'
   },
   {
+    _tag: 'CSidebarNavItem',
+    name: 'Reportes',
+    route:'reportes',
+    icon: 'cil-clipboard',
+
+  },
+  {
     _tag: 'CSidebarNavTitle',
-    _children: ['Extras'],
+    _children: ['Acciones']
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Alertas',
-    route: '/pages',
-    icon: 'cil-alarm',
+    route: '/alertas',
+    icon: 'cil-bullhorn',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Tareas',
+    route: '/tareas',
+    icon: 'cil-task',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Gatillos',
+    route: '/gatillos',
+    icon: 'cil-functions',
   },
 ]
 
