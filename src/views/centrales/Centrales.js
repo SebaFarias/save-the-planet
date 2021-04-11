@@ -27,9 +27,9 @@ import centralesMethods from '../centrales/data'
 
 const Centrales = ({match}) => {
   
-  const fetchCentralData = useCallback( id => {
+  const fetchCentralData = useCallback( () => {
     return {
-      ...centralesMethods.getCentralDataById(id),
+      ...centralesMethods.getCentralDataById(match.params.id),
       devices: devicesMethods.getDevicesByCentralId(match.params.id),
     }
   },[match]) 
@@ -65,7 +65,7 @@ useEffect( () => {
           </CCardHeader>
           <CCardBody>
             <CTabs activeTab={active} onActiveTabChange={idx => setActive(idx)}>
-              <CNav variant="tabs">
+              <CNav fill variant="tabs">
                 <CNavItem>
                   <CNavLink>
                     <CIcon name="cil-clipboard" />
@@ -95,16 +95,16 @@ useEffect( () => {
                 <CTabPane>
                   <CRow>
                     <CCol sm="12" md="6">
-                      <CListGroup>
-                        <CListGroupItem>Central: {data.name}</CListGroupItem>
-                        <CListGroupItem>id: {data.id} </CListGroupItem>
+                      <CListGroup className='mt-3'>
+                        <CListGroupItem className='mx-3' >Central: {data.name}</CListGroupItem>
+                        <CListGroupItem className='mx-3' >id: {data.id} </CListGroupItem>
                     </CListGroup>
                     </CCol>
                     <CCol sm="12" md="6">
                       <img 
                         src={data.img}
                         alt={`a little thubnail of ${data.name}`}
-                        className='img-fluid rounded'
+                        className='img-fluid rounded m-3 p-3'
                       />
                     </CCol>
                   </CRow>
@@ -143,22 +143,22 @@ useEffect( () => {
                           datasets={[
                             {
                               label: 'Refrigeración',
-                              backgroundColor: 'rgb(228,102,81,0.9)',
+                              backgroundColor: 'rgb(51,153,255,0.9)',
                               data: [30, 39, 10, 50, 30, 70, 35]
                             },
                             {
                               label: 'Calefacción',
-                              backgroundColor: 'rgb(0,216,160,0.9)',
+                              backgroundColor: 'rgb(229,83,83,0.9)',
                               data: [39, 30, 40, 35, 70, 90, 45]
                             },
                             {
                               label: 'Iluminación',
-                              backgroundColor: 'rgb(128,102,81,0.9)',
+                              backgroundColor: 'rgb(249,177,21,0.9)',
                               data: [15, 39, 30, 50, 30, 70, 35]
                             },
                             {
                               label: 'Ventilación',
-                              backgroundColor: 'rgb(0,216,255,0.9)',
+                              backgroundColor: 'rgb(46,184,92,0.9)',
                               data: [39, 80, 40, 35, 40, 20, 45]
                             },
                           ]}
@@ -175,8 +175,8 @@ useEffect( () => {
                     <CCol sm="12" md="6">
                     <CCard>
           <CCardHeader>
-            Collapse
-            <small> accordion</small>
+            Consumo Histório
+            <small> por subsistema </small>
           </CCardHeader>
           <CCardBody>
             <div id="accordion">
@@ -193,11 +193,26 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 0}>
                   <CCardBody>
-                    1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-                    cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                    beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven''t heard of them accusamus labore sustainable VHS.
+                    <CDataTable
+                      items={data?.devices}
+                      fields={fields}
+                      hover
+                      striped
+                      bordered
+                      size="sm"
+                      itemsPerPage={15}
+                      pagination
+                      scopedSlots = {{
+                        'status':
+                          (item)=>(
+                            <td>
+                              <CBadge color={getBadge(item.status)}>
+                                {item.status}
+                              </CBadge>
+                            </td>
+                          )
+                      }}
+                    />
                   </CCardBody>
                 </CCollapse>
               </CCard>
@@ -214,11 +229,26 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 1}>
                   <CCardBody>
-                    2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-                    cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                    beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven''t heard of them accusamus labore sustainable VHS.
+                    <CDataTable
+                      items={data?.devices}
+                      fields={fields}
+                      hover
+                      striped
+                      bordered
+                      size="sm"
+                      itemsPerPage={15}
+                      pagination
+                      scopedSlots = {{
+                        'status':
+                          (item)=>(
+                            <td>
+                              <CBadge color={getBadge(item.status)}>
+                                {item.status}
+                              </CBadge>
+                            </td>
+                          )
+                      }}
+                    />
                   </CCardBody>
                 </CCollapse>
               </CCard>
@@ -235,11 +265,26 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 2}>
                   <CCardBody>
-                    3. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-                    cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                    beer farm-to-table, raw denim aesthetic synth nesciunt you probably havent heard of them accusamus labore sustainable VHS.
+                    <CDataTable
+                      items={data?.devices}
+                      fields={fields}
+                      hover
+                      striped
+                      bordered
+                      size="sm"
+                      itemsPerPage={15}
+                      pagination
+                      scopedSlots = {{
+                        'status':
+                          (item)=>(
+                            <td>
+                              <CBadge color={getBadge(item.status)}>
+                                {item.status}
+                              </CBadge>
+                            </td>
+                          )
+                      }}
+                    />
                   </CCardBody>
                 </CCollapse>
               </CCard>
@@ -256,11 +301,26 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 3}>
                   <CCardBody>
-                    4. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-                    cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                    beer farm-to-table, raw denim aesthetic synth nesciunt you probably havent heard of them accusamus labore sustainable VHS.
+                    <CDataTable
+                      items={data?.devices}
+                      fields={fields}
+                      hover
+                      striped
+                      bordered
+                      size="sm"
+                      itemsPerPage={15}
+                      pagination
+                      scopedSlots = {{
+                        'status':
+                          (item)=>(
+                            <td>
+                              <CBadge color={getBadge(item.status)}>
+                                {item.status}
+                              </CBadge>
+                            </td>
+                          )
+                      }}
+                    />
                   </CCardBody>
                 </CCollapse>
               </CCard>
