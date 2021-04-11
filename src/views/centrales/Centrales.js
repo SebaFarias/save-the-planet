@@ -24,6 +24,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import devicesMethods from '../dispositivos/data'
 import centralesMethods from '../centrales/data'
+import DataTablePrimary from '../base/tables/DataTablePrimary'
 
 const Centrales = ({match}) => {
   
@@ -43,17 +44,14 @@ const Centrales = ({match}) => {
       default: return 'primary'
     }
   }
-  const fields = ['id', 'tipo', 'central' , 'centralId', 'zona' , 'status']
+  const fields = ['id', 'tipo', 'central' , 'centralId','subsistema', 'zona' , 'status']
   const [ data, setData ] = useState(fetchCentralData(match.params.id))
   const [ active, setActive ] = useState(1)
   const [ accordion, setAccordion ] = useState(1)
-  const lorem = 'mensaje'
 
 useEffect( () => {
   setData(fetchCentralData(match.params.id))
 },[match.params.id,fetchCentralData])
-
-  
 
   return(
     <CRow>
@@ -91,9 +89,9 @@ useEffect( () => {
                   </CNavLink>
                 </CNavItem>
               </CNav>
-              <CTabContent>
+              <CTabContent className="mt-3">
                 <CTabPane>
-                  <CRow>
+                  <CRow >
                     <CCol sm="12" md="6">
                       <CListGroup className='mt-3'>
                         <CListGroupItem className='mx-3' >Central: {data.name}</CListGroupItem>
@@ -139,7 +137,8 @@ useEffect( () => {
                         {data.name}: Consumo Histório
                       </CCardHeader>
                       <CCardBody>
-                        <CChartLine
+                        <CChartLine 
+                          style={{minHeight: '300px', marginTop: '40px'}}
                           datasets={[
                             {
                               label: 'Refrigeración',
@@ -163,9 +162,37 @@ useEffect( () => {
                             },
                           ]}
                           options={{
-                            tooltips: {
-                              enabled: true
+                            responsive: true,
+                            plugins: {
+                              title: {
+                                display: true,
+                                text: (ctx) => 'Chart.js Line Chart - stacked=' + ctx.chart.options.scales.y.stacked
+                              },
+                              tooltip: {
+                                mode: 'index'
+                              },
+                            },
+                            interaction: {
+                              mode: 'nearest',
+                              axis: 'x',
+                              intersect: false
+                            },
+                            scales: {
+                              x: {
+                                title: {
+                                  display: true,
+                                  text: 'Month'
+                                }
+                              },
+                              y: {
+                                stacked: true,
+                                title: {
+                                  display: true,
+                                  text: 'Value'
+                                }
+                              }
                             }
+                          
                           }}
                           labels="months"
                         />
@@ -193,25 +220,10 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 0}>
                   <CCardBody>
-                    <CDataTable
-                      items={data?.devices}
+                    <DataTablePrimary
+                      itemSet={devicesMethods.filterBySubsistem('Refrigeracion',data?.devices)}
                       fields={fields}
-                      hover
-                      striped
-                      bordered
-                      size="sm"
                       itemsPerPage={15}
-                      pagination
-                      scopedSlots = {{
-                        'status':
-                          (item)=>(
-                            <td>
-                              <CBadge color={getBadge(item.status)}>
-                                {item.status}
-                              </CBadge>
-                            </td>
-                          )
-                      }}
                     />
                   </CCardBody>
                 </CCollapse>
@@ -229,25 +241,10 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 1}>
                   <CCardBody>
-                    <CDataTable
-                      items={data?.devices}
+                  <DataTablePrimary
+                      itemSet={devicesMethods.filterBySubsistem('Calefaccion',data?.devices)}
                       fields={fields}
-                      hover
-                      striped
-                      bordered
-                      size="sm"
                       itemsPerPage={15}
-                      pagination
-                      scopedSlots = {{
-                        'status':
-                          (item)=>(
-                            <td>
-                              <CBadge color={getBadge(item.status)}>
-                                {item.status}
-                              </CBadge>
-                            </td>
-                          )
-                      }}
                     />
                   </CCardBody>
                 </CCollapse>
@@ -265,26 +262,11 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 2}>
                   <CCardBody>
-                    <CDataTable
-                      items={data?.devices}
-                      fields={fields}
-                      hover
-                      striped
-                      bordered
-                      size="sm"
-                      itemsPerPage={15}
-                      pagination
-                      scopedSlots = {{
-                        'status':
-                          (item)=>(
-                            <td>
-                              <CBadge color={getBadge(item.status)}>
-                                {item.status}
-                              </CBadge>
-                            </td>
-                          )
-                      }}
-                    />
+                    <DataTablePrimary
+                        itemSet={devicesMethods.filterBySubsistem('Iluminacion',data?.devices)}
+                        fields={fields}
+                        itemsPerPage={15}
+                      />
                   </CCardBody>
                 </CCollapse>
               </CCard>
@@ -301,25 +283,10 @@ useEffect( () => {
                 </CCardHeader>
                 <CCollapse show={accordion === 3}>
                   <CCardBody>
-                    <CDataTable
-                      items={data?.devices}
+                  <DataTablePrimary
+                      itemSet={devicesMethods.filterBySubsistem('Ventilacion',data?.devices)}
                       fields={fields}
-                      hover
-                      striped
-                      bordered
-                      size="sm"
                       itemsPerPage={15}
-                      pagination
-                      scopedSlots = {{
-                        'status':
-                          (item)=>(
-                            <td>
-                              <CBadge color={getBadge(item.status)}>
-                                {item.status}
-                              </CBadge>
-                            </td>
-                          )
-                      }}
                     />
                   </CCardBody>
                 </CCollapse>
@@ -332,7 +299,11 @@ useEffect( () => {
                   
                 </CTabPane>
                 <CTabPane>
-                  {`4. ${lorem}`}
+                <DataTablePrimary
+                  itemSet={data?.devices}
+                  fields={fields}
+                  itemsPerPage={15}
+                />
                 </CTabPane>
               </CTabContent>
             </CTabs>

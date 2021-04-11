@@ -1,7008 +1,1007 @@
 import centralesMethods from '../centrales/data'
 
 const devicesData = [
-  {
-    "id": 1,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zaam-Dox",
-    "status": "ok"
-  },
-  {
-    "id": 2,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zamit",
-    "status": "dañado"
-  },
-  {
-    "id": 3,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Fixflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 4,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Trippledex",
-    "status": "ok"
-  },
-  {
-    "id": 5,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 6,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 7,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Daltfresh",
-    "status": "ok"
-  },
-  {
-    "id": 8,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "ok"
-  },
-  {
-    "id": 9,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Wrapsafe",
-    "status": "apagado"
-  },
-  {
-    "id": 10,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zamit",
-    "status": "apagado"
-  },
-  {
-    "id": 11,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Namfix",
-    "status": "ok"
-  },
-  {
-    "id": 12,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Regrant",
-    "status": "ok"
-  },
-  {
-    "id": 13,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Konklux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 14,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Sub-Ex",
-    "status": "dañado"
-  },
-  {
-    "id": 15,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zamit",
-    "status": "durmiendo"
-  },
-  {
-    "id": 16,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Trippledex",
-    "status": "dañado"
-  },
-  {
-    "id": 17,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Lotlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 18,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Asoka",
-    "status": "dañado"
-  },
-  {
-    "id": 19,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Tresom",
-    "status": "dañado"
-  },
-  {
-    "id": 20,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Lotstring",
-    "status": "ok"
-  },
-  {
-    "id": 21,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zoolab",
-    "status": "apagado"
-  },
-  {
-    "id": 22,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "apagado"
-  },
-  {
-    "id": 23,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Alphazap",
-    "status": "apagado"
-  },
-  {
-    "id": 24,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bitchip",
-    "status": "dañado"
-  },
-  {
-    "id": 25,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Flowdesk",
-    "status": "apagado"
-  },
-  {
-    "id": 26,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Prodder",
-    "status": "apagado"
-  },
-  {
-    "id": 27,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "apagado"
-  },
-  {
-    "id": 28,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Keylex",
-    "status": "ok"
-  },
-  {
-    "id": 29,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Konklab",
-    "status": "apagado"
-  },
-  {
-    "id": 30,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Greenlam",
-    "status": "dañado"
-  },
-  {
-    "id": 31,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Overhold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 32,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 33,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "durmiendo"
-  },
-  {
-    "id": 34,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Ventosanzap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 35,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 36,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Trippledex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 37,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Treeflex",
-    "status": "apagado"
-  },
-  {
-    "id": 38,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Namfix",
-    "status": "dañado"
-  },
-  {
-    "id": 39,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Redhold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 40,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Hatity",
-    "status": "ok"
-  },
-  {
-    "id": 41,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zoolab",
-    "status": "ok"
-  },
-  {
-    "id": 42,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zoolab",
-    "status": "durmiendo"
-  },
-  {
-    "id": 43,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Prodder",
-    "status": "dañado"
-  },
-  {
-    "id": 44,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 45,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Biodex",
-    "status": "ok"
-  },
-  {
-    "id": 46,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "It",
-    "status": "apagado"
-  },
-  {
-    "id": 47,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Overhold",
-    "status": "ok"
-  },
-  {
-    "id": 48,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Tin",
-    "status": "apagado"
-  },
-  {
-    "id": 49,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "dañado"
-  },
-  {
-    "id": 50,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Otcom",
-    "status": "apagado"
-  },
-  {
-    "id": 51,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zathin",
-    "status": "ok"
-  },
-  {
-    "id": 52,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Domainer",
-    "status": "ok"
-  },
-  {
-    "id": 53,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zaam-Dox",
-    "status": "durmiendo"
-  },
-  {
-    "id": 54,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Temp",
-    "status": "ok"
-  },
-  {
-    "id": 55,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Rank",
-    "status": "apagado"
-  },
-  {
-    "id": 56,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Tresom",
-    "status": "dañado"
-  },
-  {
-    "id": 57,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Tampflex",
-    "status": "apagado"
-  },
-  {
-    "id": 58,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Mat Lam Tam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 59,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Job",
-    "status": "apagado"
-  },
-  {
-    "id": 60,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "apagado"
-  },
-  {
-    "id": 61,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Gembucket",
-    "status": "apagado"
-  },
-  {
-    "id": 62,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Subin",
-    "status": "dañado"
-  },
-  {
-    "id": 63,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Tampflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 64,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Sonair",
-    "status": "dañado"
-  },
-  {
-    "id": 65,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Andalax",
-    "status": "ok"
-  },
-  {
-    "id": 66,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Asoka",
-    "status": "ok"
-  },
-  {
-    "id": 67,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Redhold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 68,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Vagram",
-    "status": "dañado"
-  },
-  {
-    "id": 69,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Lotstring",
-    "status": "durmiendo"
-  },
-  {
-    "id": 70,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Fix San",
-    "status": "durmiendo"
-  },
-  {
-    "id": 71,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Namfix",
-    "status": "dañado"
-  },
-  {
-    "id": 72,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 73,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "durmiendo"
-  },
-  {
-    "id": 74,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Stim",
-    "status": "durmiendo"
-  },
-  {
-    "id": 75,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Opela",
-    "status": "dañado"
-  },
-  {
-    "id": 76,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Sub-Ex",
-    "status": "apagado"
-  },
-  {
-    "id": 77,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Gembucket",
-    "status": "dañado"
-  },
-  {
-    "id": 78,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Lotlux",
-    "status": "dañado"
-  },
-  {
-    "id": 79,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Matsoft",
-    "status": "dañado"
-  },
-  {
-    "id": 80,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Temp",
-    "status": "apagado"
-  },
-  {
-    "id": 81,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Lotlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 82,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Lotstring",
-    "status": "durmiendo"
-  },
-  {
-    "id": 83,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Lotlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 84,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "dañado"
-  },
-  {
-    "id": 85,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Greenlam",
-    "status": "ok"
-  },
-  {
-    "id": 86,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Fintone",
-    "status": "durmiendo"
-  },
-  {
-    "id": 87,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bitwolf",
-    "status": "ok"
-  },
-  {
-    "id": 88,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Pannier",
-    "status": "apagado"
-  },
-  {
-    "id": 89,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Duobam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 90,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Lotlux",
-    "status": "apagado"
-  },
-  {
-    "id": 91,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Toughjoyfax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 92,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Flexidy",
-    "status": "ok"
-  },
-  {
-    "id": 93,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Tresom",
-    "status": "ok"
-  },
-  {
-    "id": 94,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Kanlam",
-    "status": "apagado"
-  },
-  {
-    "id": 95,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Overhold",
-    "status": "apagado"
-  },
-  {
-    "id": 96,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Lotlux",
-    "status": "ok"
-  },
-  {
-    "id": 97,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bytecard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 98,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Ronstring",
-    "status": "apagado"
-  },
-  {
-    "id": 99,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Vagram",
-    "status": "dañado"
-  },
-  {
-    "id": 100,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Span",
-    "status": "dañado"
-  },
-  {
-    "id": 101,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bitchip",
-    "status": "durmiendo"
-  },
-  {
-    "id": 102,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 103,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cardify",
-    "status": "ok"
-  },
-  {
-    "id": 104,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Sonair",
-    "status": "dañado"
-  },
-  {
-    "id": 105,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Tampflex",
-    "status": "ok"
-  },
-  {
-    "id": 106,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Job",
-    "status": "dañado"
-  },
-  {
-    "id": 107,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Voltsillam",
-    "status": "apagado"
-  },
-  {
-    "id": 108,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Prodder",
-    "status": "apagado"
-  },
-  {
-    "id": 109,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Konklux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 110,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Lotlux",
-    "status": "dañado"
-  },
-  {
-    "id": 111,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Stim",
-    "status": "durmiendo"
-  },
-  {
-    "id": 112,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Job",
-    "status": "apagado"
-  },
-  {
-    "id": 113,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Andalax",
-    "status": "apagado"
-  },
-  {
-    "id": 114,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Kanlam",
-    "status": "dañado"
-  },
-  {
-    "id": 115,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Wrapsafe",
-    "status": "durmiendo"
-  },
-  {
-    "id": 116,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Aerified",
-    "status": "durmiendo"
-  },
-  {
-    "id": 117,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Asoka",
-    "status": "apagado"
-  },
-  {
-    "id": 118,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Tampflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 119,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zamit",
-    "status": "durmiendo"
-  },
-  {
-    "id": 120,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Alpha",
-    "status": "ok"
-  },
-  {
-    "id": 121,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Greenlam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 122,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Sonsing",
-    "status": "durmiendo"
-  },
-  {
-    "id": 123,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Andalax",
-    "status": "dañado"
-  },
-  {
-    "id": 124,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Konklux",
-    "status": "dañado"
-  },
-  {
-    "id": 125,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "It",
-    "status": "durmiendo"
-  },
-  {
-    "id": 126,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Toughjoyfax",
-    "status": "ok"
-  },
-  {
-    "id": 127,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Pannier",
-    "status": "durmiendo"
-  },
-  {
-    "id": 128,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "durmiendo"
-  },
-  {
-    "id": 129,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Gembucket",
-    "status": "dañado"
-  },
-  {
-    "id": 130,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Voltsillam",
-    "status": "dañado"
-  },
-  {
-    "id": 131,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cardguard",
-    "status": "apagado"
-  },
-  {
-    "id": 132,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bigtax",
-    "status": "apagado"
-  },
-  {
-    "id": 133,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Lotlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 134,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bamity",
-    "status": "apagado"
-  },
-  {
-    "id": 135,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Wrapsafe",
-    "status": "dañado"
-  },
-  {
-    "id": 136,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Keylex",
-    "status": "apagado"
-  },
-  {
-    "id": 137,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Veribet",
-    "status": "durmiendo"
-  },
-  {
-    "id": 138,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Lotstring",
-    "status": "ok"
-  },
-  {
-    "id": 139,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Gembucket",
-    "status": "dañado"
-  },
-  {
-    "id": 140,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 141,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Tresom",
-    "status": "durmiendo"
-  },
-  {
-    "id": 142,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Y-find",
-    "status": "dañado"
-  },
-  {
-    "id": 143,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Subin",
-    "status": "dañado"
-  },
-  {
-    "id": 144,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Hatity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 145,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Pannier",
-    "status": "apagado"
-  },
-  {
-    "id": 146,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Lotlux",
-    "status": "ok"
-  },
-  {
-    "id": 147,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Transcof",
-    "status": "ok"
-  },
-  {
-    "id": 148,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zamit",
-    "status": "apagado"
-  },
-  {
-    "id": 149,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Rank",
-    "status": "ok"
-  },
-  {
-    "id": 150,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Treeflex",
-    "status": "ok"
-  },
-  {
-    "id": 151,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Toughjoyfax",
-    "status": "apagado"
-  },
-  {
-    "id": 152,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bigtax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 153,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "dañado"
-  },
-  {
-    "id": 154,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Span",
-    "status": "durmiendo"
-  },
-  {
-    "id": 155,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Lotlux",
-    "status": "dañado"
-  },
-  {
-    "id": 156,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zontrax",
-    "status": "ok"
-  },
-  {
-    "id": 157,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Keylex",
-    "status": "apagado"
-  },
-  {
-    "id": 158,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cookley",
-    "status": "ok"
-  },
-  {
-    "id": 159,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 160,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Konklux",
-    "status": "dañado"
-  },
-  {
-    "id": 161,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Vagram",
-    "status": "durmiendo"
-  },
-  {
-    "id": 162,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Asoka",
-    "status": "apagado"
-  },
-  {
-    "id": 163,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Zamit",
-    "status": "apagado"
-  },
-  {
-    "id": 164,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Tin",
-    "status": "apagado"
-  },
-  {
-    "id": 165,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Greenlam",
-    "status": "dañado"
-  },
-  {
-    "id": 166,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "apagado"
-  },
-  {
-    "id": 167,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Span",
-    "status": "dañado"
-  },
-  {
-    "id": 168,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Viva",
-    "status": "durmiendo"
-  },
-  {
-    "id": 169,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Stronghold",
-    "status": "dañado"
-  },
-  {
-    "id": 170,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Voltsillam",
-    "status": "dañado"
-  },
-  {
-    "id": 171,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Opela",
-    "status": "ok"
-  },
-  {
-    "id": 172,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Sonsing",
-    "status": "ok"
-  },
-  {
-    "id": 173,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Fintone",
-    "status": "durmiendo"
-  },
-  {
-    "id": 174,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Alpha",
-    "status": "durmiendo"
-  },
-  {
-    "id": 175,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Asoka",
-    "status": "durmiendo"
-  },
-  {
-    "id": 176,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Mat Lam Tam",
-    "status": "ok"
-  },
-  {
-    "id": 177,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Hatity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 178,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Solarbreeze",
-    "status": "dañado"
-  },
-  {
-    "id": 179,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Lotstring",
-    "status": "apagado"
-  },
-  {
-    "id": 180,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bamity",
-    "status": "apagado"
-  },
-  {
-    "id": 181,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Cookley",
-    "status": "dañado"
-  },
-  {
-    "id": 182,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Namfix",
-    "status": "durmiendo"
-  },
-  {
-    "id": 183,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "dañado"
-  },
-  {
-    "id": 184,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Ventosanzap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 185,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Regrant",
-    "status": "dañado"
-  },
-  {
-    "id": 186,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Bamity",
-    "status": "dañado"
-  },
-  {
-    "id": 187,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Toughjoyfax",
-    "status": "ok"
-  },
-  {
-    "id": 188,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Wrapsafe",
-    "status": "dañado"
-  },
-  {
-    "id": 189,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Voyatouch",
-    "status": "apagado"
-  },
-  {
-    "id": 190,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Prodder",
-    "status": "durmiendo"
-  },
-  {
-    "id": 191,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Overhold",
-    "status": "apagado"
-  },
-  {
-    "id": 192,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Namfix",
-    "status": "apagado"
-  },
-  {
-    "id": 193,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Transcof",
-    "status": "durmiendo"
-  },
-  {
-    "id": 194,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Latlux",
-    "status": "apagado"
-  },
-  {
-    "id": 195,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Cookley",
-    "status": "durmiendo"
-  },
-  {
-    "id": 196,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Hatity",
-    "status": "ok"
-  },
-  {
-    "id": 197,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Tampflex",
-    "status": "dañado"
-  },
-  {
-    "id": 198,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Subin",
-    "status": "ok"
-  },
-  {
-    "id": 199,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Fix San",
-    "status": "apagado"
-  },
-  {
-    "id": 200,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Ventosanzap",
-    "status": "ok"
-  },
-  {
-    "id": 201,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Domainer",
-    "status": "ok"
-  },
-  {
-    "id": 202,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Solarbreeze",
-    "status": "durmiendo"
-  },
-  {
-    "id": 203,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Sonair",
-    "status": "dañado"
-  },
-  {
-    "id": 204,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Prodder",
-    "status": "ok"
-  },
-  {
-    "id": 205,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Treeflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 206,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "It",
-    "status": "dañado"
-  },
-  {
-    "id": 207,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Solarbreeze",
-    "status": "ok"
-  },
-  {
-    "id": 208,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Opela",
-    "status": "apagado"
-  },
-  {
-    "id": 209,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Fintone",
-    "status": "ok"
-  },
-  {
-    "id": 210,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Tresom",
-    "status": "apagado"
-  },
-  {
-    "id": 211,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Redhold",
-    "status": "apagado"
-  },
-  {
-    "id": 212,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Flexidy",
-    "status": "dañado"
-  },
-  {
-    "id": 213,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Solarbreeze",
-    "status": "dañado"
-  },
-  {
-    "id": 214,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "durmiendo"
-  },
-  {
-    "id": 215,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Gembucket",
-    "status": "apagado"
-  },
-  {
-    "id": 216,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Sub-Ex",
-    "status": "dañado"
-  },
-  {
-    "id": 217,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Tempsoft",
-    "status": "ok"
-  },
-  {
-    "id": 218,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Tresom",
-    "status": "ok"
-  },
-  {
-    "id": 219,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Daltfresh",
-    "status": "apagado"
-  },
-  {
-    "id": 220,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Toughjoyfax",
-    "status": "dañado"
-  },
-  {
-    "id": 221,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Vagram",
-    "status": "ok"
-  },
-  {
-    "id": 222,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Flexidy",
-    "status": "apagado"
-  },
-  {
-    "id": 223,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Duobam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 224,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zontrax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 225,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Holdlamis",
-    "status": "durmiendo"
-  },
-  {
-    "id": 226,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "dañado"
-  },
-  {
-    "id": 227,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Daltfresh",
-    "status": "durmiendo"
-  },
-  {
-    "id": 228,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Solarbreeze",
-    "status": "apagado"
-  },
-  {
-    "id": 229,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Stringtough",
-    "status": "dañado"
-  },
-  {
-    "id": 230,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Cardify",
-    "status": "apagado"
-  },
-  {
-    "id": 231,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bytecard",
-    "status": "ok"
-  },
-  {
-    "id": 232,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Y-find",
-    "status": "dañado"
-  },
-  {
-    "id": 233,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Gembucket",
-    "status": "ok"
-  },
-  {
-    "id": 234,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Transcof",
-    "status": "ok"
-  },
-  {
-    "id": 235,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "ok"
-  },
-  {
-    "id": 236,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bytecard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 237,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cardify",
-    "status": "apagado"
-  },
-  {
-    "id": 238,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bytecard",
-    "status": "ok"
-  },
-  {
-    "id": 239,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Matsoft",
-    "status": "ok"
-  },
-  {
-    "id": 240,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Cardguard",
-    "status": "ok"
-  },
-  {
-    "id": 241,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "durmiendo"
-  },
-  {
-    "id": 242,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Tin",
-    "status": "ok"
-  },
-  {
-    "id": 243,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Fixflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 244,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Tempsoft",
-    "status": "ok"
-  },
-  {
-    "id": 245,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Asoka",
-    "status": "dañado"
-  },
-  {
-    "id": 246,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Cardguard",
-    "status": "ok"
-  },
-  {
-    "id": 247,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 248,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Sonsing",
-    "status": "apagado"
-  },
-  {
-    "id": 249,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Stringtough",
-    "status": "dañado"
-  },
-  {
-    "id": 250,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Temp",
-    "status": "apagado"
-  },
-  {
-    "id": 251,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cardguard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 252,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bitwolf",
-    "status": "durmiendo"
-  },
-  {
-    "id": 253,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Lotstring",
-    "status": "durmiendo"
-  },
-  {
-    "id": 254,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Daltfresh",
-    "status": "dañado"
-  },
-  {
-    "id": 255,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Viva",
-    "status": "apagado"
-  },
-  {
-    "id": 256,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Ronstring",
-    "status": "ok"
-  },
-  {
-    "id": 257,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 258,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bigtax",
-    "status": "dañado"
-  },
-  {
-    "id": 259,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Voyatouch",
-    "status": "dañado"
-  },
-  {
-    "id": 260,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bytecard",
-    "status": "ok"
-  },
-  {
-    "id": 261,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Sonair",
-    "status": "apagado"
-  },
-  {
-    "id": 262,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Viva",
-    "status": "durmiendo"
-  },
-  {
-    "id": 263,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Quo Lux",
-    "status": "ok"
-  },
-  {
-    "id": 264,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 265,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "apagado"
-  },
-  {
-    "id": 266,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Andalax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 267,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "apagado"
-  },
-  {
-    "id": 268,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Solarbreeze",
-    "status": "dañado"
-  },
-  {
-    "id": 269,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Fintone",
-    "status": "apagado"
-  },
-  {
-    "id": 270,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "apagado"
-  },
-  {
-    "id": 271,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Pannier",
-    "status": "durmiendo"
-  },
-  {
-    "id": 272,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Biodex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 273,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Viva",
-    "status": "ok"
-  },
-  {
-    "id": 274,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Treeflex",
-    "status": "apagado"
-  },
-  {
-    "id": 275,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Alpha",
-    "status": "dañado"
-  },
-  {
-    "id": 276,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Kanlam",
-    "status": "apagado"
-  },
-  {
-    "id": 277,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Matsoft",
-    "status": "durmiendo"
-  },
-  {
-    "id": 278,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Lotstring",
-    "status": "dañado"
-  },
-  {
-    "id": 279,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Pannier",
-    "status": "durmiendo"
-  },
-  {
-    "id": 280,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "ok"
-  },
-  {
-    "id": 281,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Domainer",
-    "status": "dañado"
-  },
-  {
-    "id": 282,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Hatity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 283,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Overhold",
-    "status": "dañado"
-  },
-  {
-    "id": 284,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Span",
-    "status": "dañado"
-  },
-  {
-    "id": 285,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Temp",
-    "status": "apagado"
-  },
-  {
-    "id": 286,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bytecard",
-    "status": "dañado"
-  },
-  {
-    "id": 287,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Konklux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 288,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cardguard",
-    "status": "apagado"
-  },
-  {
-    "id": 289,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Transcof",
-    "status": "durmiendo"
-  },
-  {
-    "id": 290,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Tempsoft",
-    "status": "apagado"
-  },
-  {
-    "id": 291,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Biodex",
-    "status": "dañado"
-  },
-  {
-    "id": 292,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "apagado"
-  },
-  {
-    "id": 293,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Fix San",
-    "status": "durmiendo"
-  },
-  {
-    "id": 294,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Gembucket",
-    "status": "dañado"
-  },
-  {
-    "id": 295,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Voyatouch",
-    "status": "durmiendo"
-  },
-  {
-    "id": 296,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Alpha",
-    "status": "apagado"
-  },
-  {
-    "id": 297,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Toughjoyfax",
-    "status": "dañado"
-  },
-  {
-    "id": 298,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Transcof",
-    "status": "dañado"
-  },
-  {
-    "id": 299,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "ok"
-  },
-  {
-    "id": 300,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Stronghold",
-    "status": "ok"
-  },
-  {
-    "id": 301,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Vagram",
-    "status": "apagado"
-  },
-  {
-    "id": 302,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "apagado"
-  },
-  {
-    "id": 303,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Solarbreeze",
-    "status": "durmiendo"
-  },
-  {
-    "id": 304,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Trippledex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 305,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Mat Lam Tam",
-    "status": "ok"
-  },
-  {
-    "id": 306,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Sub-Ex",
-    "status": "dañado"
-  },
-  {
-    "id": 307,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Trippledex",
-    "status": "apagado"
-  },
-  {
-    "id": 308,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Treeflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 309,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bigtax",
-    "status": "ok"
-  },
-  {
-    "id": 310,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Vagram",
-    "status": "dañado"
-  },
-  {
-    "id": 311,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Stringtough",
-    "status": "apagado"
-  },
-  {
-    "id": 312,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Opela",
-    "status": "apagado"
-  },
-  {
-    "id": 313,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Flexidy",
-    "status": "ok"
-  },
-  {
-    "id": 314,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Biodex",
-    "status": "ok"
-  },
-  {
-    "id": 315,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Namfix",
-    "status": "dañado"
-  },
-  {
-    "id": 316,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Kanlam",
-    "status": "apagado"
-  },
-  {
-    "id": 317,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Namfix",
-    "status": "ok"
-  },
-  {
-    "id": 318,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Tempsoft",
-    "status": "apagado"
-  },
-  {
-    "id": 319,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Redhold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 320,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 321,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Rank",
-    "status": "apagado"
-  },
-  {
-    "id": 322,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Domainer",
-    "status": "ok"
-  },
-  {
-    "id": 323,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zoolab",
-    "status": "durmiendo"
-  },
-  {
-    "id": 324,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Rank",
-    "status": "apagado"
-  },
-  {
-    "id": 325,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Ronstring",
-    "status": "dañado"
-  },
-  {
-    "id": 326,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Vagram",
-    "status": "ok"
-  },
-  {
-    "id": 327,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Latlux",
-    "status": "dañado"
-  },
-  {
-    "id": 328,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 329,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 330,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Biodex",
-    "status": "apagado"
-  },
-  {
-    "id": 331,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Vagram",
-    "status": "dañado"
-  },
-  {
-    "id": 332,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Redhold",
-    "status": "dañado"
-  },
-  {
-    "id": 333,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Quo Lux",
-    "status": "dañado"
-  },
-  {
-    "id": 334,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Tin",
-    "status": "ok"
-  },
-  {
-    "id": 335,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Toughjoyfax",
-    "status": "apagado"
-  },
-  {
-    "id": 336,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 337,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Pannier",
-    "status": "ok"
-  },
-  {
-    "id": 338,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Tres-Zap",
-    "status": "dañado"
-  },
-  {
-    "id": 339,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bitwolf",
-    "status": "apagado"
-  },
-  {
-    "id": 340,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Alpha",
-    "status": "apagado"
-  },
-  {
-    "id": 341,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Sonair",
-    "status": "ok"
-  },
-  {
-    "id": 342,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Toughjoyfax",
-    "status": "dañado"
-  },
-  {
-    "id": 343,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bytecard",
-    "status": "ok"
-  },
-  {
-    "id": 344,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Latlux",
-    "status": "apagado"
-  },
-  {
-    "id": 345,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 346,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Alphazap",
-    "status": "apagado"
-  },
-  {
-    "id": 347,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Prodder",
-    "status": "durmiendo"
-  },
-  {
-    "id": 348,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Rank",
-    "status": "dañado"
-  },
-  {
-    "id": 349,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Opela",
-    "status": "apagado"
-  },
-  {
-    "id": 350,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Zamit",
-    "status": "durmiendo"
-  },
-  {
-    "id": 351,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Span",
-    "status": "durmiendo"
-  },
-  {
-    "id": 352,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Mat Lam Tam",
-    "status": "apagado"
-  },
-  {
-    "id": 353,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Matsoft",
-    "status": "durmiendo"
-  },
-  {
-    "id": 354,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Holdlamis",
-    "status": "dañado"
-  },
-  {
-    "id": 355,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Tampflex",
-    "status": "dañado"
-  },
-  {
-    "id": 356,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Domainer",
-    "status": "durmiendo"
-  },
-  {
-    "id": 357,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zathin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 358,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Aerified",
-    "status": "apagado"
-  },
-  {
-    "id": 359,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Tres-Zap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 360,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Holdlamis",
-    "status": "ok"
-  },
-  {
-    "id": 361,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Keylex",
-    "status": "ok"
-  },
-  {
-    "id": 362,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Kanlam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 363,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Mat Lam Tam",
-    "status": "apagado"
-  },
-  {
-    "id": 364,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Prodder",
-    "status": "apagado"
-  },
-  {
-    "id": 365,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Opela",
-    "status": "ok"
-  },
-  {
-    "id": 366,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Overhold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 367,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Otcom",
-    "status": "durmiendo"
-  },
-  {
-    "id": 368,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Fintone",
-    "status": "ok"
-  },
-  {
-    "id": 369,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zamit",
-    "status": "ok"
-  },
-  {
-    "id": 370,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Latlux",
-    "status": "ok"
-  },
-  {
-    "id": 371,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cookley",
-    "status": "apagado"
-  },
-  {
-    "id": 372,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Trippledex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 373,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "ok"
-  },
-  {
-    "id": 374,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Flexidy",
-    "status": "durmiendo"
-  },
-  {
-    "id": 375,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Opela",
-    "status": "dañado"
-  },
-  {
-    "id": 376,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Y-Solowarm",
-    "status": "dañado"
-  },
-  {
-    "id": 377,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Subin",
-    "status": "apagado"
-  },
-  {
-    "id": 378,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Cardguard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 379,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Quo Lux",
-    "status": "apagado"
-  },
-  {
-    "id": 380,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Rank",
-    "status": "ok"
-  },
-  {
-    "id": 381,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "apagado"
-  },
-  {
-    "id": 382,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 383,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Namfix",
-    "status": "ok"
-  },
-  {
-    "id": 384,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Sub-Ex",
-    "status": "apagado"
-  },
-  {
-    "id": 385,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Viva",
-    "status": "apagado"
-  },
-  {
-    "id": 386,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Bitwolf",
-    "status": "ok"
-  },
-  {
-    "id": 387,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 388,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Tin",
-    "status": "apagado"
-  },
-  {
-    "id": 389,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Quo Lux",
-    "status": "apagado"
-  },
-  {
-    "id": 390,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Subin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 391,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Treeflex",
-    "status": "ok"
-  },
-  {
-    "id": 392,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Solarbreeze",
-    "status": "apagado"
-  },
-  {
-    "id": 393,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Veribet",
-    "status": "dañado"
-  },
-  {
-    "id": 394,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "It",
-    "status": "durmiendo"
-  },
-  {
-    "id": 395,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "ok"
-  },
-  {
-    "id": 396,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bigtax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 397,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Domainer",
-    "status": "dañado"
-  },
-  {
-    "id": 398,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Konklab",
-    "status": "durmiendo"
-  },
-  {
-    "id": 399,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Regrant",
-    "status": "ok"
-  },
-  {
-    "id": 400,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Cookley",
-    "status": "apagado"
-  },
-  {
-    "id": 401,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Mat Lam Tam",
-    "status": "ok"
-  },
-  {
-    "id": 402,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bytecard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 403,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Fix San",
-    "status": "apagado"
-  },
-  {
-    "id": 404,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Aerified",
-    "status": "apagado"
-  },
-  {
-    "id": 405,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Ventosanzap",
-    "status": "apagado"
-  },
-  {
-    "id": 406,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Wrapsafe",
-    "status": "dañado"
-  },
-  {
-    "id": 407,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Daltfresh",
-    "status": "apagado"
-  },
-  {
-    "id": 408,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Konklux",
-    "status": "dañado"
-  },
-  {
-    "id": 409,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Temp",
-    "status": "ok"
-  },
-  {
-    "id": 410,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Biodex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 411,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Otcom",
-    "status": "durmiendo"
-  },
-  {
-    "id": 412,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Stringtough",
-    "status": "ok"
-  },
-  {
-    "id": 413,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 414,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Opela",
-    "status": "ok"
-  },
-  {
-    "id": 415,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Toughjoyfax",
-    "status": "dañado"
-  },
-  {
-    "id": 416,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Pannier",
-    "status": "ok"
-  },
-  {
-    "id": 417,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Asoka",
-    "status": "durmiendo"
-  },
-  {
-    "id": 418,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Andalax",
-    "status": "dañado"
-  },
-  {
-    "id": 419,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Overhold",
-    "status": "ok"
-  },
-  {
-    "id": 420,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Biodex",
-    "status": "ok"
-  },
-  {
-    "id": 421,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "ok"
-  },
-  {
-    "id": 422,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bamity",
-    "status": "apagado"
-  },
-  {
-    "id": 423,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Stim",
-    "status": "durmiendo"
-  },
-  {
-    "id": 424,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Fintone",
-    "status": "ok"
-  },
-  {
-    "id": 425,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bigtax",
-    "status": "apagado"
-  },
-  {
-    "id": 426,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bitchip",
-    "status": "dañado"
-  },
-  {
-    "id": 427,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Gembucket",
-    "status": "durmiendo"
-  },
-  {
-    "id": 428,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Vagram",
-    "status": "dañado"
-  },
-  {
-    "id": 429,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 430,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Sonair",
-    "status": "dañado"
-  },
-  {
-    "id": 431,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Wrapsafe",
-    "status": "durmiendo"
-  },
-  {
-    "id": 432,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "dañado"
-  },
-  {
-    "id": 433,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Prodder",
-    "status": "ok"
-  },
-  {
-    "id": 434,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Asoka",
-    "status": "dañado"
-  },
-  {
-    "id": 435,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Sonsing",
-    "status": "durmiendo"
-  },
-  {
-    "id": 436,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Latlux",
-    "status": "dañado"
-  },
-  {
-    "id": 437,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Konklux",
-    "status": "ok"
-  },
-  {
-    "id": 438,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Konklab",
-    "status": "dañado"
-  },
-  {
-    "id": 439,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Lotlux",
-    "status": "ok"
-  },
-  {
-    "id": 440,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Y-find",
-    "status": "ok"
-  },
-  {
-    "id": 441,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Voltsillam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 442,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Sonsing",
-    "status": "durmiendo"
-  },
-  {
-    "id": 443,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Greenlam",
-    "status": "apagado"
-  },
-  {
-    "id": 444,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Fix San",
-    "status": "dañado"
-  },
-  {
-    "id": 445,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Hatity",
-    "status": "ok"
-  },
-  {
-    "id": 446,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Redhold",
-    "status": "dañado"
-  },
-  {
-    "id": 447,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Greenlam",
-    "status": "dañado"
-  },
-  {
-    "id": 448,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Zamit",
-    "status": "ok"
-  },
-  {
-    "id": 449,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Voltsillam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 450,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 451,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Fix San",
-    "status": "durmiendo"
-  },
-  {
-    "id": 452,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Stim",
-    "status": "ok"
-  },
-  {
-    "id": 453,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Flexidy",
-    "status": "apagado"
-  },
-  {
-    "id": 454,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Regrant",
-    "status": "ok"
-  },
-  {
-    "id": 455,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Zathin",
-    "status": "ok"
-  },
-  {
-    "id": 456,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "ok"
-  },
-  {
-    "id": 457,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Span",
-    "status": "ok"
-  },
-  {
-    "id": 458,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Trippledex",
-    "status": "dañado"
-  },
-  {
-    "id": 459,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Viva",
-    "status": "durmiendo"
-  },
-  {
-    "id": 460,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Tempsoft",
-    "status": "ok"
-  },
-  {
-    "id": 461,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Tres-Zap",
-    "status": "ok"
-  },
-  {
-    "id": 462,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Hatity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 463,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Stim",
-    "status": "apagado"
-  },
-  {
-    "id": 464,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Y-find",
-    "status": "ok"
-  },
-  {
-    "id": 465,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Viva",
-    "status": "apagado"
-  },
-  {
-    "id": 466,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bytecard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 467,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bigtax",
-    "status": "ok"
-  },
-  {
-    "id": 468,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Mat Lam Tam",
-    "status": "dañado"
-  },
-  {
-    "id": 469,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Daltfresh",
-    "status": "dañado"
-  },
-  {
-    "id": 470,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zamit",
-    "status": "apagado"
-  },
-  {
-    "id": 471,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Fixflex",
-    "status": "dañado"
-  },
-  {
-    "id": 472,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Bamity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 473,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Vagram",
-    "status": "apagado"
-  },
-  {
-    "id": 474,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Latlux",
-    "status": "apagado"
-  },
-  {
-    "id": 475,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Solarbreeze",
-    "status": "dañado"
-  },
-  {
-    "id": 476,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Latlux",
-    "status": "dañado"
-  },
-  {
-    "id": 477,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cardguard",
-    "status": "apagado"
-  },
-  {
-    "id": 478,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Andalax",
-    "status": "dañado"
-  },
-  {
-    "id": 479,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Solarbreeze",
-    "status": "durmiendo"
-  },
-  {
-    "id": 480,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Toughjoyfax",
-    "status": "ok"
-  },
-  {
-    "id": 481,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Opela",
-    "status": "durmiendo"
-  },
-  {
-    "id": 482,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Tresom",
-    "status": "ok"
-  },
-  {
-    "id": 483,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bigtax",
-    "status": "dañado"
-  },
-  {
-    "id": 484,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Ventosanzap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 485,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Toughjoyfax",
-    "status": "apagado"
-  },
-  {
-    "id": 486,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Y-find",
-    "status": "apagado"
-  },
-  {
-    "id": 487,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zamit",
-    "status": "apagado"
-  },
-  {
-    "id": 488,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Subin",
-    "status": "apagado"
-  },
-  {
-    "id": 489,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Fixflex",
-    "status": "dañado"
-  },
-  {
-    "id": 490,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Ronstring",
-    "status": "durmiendo"
-  },
-  {
-    "id": 491,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "apagado"
-  },
-  {
-    "id": 492,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Zamit",
-    "status": "dañado"
-  },
-  {
-    "id": 493,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Toughjoyfax",
-    "status": "apagado"
-  },
-  {
-    "id": 494,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 495,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Wrapsafe",
-    "status": "ok"
-  },
-  {
-    "id": 496,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Tempsoft",
-    "status": "durmiendo"
-  },
-  {
-    "id": 497,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Pannier",
-    "status": "ok"
-  },
-  {
-    "id": 498,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Keylex",
-    "status": "dañado"
-  },
-  {
-    "id": 499,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 500,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Stim",
-    "status": "apagado"
-  },
-  {
-    "id": 501,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Biodex",
-    "status": "apagado"
-  },
-  {
-    "id": 502,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Alpha",
-    "status": "ok"
-  },
-  {
-    "id": 503,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Alphazap",
-    "status": "dañado"
-  },
-  {
-    "id": 504,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Stim",
-    "status": "ok"
-  },
-  {
-    "id": 505,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Stringtough",
-    "status": "durmiendo"
-  },
-  {
-    "id": 506,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Transcof",
-    "status": "ok"
-  },
-  {
-    "id": 507,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Fintone",
-    "status": "apagado"
-  },
-  {
-    "id": 508,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Stim",
-    "status": "durmiendo"
-  },
-  {
-    "id": 509,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bigtax",
-    "status": "apagado"
-  },
-  {
-    "id": 510,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Daltfresh",
-    "status": "apagado"
-  },
-  {
-    "id": 511,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cardify",
-    "status": "apagado"
-  },
-  {
-    "id": 512,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Y-Solowarm",
-    "status": "durmiendo"
-  },
-  {
-    "id": 513,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Quo Lux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 514,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Transcof",
-    "status": "durmiendo"
-  },
-  {
-    "id": 515,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Ronstring",
-    "status": "ok"
-  },
-  {
-    "id": 516,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Tampflex",
-    "status": "apagado"
-  },
-  {
-    "id": 517,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Prodder",
-    "status": "ok"
-  },
-  {
-    "id": 518,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Regrant",
-    "status": "ok"
-  },
-  {
-    "id": 519,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Otcom",
-    "status": "ok"
-  },
-  {
-    "id": 520,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Redhold",
-    "status": "dañado"
-  },
-  {
-    "id": 521,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "ok"
-  },
-  {
-    "id": 522,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Y-Solowarm",
-    "status": "ok"
-  },
-  {
-    "id": 523,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Keylex",
-    "status": "apagado"
-  },
-  {
-    "id": 524,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Tin",
-    "status": "dañado"
-  },
-  {
-    "id": 525,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Tempsoft",
-    "status": "dañado"
-  },
-  {
-    "id": 526,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Wrapsafe",
-    "status": "ok"
-  },
-  {
-    "id": 527,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Job",
-    "status": "apagado"
-  },
-  {
-    "id": 528,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Flexidy",
-    "status": "apagado"
-  },
-  {
-    "id": 529,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bigtax",
-    "status": "dañado"
-  },
-  {
-    "id": 530,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Home Ing",
-    "status": "dañado"
-  },
-  {
-    "id": 531,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Daltfresh",
-    "status": "durmiendo"
-  },
-  {
-    "id": 532,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Flowdesk",
-    "status": "durmiendo"
-  },
-  {
-    "id": 533,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Temp",
-    "status": "durmiendo"
-  },
-  {
-    "id": 534,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Daltfresh",
-    "status": "dañado"
-  },
-  {
-    "id": 535,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "dañado"
-  },
-  {
-    "id": 536,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Flowdesk",
-    "status": "ok"
-  },
-  {
-    "id": 537,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Stim",
-    "status": "dañado"
-  },
-  {
-    "id": 538,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Trippledex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 539,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Ronstring",
-    "status": "dañado"
-  },
-  {
-    "id": 540,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Transcof",
-    "status": "durmiendo"
-  },
-  {
-    "id": 541,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Bytecard",
-    "status": "apagado"
-  },
-  {
-    "id": 542,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Redhold",
-    "status": "ok"
-  },
-  {
-    "id": 543,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Sonsing",
-    "status": "ok"
-  },
-  {
-    "id": 544,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Sonsing",
-    "status": "durmiendo"
-  },
-  {
-    "id": 545,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Redhold",
-    "status": "apagado"
-  },
-  {
-    "id": 546,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Y-find",
-    "status": "ok"
-  },
-  {
-    "id": 547,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Home Ing",
-    "status": "ok"
-  },
-  {
-    "id": 548,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Opela",
-    "status": "apagado"
-  },
-  {
-    "id": 549,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Asoka",
-    "status": "ok"
-  },
-  {
-    "id": 550,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Lotstring",
-    "status": "durmiendo"
-  },
-  {
-    "id": 551,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Voltsillam",
-    "status": "apagado"
-  },
-  {
-    "id": 552,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Gembucket",
-    "status": "durmiendo"
-  },
-  {
-    "id": 553,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Job",
-    "status": "durmiendo"
-  },
-  {
-    "id": 554,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Rank",
-    "status": "apagado"
-  },
-  {
-    "id": 555,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 556,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Stringtough",
-    "status": "ok"
-  },
-  {
-    "id": 557,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Quo Lux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 558,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cardguard",
-    "status": "dañado"
-  },
-  {
-    "id": 559,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Tin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 560,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Alpha",
-    "status": "apagado"
-  },
-  {
-    "id": 561,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 562,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "ok"
-  },
-  {
-    "id": 563,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Biodex",
-    "status": "ok"
-  },
-  {
-    "id": 564,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Quo Lux",
-    "status": "ok"
-  },
-  {
-    "id": 565,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Ventosanzap",
-    "status": "dañado"
-  },
-  {
-    "id": 566,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zamit",
-    "status": "dañado"
-  },
-  {
-    "id": 567,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Trippledex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 568,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Matsoft",
-    "status": "ok"
-  },
-  {
-    "id": 569,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Holdlamis",
-    "status": "durmiendo"
-  },
-  {
-    "id": 570,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Fixflex",
-    "status": "apagado"
-  },
-  {
-    "id": 571,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Zathin",
-    "status": "ok"
-  },
-  {
-    "id": 572,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Namfix",
-    "status": "ok"
-  },
-  {
-    "id": 573,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "It",
-    "status": "apagado"
-  },
-  {
-    "id": 574,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Home Ing",
-    "status": "dañado"
-  },
-  {
-    "id": 575,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Namfix",
-    "status": "apagado"
-  },
-  {
-    "id": 576,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Y-Solowarm",
-    "status": "dañado"
-  },
-  {
-    "id": 577,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Opela",
-    "status": "dañado"
-  },
-  {
-    "id": 578,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Bamity",
-    "status": "dañado"
-  },
-  {
-    "id": 579,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Andalax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 580,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Konklab",
-    "status": "apagado"
-  },
-  {
-    "id": 581,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zamit",
-    "status": "durmiendo"
-  },
-  {
-    "id": 582,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Fixflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 583,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Opela",
-    "status": "durmiendo"
-  },
-  {
-    "id": 584,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Viva",
-    "status": "apagado"
-  },
-  {
-    "id": 585,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Pannier",
-    "status": "ok"
-  },
-  {
-    "id": 586,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Cookley",
-    "status": "dañado"
-  },
-  {
-    "id": 587,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Aerified",
-    "status": "ok"
-  },
-  {
-    "id": 588,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Solarbreeze",
-    "status": "durmiendo"
-  },
-  {
-    "id": 589,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Flowdesk",
-    "status": "apagado"
-  },
-  {
-    "id": 590,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Wrapsafe",
-    "status": "ok"
-  },
-  {
-    "id": 591,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Hatity",
-    "status": "ok"
-  },
-  {
-    "id": 592,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Alpha",
-    "status": "ok"
-  },
-  {
-    "id": 593,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Job",
-    "status": "dañado"
-  },
-  {
-    "id": 594,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Tempsoft",
-    "status": "dañado"
-  },
-  {
-    "id": 595,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Keylex",
-    "status": "dañado"
-  },
-  {
-    "id": 596,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Bytecard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 597,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Viva",
-    "status": "durmiendo"
-  },
-  {
-    "id": 598,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Redhold",
-    "status": "apagado"
-  },
-  {
-    "id": 599,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Ventosanzap",
-    "status": "dañado"
-  },
-  {
-    "id": 600,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Duobam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 601,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Solarbreeze",
-    "status": "dañado"
-  },
-  {
-    "id": 602,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Ronstring",
-    "status": "durmiendo"
-  },
-  {
-    "id": 603,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Sonsing",
-    "status": "apagado"
-  },
-  {
-    "id": 604,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bitwolf",
-    "status": "ok"
-  },
-  {
-    "id": 605,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Veribet",
-    "status": "dañado"
-  },
-  {
-    "id": 606,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Span",
-    "status": "ok"
-  },
-  {
-    "id": 607,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Daltfresh",
-    "status": "apagado"
-  },
-  {
-    "id": 608,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Greenlam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 609,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Vagram",
-    "status": "ok"
-  },
-  {
-    "id": 610,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bamity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 611,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Holdlamis",
-    "status": "dañado"
-  },
-  {
-    "id": 612,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Sub-Ex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 613,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Y-Solowarm",
-    "status": "ok"
-  },
-  {
-    "id": 614,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Pannier",
-    "status": "ok"
-  },
-  {
-    "id": 615,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Domainer",
-    "status": "apagado"
-  },
-  {
-    "id": 616,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 617,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Latlux",
-    "status": "dañado"
-  },
-  {
-    "id": 618,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Bigtax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 619,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Sonair",
-    "status": "apagado"
-  },
-  {
-    "id": 620,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Span",
-    "status": "dañado"
-  },
-  {
-    "id": 621,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Fintone",
-    "status": "dañado"
-  },
-  {
-    "id": 622,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "ok"
-  },
-  {
-    "id": 623,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Otcom",
-    "status": "durmiendo"
-  },
-  {
-    "id": 624,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "ok"
-  },
-  {
-    "id": 625,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Temp",
-    "status": "ok"
-  },
-  {
-    "id": 626,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bitchip",
-    "status": "apagado"
-  },
-  {
-    "id": 627,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "ok"
-  },
-  {
-    "id": 628,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Holdlamis",
-    "status": "dañado"
-  },
-  {
-    "id": 629,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Quo Lux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 630,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Solarbreeze",
-    "status": "apagado"
-  },
-  {
-    "id": 631,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Transcof",
-    "status": "ok"
-  },
-  {
-    "id": 632,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "It",
-    "status": "durmiendo"
-  },
-  {
-    "id": 633,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Voyatouch",
-    "status": "dañado"
-  },
-  {
-    "id": 634,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Greenlam",
-    "status": "dañado"
-  },
-  {
-    "id": 635,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Bigtax",
-    "status": "dañado"
-  },
-  {
-    "id": 636,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Matsoft",
-    "status": "dañado"
-  },
-  {
-    "id": 637,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Flowdesk",
-    "status": "ok"
-  },
-  {
-    "id": 638,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Viva",
-    "status": "dañado"
-  },
-  {
-    "id": 639,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Mat Lam Tam",
-    "status": "dañado"
-  },
-  {
-    "id": 640,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Konklux",
-    "status": "dañado"
-  },
-  {
-    "id": 641,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Toughjoyfax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 642,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Alpha",
-    "status": "ok"
-  },
-  {
-    "id": 643,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Stringtough",
-    "status": "durmiendo"
-  },
-  {
-    "id": 644,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Zaam-Dox",
-    "status": "ok"
-  },
-  {
-    "id": 645,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Lotlux",
-    "status": "ok"
-  },
-  {
-    "id": 646,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 647,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Tampflex",
-    "status": "apagado"
-  },
-  {
-    "id": 648,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Cookley",
-    "status": "durmiendo"
-  },
-  {
-    "id": 649,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Y-find",
-    "status": "dañado"
-  },
-  {
-    "id": 650,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Matsoft",
-    "status": "dañado"
-  },
-  {
-    "id": 651,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Otcom",
-    "status": "durmiendo"
-  },
-  {
-    "id": 652,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Voyatouch",
-    "status": "dañado"
-  },
-  {
-    "id": 653,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Subin",
-    "status": "dañado"
-  },
-  {
-    "id": 654,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Toughjoyfax",
-    "status": "apagado"
-  },
-  {
-    "id": 655,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 656,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Lotlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 657,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Stringtough",
-    "status": "dañado"
-  },
-  {
-    "id": 658,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Sonsing",
-    "status": "dañado"
-  },
-  {
-    "id": 659,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zathin",
-    "status": "dañado"
-  },
-  {
-    "id": 660,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Transcof",
-    "status": "dañado"
-  },
-  {
-    "id": 661,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Span",
-    "status": "apagado"
-  },
-  {
-    "id": 662,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Home Ing",
-    "status": "dañado"
-  },
-  {
-    "id": 663,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Fixflex",
-    "status": "dañado"
-  },
-  {
-    "id": 664,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Fix San",
-    "status": "durmiendo"
-  },
-  {
-    "id": 665,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Voltsillam",
-    "status": "ok"
-  },
-  {
-    "id": 666,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Y-Solowarm",
-    "status": "ok"
-  },
-  {
-    "id": 667,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Sonair",
-    "status": "dañado"
-  },
-  {
-    "id": 668,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "durmiendo"
-  },
-  {
-    "id": 669,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Keylex",
-    "status": "apagado"
-  },
-  {
-    "id": 670,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Daltfresh",
-    "status": "apagado"
-  },
-  {
-    "id": 671,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Namfix",
-    "status": "apagado"
-  },
-  {
-    "id": 672,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Zamit",
-    "status": "dañado"
-  },
-  {
-    "id": 673,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Job",
-    "status": "ok"
-  },
-  {
-    "id": 674,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Kanlam",
-    "status": "apagado"
-  },
-  {
-    "id": 675,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Fix San",
-    "status": "apagado"
-  },
-  {
-    "id": 676,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Mat Lam Tam",
-    "status": "dañado"
-  },
-  {
-    "id": 677,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zathin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 678,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Hatity",
-    "status": "ok"
-  },
-  {
-    "id": 679,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Sub-Ex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 680,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Fixflex",
-    "status": "apagado"
-  },
-  {
-    "id": 681,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Stronghold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 682,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 683,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Span",
-    "status": "durmiendo"
-  },
-  {
-    "id": 684,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Veribet",
-    "status": "ok"
-  },
-  {
-    "id": 685,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Lotlux",
-    "status": "dañado"
-  },
-  {
-    "id": 686,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Pannier",
-    "status": "durmiendo"
-  },
-  {
-    "id": 687,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Namfix",
-    "status": "ok"
-  },
-  {
-    "id": 688,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bytecard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 689,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Ventosanzap",
-    "status": "dañado"
-  },
-  {
-    "id": 690,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Redhold",
-    "status": "dañado"
-  },
-  {
-    "id": 691,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Fixflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 692,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Flowdesk",
-    "status": "ok"
-  },
-  {
-    "id": 693,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Trippledex",
-    "status": "ok"
-  },
-  {
-    "id": 694,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Stronghold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 695,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Hatity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 696,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Veribet",
-    "status": "ok"
-  },
-  {
-    "id": 697,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Lotstring",
-    "status": "durmiendo"
-  },
-  {
-    "id": 698,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Alphazap",
-    "status": "dañado"
-  },
-  {
-    "id": 699,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Cookley",
-    "status": "apagado"
-  },
-  {
-    "id": 700,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Asoka",
-    "status": "apagado"
-  },
-  {
-    "id": 701,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Daltfresh",
-    "status": "durmiendo"
-  },
-  {
-    "id": 702,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zontrax",
-    "status": "dañado"
-  },
-  {
-    "id": 703,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 704,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Biodex",
-    "status": "dañado"
-  },
-  {
-    "id": 705,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cookley",
-    "status": "dañado"
-  },
-  {
-    "id": 706,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Domainer",
-    "status": "dañado"
-  },
-  {
-    "id": 707,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Fixflex",
-    "status": "ok"
-  },
-  {
-    "id": 708,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Wrapsafe",
-    "status": "ok"
-  },
-  {
-    "id": 709,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zoolab",
-    "status": "durmiendo"
-  },
-  {
-    "id": 710,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "dañado"
-  },
-  {
-    "id": 711,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Greenlam",
-    "status": "apagado"
-  },
-  {
-    "id": 712,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Duobam",
-    "status": "apagado"
-  },
-  {
-    "id": 713,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Asoka",
-    "status": "apagado"
-  },
-  {
-    "id": 714,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Rank",
-    "status": "dañado"
-  },
-  {
-    "id": 715,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Regrant",
-    "status": "dañado"
-  },
-  {
-    "id": 716,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Duobam",
-    "status": "ok"
-  },
-  {
-    "id": 717,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bitchip",
-    "status": "apagado"
-  },
-  {
-    "id": 718,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bitwolf",
-    "status": "ok"
-  },
-  {
-    "id": 719,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Redhold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 720,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Ventosanzap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 721,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Aerified",
-    "status": "ok"
-  },
-  {
-    "id": 722,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Sonair",
-    "status": "dañado"
-  },
-  {
-    "id": 723,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 724,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Viva",
-    "status": "apagado"
-  },
-  {
-    "id": 725,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Stringtough",
-    "status": "apagado"
-  },
-  {
-    "id": 726,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zaam-Dox",
-    "status": "ok"
-  },
-  {
-    "id": 727,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 728,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Wrapsafe",
-    "status": "ok"
-  },
-  {
-    "id": 729,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Lotlux",
-    "status": "dañado"
-  },
-  {
-    "id": 730,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "ok"
-  },
-  {
-    "id": 731,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 732,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zoolab",
-    "status": "apagado"
-  },
-  {
-    "id": 733,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "ok"
-  },
-  {
-    "id": 734,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bamity",
-    "status": "dañado"
-  },
-  {
-    "id": 735,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Transcof",
-    "status": "dañado"
-  },
-  {
-    "id": 736,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bitchip",
-    "status": "ok"
-  },
-  {
-    "id": 737,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Andalax",
-    "status": "ok"
-  },
-  {
-    "id": 738,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Alphazap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 739,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Redhold",
-    "status": "durmiendo"
-  },
-  {
-    "id": 740,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zamit",
-    "status": "dañado"
-  },
-  {
-    "id": 741,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Cardify",
-    "status": "ok"
-  },
-  {
-    "id": 742,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "apagado"
-  },
-  {
-    "id": 743,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Wrapsafe",
-    "status": "dañado"
-  },
-  {
-    "id": 744,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Fix San",
-    "status": "dañado"
-  },
-  {
-    "id": 745,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Veribet",
-    "status": "dañado"
-  },
-  {
-    "id": 746,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Quo Lux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 747,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Lotlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 748,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Bytecard",
-    "status": "dañado"
-  },
-  {
-    "id": 749,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bitwolf",
-    "status": "durmiendo"
-  },
-  {
-    "id": 750,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Ronstring",
-    "status": "dañado"
-  },
-  {
-    "id": 751,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Trippledex",
-    "status": "apagado"
-  },
-  {
-    "id": 752,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Opela",
-    "status": "durmiendo"
-  },
-  {
-    "id": 753,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Prodder",
-    "status": "ok"
-  },
-  {
-    "id": 754,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Mat Lam Tam",
-    "status": "apagado"
-  },
-  {
-    "id": 755,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Fintone",
-    "status": "apagado"
-  },
-  {
-    "id": 756,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Aerified",
-    "status": "apagado"
-  },
-  {
-    "id": 757,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Quo Lux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 758,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Daltfresh",
-    "status": "ok"
-  },
-  {
-    "id": 759,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Fix San",
-    "status": "apagado"
-  },
-  {
-    "id": 760,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Transcof",
-    "status": "dañado"
-  },
-  {
-    "id": 761,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 762,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Home Ing",
-    "status": "ok"
-  },
-  {
-    "id": 763,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Asoka",
-    "status": "dañado"
-  },
-  {
-    "id": 764,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Prodder",
-    "status": "ok"
-  },
-  {
-    "id": 765,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Trippledex",
-    "status": "apagado"
-  },
-  {
-    "id": 766,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Biodex",
-    "status": "dañado"
-  },
-  {
-    "id": 767,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 768,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bamity",
-    "status": "apagado"
-  },
-  {
-    "id": 769,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Otcom",
-    "status": "dañado"
-  },
-  {
-    "id": 770,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Hatity",
-    "status": "durmiendo"
-  },
-  {
-    "id": 771,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Cardguard",
-    "status": "ok"
-  },
-  {
-    "id": 772,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Toughjoyfax",
-    "status": "apagado"
-  },
-  {
-    "id": 773,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Aerified",
-    "status": "ok"
-  },
-  {
-    "id": 774,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Pannier",
-    "status": "apagado"
-  },
-  {
-    "id": 775,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Treeflex",
-    "status": "dañado"
-  },
-  {
-    "id": 776,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Keylex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 777,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Konklux",
-    "status": "dañado"
-  },
-  {
-    "id": 778,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Home Ing",
-    "status": "dañado"
-  },
-  {
-    "id": 779,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Keylex",
-    "status": "dañado"
-  },
-  {
-    "id": 780,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Span",
-    "status": "dañado"
-  },
-  {
-    "id": 781,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Viva",
-    "status": "ok"
-  },
-  {
-    "id": 782,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Fintone",
-    "status": "durmiendo"
-  },
-  {
-    "id": 783,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Sonsing",
-    "status": "ok"
-  },
-  {
-    "id": 784,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Ventosanzap",
-    "status": "dañado"
-  },
-  {
-    "id": 785,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Greenlam",
-    "status": "ok"
-  },
-  {
-    "id": 786,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Gembucket",
-    "status": "dañado"
-  },
-  {
-    "id": 787,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Trippledex",
-    "status": "dañado"
-  },
-  {
-    "id": 788,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Alphazap",
-    "status": "ok"
-  },
-  {
-    "id": 789,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Otcom",
-    "status": "ok"
-  },
-  {
-    "id": 790,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Lotstring",
-    "status": "dañado"
-  },
-  {
-    "id": 791,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Y-Solowarm",
-    "status": "dañado"
-  },
-  {
-    "id": 792,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Tempsoft",
-    "status": "dañado"
-  },
-  {
-    "id": 793,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Cardguard",
-    "status": "apagado"
-  },
-  {
-    "id": 794,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Ventosanzap",
-    "status": "apagado"
-  },
-  {
-    "id": 795,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Mat Lam Tam",
-    "status": "dañado"
-  },
-  {
-    "id": 796,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "durmiendo"
-  },
-  {
-    "id": 797,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Andalax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 798,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Vagram",
-    "status": "ok"
-  },
-  {
-    "id": 799,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bigtax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 800,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 801,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Prodder",
-    "status": "dañado"
-  },
-  {
-    "id": 802,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Trippledex",
-    "status": "dañado"
-  },
-  {
-    "id": 803,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Tres-Zap",
-    "status": "apagado"
-  },
-  {
-    "id": 804,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 805,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Asoka",
-    "status": "apagado"
-  },
-  {
-    "id": 806,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Temp",
-    "status": "dañado"
-  },
-  {
-    "id": 807,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zathin",
-    "status": "durmiendo"
-  },
-  {
-    "id": 808,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Flexidy",
-    "status": "durmiendo"
-  },
-  {
-    "id": 809,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Flowdesk",
-    "status": "dañado"
-  },
-  {
-    "id": 810,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Voyatouch",
-    "status": "durmiendo"
-  },
-  {
-    "id": 811,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "ok"
-  },
-  {
-    "id": 812,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Flowdesk",
-    "status": "apagado"
-  },
-  {
-    "id": 813,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Sub-Ex",
-    "status": "dañado"
-  },
-  {
-    "id": 814,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Quo Lux",
-    "status": "apagado"
-  },
-  {
-    "id": 815,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bitchip",
-    "status": "ok"
-  },
-  {
-    "id": 816,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Fix San",
-    "status": "durmiendo"
-  },
-  {
-    "id": 817,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Fintone",
-    "status": "durmiendo"
-  },
-  {
-    "id": 818,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Kanlam",
-    "status": "dañado"
-  },
-  {
-    "id": 819,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Voltsillam",
-    "status": "apagado"
-  },
-  {
-    "id": 820,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Lotstring",
-    "status": "apagado"
-  },
-  {
-    "id": 821,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Prodder",
-    "status": "apagado"
-  },
-  {
-    "id": 822,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Keylex",
-    "status": "dañado"
-  },
-  {
-    "id": 823,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Biodex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 824,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Voltsillam",
-    "status": "ok"
-  },
-  {
-    "id": 825,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Holdlamis",
-    "status": "ok"
-  },
-  {
-    "id": 826,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Voltsillam",
-    "status": "apagado"
-  },
-  {
-    "id": 827,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Trippledex",
-    "status": "apagado"
-  },
-  {
-    "id": 828,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Trippledex",
-    "status": "apagado"
-  },
-  {
-    "id": 829,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Voyatouch",
-    "status": "dañado"
-  },
-  {
-    "id": 830,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bigtax",
-    "status": "apagado"
-  },
-  {
-    "id": 831,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Viva",
-    "status": "apagado"
-  },
-  {
-    "id": 832,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Tresom",
-    "status": "ok"
-  },
-  {
-    "id": 833,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Ventosanzap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 834,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Pannier",
-    "status": "apagado"
-  },
-  {
-    "id": 835,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Y-Solowarm",
-    "status": "apagado"
-  },
-  {
-    "id": 836,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "It",
-    "status": "ok"
-  },
-  {
-    "id": 837,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bamity",
-    "status": "dañado"
-  },
-  {
-    "id": 838,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Ronstring",
-    "status": "apagado"
-  },
-  {
-    "id": 839,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Cardify",
-    "status": "durmiendo"
-  },
-  {
-    "id": 840,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Aerified",
-    "status": "durmiendo"
-  },
-  {
-    "id": 841,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Quo Lux",
-    "status": "apagado"
-  },
-  {
-    "id": 842,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Duobam",
-    "status": "durmiendo"
-  },
-  {
-    "id": 843,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Ventosanzap",
-    "status": "dañado"
-  },
-  {
-    "id": 844,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Cookley",
-    "status": "ok"
-  },
-  {
-    "id": 845,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Alphazap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 846,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Home Ing",
-    "status": "apagado"
-  },
-  {
-    "id": 847,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Fixflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 848,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Vagram",
-    "status": "dañado"
-  },
-  {
-    "id": 849,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Prodder",
-    "status": "durmiendo"
-  },
-  {
-    "id": 850,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Redhold",
-    "status": "ok"
-  },
-  {
-    "id": 851,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zamit",
-    "status": "apagado"
-  },
-  {
-    "id": 852,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zoolab",
-    "status": "ok"
-  },
-  {
-    "id": 853,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bigtax",
-    "status": "ok"
-  },
-  {
-    "id": 854,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Trippledex",
-    "status": "ok"
-  },
-  {
-    "id": 855,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Vagram",
-    "status": "apagado"
-  },
-  {
-    "id": 856,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Ventosanzap",
-    "status": "apagado"
-  },
-  {
-    "id": 857,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Konklux",
-    "status": "dañado"
-  },
-  {
-    "id": 858,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Greenlam",
-    "status": "ok"
-  },
-  {
-    "id": 859,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Cardguard",
-    "status": "apagado"
-  },
-  {
-    "id": 860,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bamity",
-    "status": "dañado"
-  },
-  {
-    "id": 861,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Domainer",
-    "status": "ok"
-  },
-  {
-    "id": 862,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Matsoft",
-    "status": "ok"
-  },
-  {
-    "id": 863,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bamity",
-    "status": "dañado"
-  },
-  {
-    "id": 864,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Job",
-    "status": "durmiendo"
-  },
-  {
-    "id": 865,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Bytecard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 866,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "durmiendo"
-  },
-  {
-    "id": 867,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zoolab",
-    "status": "ok"
-  },
-  {
-    "id": 868,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Sonair",
-    "status": "dañado"
-  },
-  {
-    "id": 869,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Tampflex",
-    "status": "apagado"
-  },
-  {
-    "id": 870,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Transcof",
-    "status": "ok"
-  },
-  {
-    "id": 871,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Biodex",
-    "status": "dañado"
-  },
-  {
-    "id": 872,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Alphazap",
-    "status": "durmiendo"
-  },
-  {
-    "id": 873,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zontrax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 874,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Y-find",
-    "status": "ok"
-  },
-  {
-    "id": 875,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Bitwolf",
-    "status": "apagado"
-  },
-  {
-    "id": 876,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Keylex",
-    "status": "ok"
-  },
-  {
-    "id": 877,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Flexidy",
-    "status": "dañado"
-  },
-  {
-    "id": 878,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Stronghold",
-    "status": "apagado"
-  },
-  {
-    "id": 879,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Cardify",
-    "status": "dañado"
-  },
-  {
-    "id": 880,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Overhold",
-    "status": "dañado"
-  },
-  {
-    "id": 881,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Temp",
-    "status": "dañado"
-  },
-  {
-    "id": 882,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Konklux",
-    "status": "dañado"
-  },
-  {
-    "id": 883,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Latlux",
-    "status": "ok"
-  },
-  {
-    "id": 884,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Holdlamis",
-    "status": "durmiendo"
-  },
-  {
-    "id": 885,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Domainer",
-    "status": "apagado"
-  },
-  {
-    "id": 886,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Pannier",
-    "status": "apagado"
-  },
-  {
-    "id": 887,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Tampflex",
-    "status": "ok"
-  },
-  {
-    "id": 888,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Konklux",
-    "status": "ok"
-  },
-  {
-    "id": 889,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Gembucket",
-    "status": "dañado"
-  },
-  {
-    "id": 890,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Latlux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 891,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Flexidy",
-    "status": "dañado"
-  },
-  {
-    "id": 892,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Bytecard",
-    "status": "ok"
-  },
-  {
-    "id": 893,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Home Ing",
-    "status": "durmiendo"
-  },
-  {
-    "id": 894,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Solarbreeze",
-    "status": "dañado"
-  },
-  {
-    "id": 895,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zaam-Dox",
-    "status": "dañado"
-  },
-  {
-    "id": 896,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Gembucket",
-    "status": "ok"
-  },
-  {
-    "id": 897,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Opela",
-    "status": "dañado"
-  },
-  {
-    "id": 898,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "apagado"
-  },
-  {
-    "id": 899,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Y-Solowarm",
-    "status": "dañado"
-  },
-  {
-    "id": 900,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Holdlamis",
-    "status": "ok"
-  },
-  {
-    "id": 901,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bitchip",
-    "status": "durmiendo"
-  },
-  {
-    "id": 902,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Bitwolf",
-    "status": "durmiendo"
-  },
-  {
-    "id": 903,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Duobam",
-    "status": "dañado"
-  },
-  {
-    "id": 904,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zaam-Dox",
-    "status": "dañado"
-  },
-  {
-    "id": 905,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 906,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Prodder",
-    "status": "apagado"
-  },
-  {
-    "id": 907,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Asoka",
-    "status": "dañado"
-  },
-  {
-    "id": 908,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Tres-Zap",
-    "status": "dañado"
-  },
-  {
-    "id": 909,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Fintone",
-    "status": "apagado"
-  },
-  {
-    "id": 910,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Voyatouch",
-    "status": "apagado"
-  },
-  {
-    "id": 911,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Sub-Ex",
-    "status": "dañado"
-  },
-  {
-    "id": 912,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bigtax",
-    "status": "apagado"
-  },
-  {
-    "id": 913,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cardguard",
-    "status": "dañado"
-  },
-  {
-    "id": 914,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Subin",
-    "status": "ok"
-  },
-  {
-    "id": 915,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Zoolab",
-    "status": "durmiendo"
-  },
-  {
-    "id": 916,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Bigtax",
-    "status": "dañado"
-  },
-  {
-    "id": 917,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Alpha",
-    "status": "durmiendo"
-  },
-  {
-    "id": 918,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Bitwolf",
-    "status": "durmiendo"
-  },
-  {
-    "id": 919,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Rank",
-    "status": "dañado"
-  },
-  {
-    "id": 920,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Konklux",
-    "status": "durmiendo"
-  },
-  {
-    "id": 921,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Daltfresh",
-    "status": "dañado"
-  },
-  {
-    "id": 922,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Tresom",
-    "status": "ok"
-  },
-  {
-    "id": 923,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Tin",
-    "status": "apagado"
-  },
-  {
-    "id": 924,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Regrant",
-    "status": "dañado"
-  },
-  {
-    "id": 925,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Bitchip",
-    "status": "apagado"
-  },
-  {
-    "id": 926,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "It",
-    "status": "dañado"
-  },
-  {
-    "id": 927,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Subin",
-    "status": "apagado"
-  },
-  {
-    "id": 928,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Y-find",
-    "status": "ok"
-  },
-  {
-    "id": 929,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Treeflex",
-    "status": "dañado"
-  },
-  {
-    "id": 930,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Biodex",
-    "status": "apagado"
-  },
-  {
-    "id": 931,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Regrant",
-    "status": "dañado"
-  },
-  {
-    "id": 932,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Namfix",
-    "status": "durmiendo"
-  },
-  {
-    "id": 933,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Ronstring",
-    "status": "ok"
-  },
-  {
-    "id": 934,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Veribet",
-    "status": "dañado"
-  },
-  {
-    "id": 935,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Opela",
-    "status": "ok"
-  },
-  {
-    "id": 936,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Transcof",
-    "status": "durmiendo"
-  },
-  {
-    "id": 937,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Sonair",
-    "status": "ok"
-  },
-  {
-    "id": 938,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Tampflex",
-    "status": "apagado"
-  },
-  {
-    "id": 939,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Overhold",
-    "status": "dañado"
-  },
-  {
-    "id": 940,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Konklab",
-    "status": "dañado"
-  },
-  {
-    "id": 941,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Prodder",
-    "status": "ok"
-  },
-  {
-    "id": 942,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Greenlam",
-    "status": "ok"
-  },
-  {
-    "id": 943,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Opela",
-    "status": "ok"
-  },
-  {
-    "id": 944,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Ventosanzap",
-    "status": "ok"
-  },
-  {
-    "id": 945,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Sonair",
-    "status": "apagado"
-  },
-  {
-    "id": 946,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Vagram",
-    "status": "apagado"
-  },
-  {
-    "id": 947,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Sonsing",
-    "status": "apagado"
-  },
-  {
-    "id": 948,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Quo Lux",
-    "status": "apagado"
-  },
-  {
-    "id": 949,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Zontrax",
-    "status": "dañado"
-  },
-  {
-    "id": 950,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Vagram",
-    "status": "dañado"
-  },
-  {
-    "id": 951,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Domainer",
-    "status": "apagado"
-  },
-  {
-    "id": 952,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zoolab",
-    "status": "apagado"
-  },
-  {
-    "id": 953,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Keylex",
-    "status": "dañado"
-  },
-  {
-    "id": 954,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Zaam-Dox",
-    "status": "apagado"
-  },
-  {
-    "id": 955,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Stim",
-    "status": "apagado"
-  },
-  {
-    "id": 956,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Bigtax",
-    "status": "dañado"
-  },
-  {
-    "id": 957,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Fintone",
-    "status": "ok"
-  },
-  {
-    "id": 958,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Temp",
-    "status": "ok"
-  },
-  {
-    "id": 959,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Mat Lam Tam",
-    "status": "ok"
-  },
-  {
-    "id": 960,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Cardguard",
-    "status": "durmiendo"
-  },
-  {
-    "id": 961,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Vagram",
-    "status": "ok"
-  },
-  {
-    "id": 962,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Domainer",
-    "status": "dañado"
-  },
-  {
-    "id": 963,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Stringtough",
-    "status": "apagado"
-  },
-  {
-    "id": 964,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Job",
-    "status": "dañado"
-  },
-  {
-    "id": 965,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Regrant",
-    "status": "dañado"
-  },
-  {
-    "id": 966,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Span",
-    "status": "apagado"
-  },
-  {
-    "id": 967,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Sonsing",
-    "status": "apagado"
-  },
-  {
-    "id": 968,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Flowdesk",
-    "status": "apagado"
-  },
-  {
-    "id": 969,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Namfix",
-    "status": "dañado"
-  },
-  {
-    "id": 970,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Stronghold",
-    "status": "ok"
-  },
-  {
-    "id": 971,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Fintone",
-    "status": "dañado"
-  },
-  {
-    "id": 972,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Zathin",
-    "status": "dañado"
-  },
-  {
-    "id": 973,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Toughjoyfax",
-    "status": "durmiendo"
-  },
-  {
-    "id": 974,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "apagado"
-  },
-  {
-    "id": 975,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Home Ing",
-    "status": "apagado"
-  },
-  {
-    "id": 976,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Holdlamis",
-    "status": "apagado"
-  },
-  {
-    "id": 977,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Job",
-    "status": "dañado"
-  },
-  {
-    "id": 978,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Quo Lux",
-    "status": "ok"
-  },
-  {
-    "id": 979,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Zathin",
-    "status": "apagado"
-  },
-  {
-    "id": 980,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Redhold",
-    "status": "apagado"
-  },
-  {
-    "id": 981,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Voltsillam",
-    "status": "ok"
-  },
-  {
-    "id": 982,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Konklab",
-    "status": "ok"
-  },
-  {
-    "id": 983,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Solarbreeze",
-    "status": "apagado"
-  },
-  {
-    "id": 984,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Alpha",
-    "status": "dañado"
-  },
-  {
-    "id": 985,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Cookley",
-    "status": "ok"
-  },
-  {
-    "id": 986,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Fixflex",
-    "status": "durmiendo"
-  },
-  {
-    "id": 987,
-    "tipo": "Nivel",
-    "central": 3,
-    "zona": "Stringtough",
-    "status": "apagado"
-  },
-  {
-    "id": 988,
-    "tipo": "Nivel",
-    "central": 1,
-    "zona": "Vagram",
-    "status": "ok"
-  },
-  {
-    "id": 989,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Latlux",
-    "status": "dañado"
-  },
-  {
-    "id": 990,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Voltsillam",
-    "status": "apagado"
-  },
-  {
-    "id": 991,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Zamit",
-    "status": "ok"
-  },
-  {
-    "id": 992,
-    "tipo": "Termometro",
-    "central": 3,
-    "zona": "Fix San",
-    "status": "ok"
-  },
-  {
-    "id": 993,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Viva",
-    "status": "ok"
-  },
-  {
-    "id": 994,
-    "tipo": "Termometro",
-    "central": 1,
-    "zona": "Cardguard",
-    "status": "apagado"
-  },
-  {
-    "id": 995,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Holdlamis",
-    "status": "durmiendo"
-  },
-  {
-    "id": 996,
-    "tipo": "Termometro",
-    "central": 2,
-    "zona": "Y-Solowarm",
-    "status": "ok"
-  },
-  {
-    "id": 997,
-    "tipo": "Nivel",
-    "central": 2,
-    "zona": "Fix San",
-    "status": "durmiendo"
-  },
-  {
-    "id": 998,
-    "tipo": "Flujometro",
-    "central": 3,
-    "zona": "Regrant",
-    "status": "dañado"
-  },
-  {
-    "id": 999,
-    "tipo": "Flujometro",
-    "central": 1,
-    "zona": "Greenlam",
-    "status": "apagado"
-  },
-  {
-    "id": 1000,
-    "tipo": "Flujometro",
-    "central": 2,
-    "zona": "Andalax",
-    "status": "durmiendo"
-  }
+  {"id":1,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Y-Solowarm","status":"durmiendo","fechaInstalacion":2009},
+  {"id":2,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Biodex","status":"ok","fechaInstalacion":1991},
+  {"id":3,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Tempsoft","status":"baja batería","fechaInstalacion":2008},
+  {"id":4,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Matsoft","status":"durmiendo","fechaInstalacion":2009},
+  {"id":5,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Duobam","status":"durmiendo","fechaInstalacion":2001},
+  {"id":6,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Temp","status":"durmiendo","fechaInstalacion":2002},
+  {"id":7,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Mat Lam Tam","status":"dañado","fechaInstalacion":1984},
+  {"id":8,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Fixflex","status":"dañado","fechaInstalacion":1985},
+  {"id":9,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Hatity","status":"ok","fechaInstalacion":2009},
+  {"id":10,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Alpha","status":"dañado","fechaInstalacion":2002},
+  {"id":11,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Regrant","status":"apagado","fechaInstalacion":2003},
+  {"id":12,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Lotlux","status":"baja batería","fechaInstalacion":1986},
+  {"id":13,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Domainer","status":"durmiendo","fechaInstalacion":1999},
+  {"id":14,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Konklux","status":"ok","fechaInstalacion":2006},
+  {"id":15,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Bitwolf","status":"apagado","fechaInstalacion":2001},
+  {"id":16,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Aerified","status":"baja batería","fechaInstalacion":2008},
+  {"id":17,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Keylex","status":"ok","fechaInstalacion":1992},
+  {"id":18,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Lotstring","status":"baja batería","fechaInstalacion":2004},
+  {"id":19,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Opela","status":"ok","fechaInstalacion":1994},
+  {"id":20,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Wrapsafe","status":"baja batería","fechaInstalacion":2009},
+  {"id":21,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Zathin","status":"apagado","fechaInstalacion":2003},
+  {"id":22,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Kanlam","status":"apagado","fechaInstalacion":2000},
+  {"id":23,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Pannier","status":"apagado","fechaInstalacion":1990},
+  {"id":24,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Fix San","status":"dañado","fechaInstalacion":1988},
+  {"id":25,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Tresom","status":"baja batería","fechaInstalacion":1988},
+  {"id":26,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Job","status":"durmiendo","fechaInstalacion":1994},
+  {"id":27,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Konklab","status":"apagado","fechaInstalacion":1999},
+  {"id":28,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Bitwolf","status":"baja batería","fechaInstalacion":2002},
+  {"id":29,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Zontrax","status":"ok","fechaInstalacion":2005},
+  {"id":30,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Bamity","status":"durmiendo","fechaInstalacion":2005},
+  {"id":31,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Alphazap","status":"apagado","fechaInstalacion":1993},
+  {"id":32,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Konklux","status":"dañado","fechaInstalacion":2011},
+  {"id":33,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Sonair","status":"baja batería","fechaInstalacion":1995},
+  {"id":34,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Vagram","status":"baja batería","fechaInstalacion":2010},
+  {"id":35,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Bytecard","status":"baja batería","fechaInstalacion":2009},
+  {"id":36,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Latlux","status":"durmiendo","fechaInstalacion":2010},
+  {"id":37,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Span","status":"durmiendo","fechaInstalacion":2011},
+  {"id":38,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Stim","status":"ok","fechaInstalacion":2006},
+  {"id":39,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Rank","status":"ok","fechaInstalacion":2004},
+  {"id":40,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Vagram","status":"apagado","fechaInstalacion":2006},
+  {"id":41,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Fix San","status":"durmiendo","fechaInstalacion":2006},
+  {"id":42,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Duobam","status":"durmiendo","fechaInstalacion":2009},
+  {"id":43,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Domainer","status":"apagado","fechaInstalacion":1995},
+  {"id":44,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"apagado","fechaInstalacion":2009},
+  {"id":45,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Trippledex","status":"apagado","fechaInstalacion":1990},
+  {"id":46,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Zathin","status":"durmiendo","fechaInstalacion":2006},
+  {"id":47,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Biodex","status":"ok","fechaInstalacion":2009},
+  {"id":48,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Greenlam","status":"durmiendo","fechaInstalacion":2006},
+  {"id":49,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Domainer","status":"ok","fechaInstalacion":2011},
+  {"id":50,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Subin","status":"baja batería","fechaInstalacion":2006},
+  {"id":51,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Ronstring","status":"durmiendo","fechaInstalacion":1998},
+  {"id":52,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Subin","status":"ok","fechaInstalacion":2001},
+  {"id":53,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Viva","status":"ok","fechaInstalacion":1966},
+  {"id":54,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Greenlam","status":"apagado","fechaInstalacion":1999},
+  {"id":55,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Stringtough","status":"dañado","fechaInstalacion":2007},
+  {"id":56,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Ronstring","status":"apagado","fechaInstalacion":2006},
+  {"id":57,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Sonsing","status":"apagado","fechaInstalacion":1991},
+  {"id":58,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Tampflex","status":"ok","fechaInstalacion":2011},
+  {"id":59,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Zontrax","status":"ok","fechaInstalacion":2002},
+  {"id":60,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Latlux","status":"baja batería","fechaInstalacion":2008},
+  {"id":61,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Flowdesk","status":"durmiendo","fechaInstalacion":1999},
+  {"id":62,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Konklab","status":"durmiendo","fechaInstalacion":2010},
+  {"id":63,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Domainer","status":"dañado","fechaInstalacion":2005},
+  {"id":64,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Redhold","status":"ok","fechaInstalacion":1993},
+  {"id":65,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Stim","status":"apagado","fechaInstalacion":2007},
+  {"id":66,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Alphazap","status":"baja batería","fechaInstalacion":1990},
+  {"id":67,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Prodder","status":"ok","fechaInstalacion":2003},
+  {"id":68,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Kanlam","status":"ok","fechaInstalacion":1965},
+  {"id":69,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Daltfresh","status":"ok","fechaInstalacion":2011},
+  {"id":70,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Gembucket","status":"dañado","fechaInstalacion":2010},
+  {"id":71,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Bytecard","status":"dañado","fechaInstalacion":2010},
+  {"id":72,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Flowdesk","status":"baja batería","fechaInstalacion":2002},
+  {"id":73,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Cardify","status":"ok","fechaInstalacion":2007},
+  {"id":74,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Toughjoyfax","status":"dañado","fechaInstalacion":2007},
+  {"id":75,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Bigtax","status":"baja batería","fechaInstalacion":2008},
+  {"id":76,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Span","status":"durmiendo","fechaInstalacion":2009},
+  {"id":77,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Y-Solowarm","status":"ok","fechaInstalacion":2004},
+  {"id":78,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Stim","status":"durmiendo","fechaInstalacion":2009},
+  {"id":79,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Rank","status":"baja batería","fechaInstalacion":2005},
+  {"id":80,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Viva","status":"durmiendo","fechaInstalacion":2010},
+  {"id":81,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Subin","status":"baja batería","fechaInstalacion":1992},
+  {"id":82,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Aerified","status":"durmiendo","fechaInstalacion":2009},
+  {"id":83,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Cardguard","status":"dañado","fechaInstalacion":2004},
+  {"id":84,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Aerified","status":"dañado","fechaInstalacion":2010},
+  {"id":85,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Duobam","status":"dañado","fechaInstalacion":1987},
+  {"id":86,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Stim","status":"durmiendo","fechaInstalacion":2009},
+  {"id":87,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Viva","status":"baja batería","fechaInstalacion":1992},
+  {"id":88,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Tin","status":"durmiendo","fechaInstalacion":2000},
+  {"id":89,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Bitwolf","status":"apagado","fechaInstalacion":2013},
+  {"id":90,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Aerified","status":"durmiendo","fechaInstalacion":2002},
+  {"id":91,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Cardguard","status":"apagado","fechaInstalacion":2009},
+  {"id":92,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Veribet","status":"ok","fechaInstalacion":2010},
+  {"id":93,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Rank","status":"dañado","fechaInstalacion":1997},
+  {"id":94,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Zoolab","status":"durmiendo","fechaInstalacion":1984},
+  {"id":95,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Bigtax","status":"dañado","fechaInstalacion":2003},
+  {"id":96,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Cookley","status":"ok","fechaInstalacion":1999},
+  {"id":97,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Keylex","status":"ok","fechaInstalacion":2001},
+  {"id":98,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Overhold","status":"ok","fechaInstalacion":1989},
+  {"id":99,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Subin","status":"baja batería","fechaInstalacion":2001},
+  {"id":100,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Greenlam","status":"ok","fechaInstalacion":2006},
+  {"id":101,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Ventosanzap","status":"ok","fechaInstalacion":2006},
+  {"id":102,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Bigtax","status":"baja batería","fechaInstalacion":2010},
+  {"id":103,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"apagado","fechaInstalacion":1989},
+  {"id":104,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Matsoft","status":"apagado","fechaInstalacion":2002},
+  {"id":105,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Job","status":"durmiendo","fechaInstalacion":1963},
+  {"id":106,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Redhold","status":"apagado","fechaInstalacion":1998},
+  {"id":107,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Zoolab","status":"ok","fechaInstalacion":1984},
+  {"id":108,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Otcom","status":"durmiendo","fechaInstalacion":2007},
+  {"id":109,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Rank","status":"ok","fechaInstalacion":2011},
+  {"id":110,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Y-find","status":"ok","fechaInstalacion":1989},
+  {"id":111,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Alphazap","status":"baja batería","fechaInstalacion":1963},
+  {"id":112,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Treeflex","status":"durmiendo","fechaInstalacion":1983},
+  {"id":113,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Opela","status":"apagado","fechaInstalacion":2005},
+  {"id":114,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Tresom","status":"ok","fechaInstalacion":1996},
+  {"id":115,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Greenlam","status":"ok","fechaInstalacion":2010},
+  {"id":116,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Overhold","status":"dañado","fechaInstalacion":1992},
+  {"id":117,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Home Ing","status":"ok","fechaInstalacion":2005},
+  {"id":118,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Kanlam","status":"baja batería","fechaInstalacion":1978},
+  {"id":119,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Keylex","status":"baja batería","fechaInstalacion":2011},
+  {"id":120,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Toughjoyfax","status":"ok","fechaInstalacion":1993},
+  {"id":121,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Asoka","status":"ok","fechaInstalacion":2007},
+  {"id":122,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Lotlux","status":"dañado","fechaInstalacion":1992},
+  {"id":123,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Hatity","status":"apagado","fechaInstalacion":2007},
+  {"id":124,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Sub-Ex","status":"dañado","fechaInstalacion":1991},
+  {"id":125,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Biodex","status":"ok","fechaInstalacion":1989},
+  {"id":126,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Namfix","status":"ok","fechaInstalacion":1992},
+  {"id":127,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Otcom","status":"ok","fechaInstalacion":1984},
+  {"id":128,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Namfix","status":"apagado","fechaInstalacion":1992},
+  {"id":129,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Opela","status":"ok","fechaInstalacion":1992},
+  {"id":130,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"durmiendo","fechaInstalacion":1993},
+  {"id":131,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Duobam","status":"baja batería","fechaInstalacion":1988},
+  {"id":132,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Wrapsafe","status":"dañado","fechaInstalacion":1986},
+  {"id":133,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Home Ing","status":"baja batería","fechaInstalacion":2002},
+  {"id":134,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Fix San","status":"baja batería","fechaInstalacion":2013},
+  {"id":135,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Tin","status":"baja batería","fechaInstalacion":1995},
+  {"id":136,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Domainer","status":"apagado","fechaInstalacion":2005},
+  {"id":137,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Keylex","status":"ok","fechaInstalacion":1996},
+  {"id":138,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Alpha","status":"baja batería","fechaInstalacion":1993},
+  {"id":139,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Tempsoft","status":"dañado","fechaInstalacion":2005},
+  {"id":140,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Latlux","status":"ok","fechaInstalacion":1990},
+  {"id":141,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Mat Lam Tam","status":"baja batería","fechaInstalacion":2004},
+  {"id":142,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Fixflex","status":"apagado","fechaInstalacion":1986},
+  {"id":143,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Voyatouch","status":"durmiendo","fechaInstalacion":2009},
+  {"id":144,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Asoka","status":"dañado","fechaInstalacion":1995},
+  {"id":145,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Mat Lam Tam","status":"ok","fechaInstalacion":1994},
+  {"id":146,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Fix San","status":"dañado","fechaInstalacion":1994},
+  {"id":147,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Cardify","status":"durmiendo","fechaInstalacion":1997},
+  {"id":148,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Home Ing","status":"durmiendo","fechaInstalacion":1970},
+  {"id":149,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Greenlam","status":"durmiendo","fechaInstalacion":2000},
+  {"id":150,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Voyatouch","status":"dañado","fechaInstalacion":1996},
+  {"id":151,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Holdlamis","status":"apagado","fechaInstalacion":2007},
+  {"id":152,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Trippledex","status":"durmiendo","fechaInstalacion":1999},
+  {"id":153,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Cardguard","status":"dañado","fechaInstalacion":1984},
+  {"id":154,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Transcof","status":"dañado","fechaInstalacion":2010},
+  {"id":155,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Flexidy","status":"apagado","fechaInstalacion":1989},
+  {"id":156,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Mat Lam Tam","status":"ok","fechaInstalacion":2007},
+  {"id":157,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Treeflex","status":"baja batería","fechaInstalacion":1986},
+  {"id":158,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"dañado","fechaInstalacion":1992},
+  {"id":159,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Zontrax","status":"durmiendo","fechaInstalacion":1997},
+  {"id":160,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Tampflex","status":"baja batería","fechaInstalacion":2002},
+  {"id":161,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Job","status":"apagado","fechaInstalacion":2004},
+  {"id":162,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Regrant","status":"dañado","fechaInstalacion":1998},
+  {"id":163,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Treeflex","status":"dañado","fechaInstalacion":1988},
+  {"id":164,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Wrapsafe","status":"dañado","fechaInstalacion":2011},
+  {"id":165,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Subin","status":"durmiendo","fechaInstalacion":1968},
+  {"id":166,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Tin","status":"apagado","fechaInstalacion":1996},
+  {"id":167,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Cardify","status":"apagado","fechaInstalacion":2005},
+  {"id":168,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Tempsoft","status":"durmiendo","fechaInstalacion":2006},
+  {"id":169,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Keylex","status":"durmiendo","fechaInstalacion":1995},
+  {"id":170,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Stronghold","status":"dañado","fechaInstalacion":1962},
+  {"id":171,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Y-find","status":"apagado","fechaInstalacion":2001},
+  {"id":172,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Lotlux","status":"baja batería","fechaInstalacion":2006},
+  {"id":173,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Ronstring","status":"dañado","fechaInstalacion":2001},
+  {"id":174,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Greenlam","status":"ok","fechaInstalacion":2000},
+  {"id":175,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Fixflex","status":"apagado","fechaInstalacion":2005},
+  {"id":176,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Y-Solowarm","status":"baja batería","fechaInstalacion":2005},
+  {"id":177,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Kanlam","status":"ok","fechaInstalacion":2010},
+  {"id":178,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Tempsoft","status":"apagado","fechaInstalacion":1988},
+  {"id":179,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Stringtough","status":"baja batería","fechaInstalacion":2010},
+  {"id":180,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Biodex","status":"dañado","fechaInstalacion":1972},
+  {"id":181,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Span","status":"durmiendo","fechaInstalacion":2001},
+  {"id":182,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Temp","status":"durmiendo","fechaInstalacion":2008},
+  {"id":183,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Stringtough","status":"baja batería","fechaInstalacion":2009},
+  {"id":184,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Alphazap","status":"ok","fechaInstalacion":1995},
+  {"id":185,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Y-find","status":"baja batería","fechaInstalacion":1909},
+  {"id":186,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Sonair","status":"apagado","fechaInstalacion":1994},
+  {"id":187,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Hatity","status":"durmiendo","fechaInstalacion":1997},
+  {"id":188,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Stringtough","status":"baja batería","fechaInstalacion":1980},
+  {"id":189,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Treeflex","status":"durmiendo","fechaInstalacion":1993},
+  {"id":190,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Lotlux","status":"apagado","fechaInstalacion":1979},
+  {"id":191,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Lotstring","status":"apagado","fechaInstalacion":1998},
+  {"id":192,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Asoka","status":"baja batería","fechaInstalacion":2008},
+  {"id":193,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Voyatouch","status":"apagado","fechaInstalacion":2006},
+  {"id":194,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Fintone","status":"durmiendo","fechaInstalacion":2002},
+  {"id":195,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Quo Lux","status":"dañado","fechaInstalacion":2005},
+  {"id":196,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"durmiendo","fechaInstalacion":2008},
+  {"id":197,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Bitwolf","status":"apagado","fechaInstalacion":1965},
+  {"id":198,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Keylex","status":"baja batería","fechaInstalacion":2010},
+  {"id":199,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Bamity","status":"ok","fechaInstalacion":2008},
+  {"id":200,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Stim","status":"apagado","fechaInstalacion":2001},
+  {"id":201,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Flexidy","status":"ok","fechaInstalacion":1999},
+  {"id":202,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Sonair","status":"apagado","fechaInstalacion":2003},
+  {"id":203,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Hatity","status":"apagado","fechaInstalacion":1995},
+  {"id":204,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Duobam","status":"dañado","fechaInstalacion":1993},
+  {"id":205,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Latlux","status":"ok","fechaInstalacion":2009},
+  {"id":206,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Regrant","status":"ok","fechaInstalacion":1990},
+  {"id":207,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Ronstring","status":"dañado","fechaInstalacion":2009},
+  {"id":208,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Domainer","status":"ok","fechaInstalacion":1999},
+  {"id":209,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Matsoft","status":"durmiendo","fechaInstalacion":1993},
+  {"id":210,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Tempsoft","status":"dañado","fechaInstalacion":1995},
+  {"id":211,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Home Ing","status":"apagado","fechaInstalacion":2012},
+  {"id":212,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Tin","status":"durmiendo","fechaInstalacion":2000},
+  {"id":213,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Job","status":"baja batería","fechaInstalacion":1993},
+  {"id":214,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Lotlux","status":"ok","fechaInstalacion":1992},
+  {"id":215,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Trippledex","status":"dañado","fechaInstalacion":2008},
+  {"id":216,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Zamit","status":"dañado","fechaInstalacion":2003},
+  {"id":217,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Mat Lam Tam","status":"baja batería","fechaInstalacion":2011},
+  {"id":218,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Span","status":"baja batería","fechaInstalacion":1993},
+  {"id":219,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Alphazap","status":"ok","fechaInstalacion":1985},
+  {"id":220,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Aerified","status":"ok","fechaInstalacion":2008},
+  {"id":221,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Mat Lam Tam","status":"dañado","fechaInstalacion":2005},
+  {"id":222,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Stringtough","status":"ok","fechaInstalacion":2004},
+  {"id":223,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Sub-Ex","status":"dañado","fechaInstalacion":2001},
+  {"id":224,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Sonair","status":"dañado","fechaInstalacion":2009},
+  {"id":225,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Lotstring","status":"apagado","fechaInstalacion":1991},
+  {"id":226,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Bigtax","status":"durmiendo","fechaInstalacion":2003},
+  {"id":227,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Aerified","status":"durmiendo","fechaInstalacion":1992},
+  {"id":228,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Cardguard","status":"dañado","fechaInstalacion":2008},
+  {"id":229,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Temp","status":"durmiendo","fechaInstalacion":1985},
+  {"id":230,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Holdlamis","status":"baja batería","fechaInstalacion":1998},
+  {"id":231,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Stringtough","status":"ok","fechaInstalacion":2013},
+  {"id":232,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Prodder","status":"dañado","fechaInstalacion":2007},
+  {"id":233,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Fix San","status":"ok","fechaInstalacion":2010},
+  {"id":234,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Veribet","status":"baja batería","fechaInstalacion":2000},
+  {"id":235,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Job","status":"baja batería","fechaInstalacion":1994},
+  {"id":236,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Pannier","status":"dañado","fechaInstalacion":2007},
+  {"id":237,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Sub-Ex","status":"ok","fechaInstalacion":1992},
+  {"id":238,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Veribet","status":"dañado","fechaInstalacion":2007},
+  {"id":239,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Biodex","status":"apagado","fechaInstalacion":2008},
+  {"id":240,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Toughjoyfax","status":"apagado","fechaInstalacion":2002},
+  {"id":241,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Overhold","status":"durmiendo","fechaInstalacion":2010},
+  {"id":242,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Vagram","status":"baja batería","fechaInstalacion":1991},
+  {"id":243,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Trippledex","status":"dañado","fechaInstalacion":1999},
+  {"id":244,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Bitchip","status":"durmiendo","fechaInstalacion":1998},
+  {"id":245,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Bytecard","status":"baja batería","fechaInstalacion":2008},
+  {"id":246,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Zamit","status":"dañado","fechaInstalacion":2004},
+  {"id":247,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Subin","status":"dañado","fechaInstalacion":1992},
+  {"id":248,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Fix San","status":"apagado","fechaInstalacion":2001},
+  {"id":249,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Solarbreeze","status":"dañado","fechaInstalacion":2007},
+  {"id":250,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Overhold","status":"baja batería","fechaInstalacion":1986},
+  {"id":251,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Latlux","status":"ok","fechaInstalacion":2003},
+  {"id":252,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Duobam","status":"dañado","fechaInstalacion":2001},
+  {"id":253,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Pannier","status":"durmiendo","fechaInstalacion":1992},
+  {"id":254,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Veribet","status":"ok","fechaInstalacion":1999},
+  {"id":255,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Cardify","status":"dañado","fechaInstalacion":2006},
+  {"id":256,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Fix San","status":"dañado","fechaInstalacion":1994},
+  {"id":257,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Fix San","status":"ok","fechaInstalacion":2004},
+  {"id":258,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Alphazap","status":"baja batería","fechaInstalacion":1999},
+  {"id":259,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Sonair","status":"apagado","fechaInstalacion":2009},
+  {"id":260,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Bamity","status":"apagado","fechaInstalacion":1999},
+  {"id":261,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Daltfresh","status":"dañado","fechaInstalacion":2009},
+  {"id":262,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Asoka","status":"apagado","fechaInstalacion":1961},
+  {"id":263,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Flexidy","status":"durmiendo","fechaInstalacion":1998},
+  {"id":264,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Bamity","status":"baja batería","fechaInstalacion":2005},
+  {"id":265,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Bytecard","status":"ok","fechaInstalacion":1995},
+  {"id":266,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Stim","status":"ok","fechaInstalacion":2004},
+  {"id":267,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Lotlux","status":"dañado","fechaInstalacion":1995},
+  {"id":268,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Pannier","status":"baja batería","fechaInstalacion":2007},
+  {"id":269,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Fixflex","status":"ok","fechaInstalacion":2008},
+  {"id":270,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Tampflex","status":"durmiendo","fechaInstalacion":2010},
+  {"id":271,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Tampflex","status":"dañado","fechaInstalacion":2006},
+  {"id":272,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Domainer","status":"baja batería","fechaInstalacion":2010},
+  {"id":273,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Subin","status":"durmiendo","fechaInstalacion":1991},
+  {"id":274,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Fixflex","status":"baja batería","fechaInstalacion":1995},
+  {"id":275,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Bytecard","status":"baja batería","fechaInstalacion":2011},
+  {"id":276,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Stringtough","status":"dañado","fechaInstalacion":2004},
+  {"id":277,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Flowdesk","status":"baja batería","fechaInstalacion":2006},
+  {"id":278,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Lotlux","status":"baja batería","fechaInstalacion":1987},
+  {"id":279,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Duobam","status":"apagado","fechaInstalacion":1995},
+  {"id":280,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Matsoft","status":"apagado","fechaInstalacion":1994},
+  {"id":281,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Latlux","status":"baja batería","fechaInstalacion":2010},
+  {"id":282,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Greenlam","status":"ok","fechaInstalacion":2010},
+  {"id":283,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Redhold","status":"durmiendo","fechaInstalacion":1997},
+  {"id":284,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Fix San","status":"ok","fechaInstalacion":1993},
+  {"id":285,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Asoka","status":"baja batería","fechaInstalacion":2010},
+  {"id":286,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Bigtax","status":"ok","fechaInstalacion":2004},
+  {"id":287,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Y-Solowarm","status":"dañado","fechaInstalacion":1966},
+  {"id":288,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Wrapsafe","status":"apagado","fechaInstalacion":2002},
+  {"id":289,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Aerified","status":"dañado","fechaInstalacion":1984},
+  {"id":290,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Lotstring","status":"ok","fechaInstalacion":2012},
+  {"id":291,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Sonair","status":"ok","fechaInstalacion":1997},
+  {"id":292,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Bitchip","status":"baja batería","fechaInstalacion":2009},
+  {"id":293,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Tresom","status":"baja batería","fechaInstalacion":2009},
+  {"id":294,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Bytecard","status":"dañado","fechaInstalacion":2008},
+  {"id":295,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Stringtough","status":"ok","fechaInstalacion":2011},
+  {"id":296,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Voyatouch","status":"durmiendo","fechaInstalacion":2004},
+  {"id":297,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Gembucket","status":"durmiendo","fechaInstalacion":2008},
+  {"id":298,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Keylex","status":"ok","fechaInstalacion":2006},
+  {"id":299,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Fintone","status":"baja batería","fechaInstalacion":2009},
+  {"id":300,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Konklab","status":"dañado","fechaInstalacion":2008},
+  {"id":301,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Matsoft","status":"ok","fechaInstalacion":2004},
+  {"id":302,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Kanlam","status":"durmiendo","fechaInstalacion":2000},
+  {"id":303,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Y-Solowarm","status":"apagado","fechaInstalacion":2005},
+  {"id":304,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Zamit","status":"durmiendo","fechaInstalacion":2006},
+  {"id":305,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Tempsoft","status":"durmiendo","fechaInstalacion":1989},
+  {"id":306,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Andalax","status":"apagado","fechaInstalacion":2005},
+  {"id":307,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Daltfresh","status":"durmiendo","fechaInstalacion":1990},
+  {"id":308,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Andalax","status":"ok","fechaInstalacion":2003},
+  {"id":309,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Cardify","status":"durmiendo","fechaInstalacion":1995},
+  {"id":310,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Lotstring","status":"durmiendo","fechaInstalacion":1994},
+  {"id":311,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Opela","status":"baja batería","fechaInstalacion":2008},
+  {"id":312,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Toughjoyfax","status":"durmiendo","fechaInstalacion":2003},
+  {"id":313,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Zontrax","status":"ok","fechaInstalacion":1995},
+  {"id":314,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Y-find","status":"durmiendo","fechaInstalacion":2003},
+  {"id":315,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Holdlamis","status":"apagado","fechaInstalacion":2009},
+  {"id":316,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Span","status":"apagado","fechaInstalacion":1996},
+  {"id":317,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Fix San","status":"baja batería","fechaInstalacion":2012},
+  {"id":318,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Opela","status":"ok","fechaInstalacion":2000},
+  {"id":319,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Zoolab","status":"ok","fechaInstalacion":1998},
+  {"id":320,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Stim","status":"dañado","fechaInstalacion":2001},
+  {"id":321,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Treeflex","status":"dañado","fechaInstalacion":1989},
+  {"id":322,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Hatity","status":"apagado","fechaInstalacion":2007},
+  {"id":323,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Viva","status":"ok","fechaInstalacion":2002},
+  {"id":324,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Tampflex","status":"dañado","fechaInstalacion":2008},
+  {"id":325,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Bitwolf","status":"baja batería","fechaInstalacion":2004},
+  {"id":326,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Alpha","status":"baja batería","fechaInstalacion":2009},
+  {"id":327,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Hatity","status":"apagado","fechaInstalacion":2004},
+  {"id":328,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Aerified","status":"ok","fechaInstalacion":1990},
+  {"id":329,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Domainer","status":"ok","fechaInstalacion":1993},
+  {"id":330,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"apagado","fechaInstalacion":1998},
+  {"id":331,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Konklux","status":"ok","fechaInstalacion":2002},
+  {"id":332,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Sonair","status":"ok","fechaInstalacion":1995},
+  {"id":333,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Konklux","status":"durmiendo","fechaInstalacion":1989},
+  {"id":334,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Keylex","status":"apagado","fechaInstalacion":1992},
+  {"id":335,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Latlux","status":"baja batería","fechaInstalacion":2003},
+  {"id":336,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Tin","status":"durmiendo","fechaInstalacion":2000},
+  {"id":337,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Konklux","status":"dañado","fechaInstalacion":2003},
+  {"id":338,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Otcom","status":"durmiendo","fechaInstalacion":1988},
+  {"id":339,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Toughjoyfax","status":"ok","fechaInstalacion":1985},
+  {"id":340,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Stronghold","status":"apagado","fechaInstalacion":1995},
+  {"id":341,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Duobam","status":"dañado","fechaInstalacion":2003},
+  {"id":342,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Solarbreeze","status":"apagado","fechaInstalacion":2000},
+  {"id":343,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Toughjoyfax","status":"durmiendo","fechaInstalacion":1998},
+  {"id":344,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Biodex","status":"dañado","fechaInstalacion":2007},
+  {"id":345,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Alphazap","status":"apagado","fechaInstalacion":2009},
+  {"id":346,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Matsoft","status":"ok","fechaInstalacion":1994},
+  {"id":347,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Cookley","status":"durmiendo","fechaInstalacion":2007},
+  {"id":348,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Flowdesk","status":"dañado","fechaInstalacion":1999},
+  {"id":349,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Cardify","status":"ok","fechaInstalacion":1992},
+  {"id":350,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Fixflex","status":"ok","fechaInstalacion":1995},
+  {"id":351,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Duobam","status":"baja batería","fechaInstalacion":2008},
+  {"id":352,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Veribet","status":"durmiendo","fechaInstalacion":1988},
+  {"id":353,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Latlux","status":"durmiendo","fechaInstalacion":1997},
+  {"id":354,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Subin","status":"apagado","fechaInstalacion":1995},
+  {"id":355,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Cardguard","status":"apagado","fechaInstalacion":2006},
+  {"id":356,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Wrapsafe","status":"baja batería","fechaInstalacion":1993},
+  {"id":357,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Quo Lux","status":"durmiendo","fechaInstalacion":1990},
+  {"id":358,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Fix San","status":"ok","fechaInstalacion":1999},
+  {"id":359,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Opela","status":"dañado","fechaInstalacion":2007},
+  {"id":360,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Sub-Ex","status":"baja batería","fechaInstalacion":2006},
+  {"id":361,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Bitwolf","status":"dañado","fechaInstalacion":1996},
+  {"id":362,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Veribet","status":"baja batería","fechaInstalacion":1986},
+  {"id":363,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Bitwolf","status":"ok","fechaInstalacion":2010},
+  {"id":364,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Fix San","status":"dañado","fechaInstalacion":1990},
+  {"id":365,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Wrapsafe","status":"durmiendo","fechaInstalacion":1988},
+  {"id":366,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Stringtough","status":"baja batería","fechaInstalacion":1993},
+  {"id":367,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Mat Lam Tam","status":"durmiendo","fechaInstalacion":2010},
+  {"id":368,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Regrant","status":"ok","fechaInstalacion":2006},
+  {"id":369,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Flowdesk","status":"durmiendo","fechaInstalacion":2003},
+  {"id":370,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"apagado","fechaInstalacion":2007},
+  {"id":371,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Treeflex","status":"dañado","fechaInstalacion":2013},
+  {"id":372,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Matsoft","status":"dañado","fechaInstalacion":2009},
+  {"id":373,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Bitwolf","status":"dañado","fechaInstalacion":1997},
+  {"id":374,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Lotstring","status":"ok","fechaInstalacion":2004},
+  {"id":375,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Mat Lam Tam","status":"dañado","fechaInstalacion":2004},
+  {"id":376,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Opela","status":"ok","fechaInstalacion":1986},
+  {"id":377,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Temp","status":"apagado","fechaInstalacion":2000},
+  {"id":378,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Y-find","status":"apagado","fechaInstalacion":2004},
+  {"id":379,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Zathin","status":"durmiendo","fechaInstalacion":1992},
+  {"id":380,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Y-find","status":"dañado","fechaInstalacion":1993},
+  {"id":381,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Pannier","status":"ok","fechaInstalacion":2006},
+  {"id":382,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Daltfresh","status":"baja batería","fechaInstalacion":2001},
+  {"id":383,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Job","status":"durmiendo","fechaInstalacion":1988},
+  {"id":384,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Andalax","status":"ok","fechaInstalacion":2008},
+  {"id":385,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Daltfresh","status":"baja batería","fechaInstalacion":2001},
+  {"id":386,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Holdlamis","status":"baja batería","fechaInstalacion":2006},
+  {"id":387,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Holdlamis","status":"dañado","fechaInstalacion":2003},
+  {"id":388,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Bigtax","status":"ok","fechaInstalacion":2005},
+  {"id":389,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Mat Lam Tam","status":"ok","fechaInstalacion":2003},
+  {"id":390,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Job","status":"dañado","fechaInstalacion":2010},
+  {"id":391,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Zontrax","status":"baja batería","fechaInstalacion":1970},
+  {"id":392,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Sonsing","status":"ok","fechaInstalacion":1996},
+  {"id":393,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Sub-Ex","status":"ok","fechaInstalacion":1998},
+  {"id":394,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Job","status":"ok","fechaInstalacion":2007},
+  {"id":395,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Tin","status":"durmiendo","fechaInstalacion":2002},
+  {"id":396,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Subin","status":"dañado","fechaInstalacion":2011},
+  {"id":397,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Bitwolf","status":"apagado","fechaInstalacion":2003},
+  {"id":398,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Mat Lam Tam","status":"ok","fechaInstalacion":1993},
+  {"id":399,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Voyatouch","status":"apagado","fechaInstalacion":1993},
+  {"id":400,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Sonsing","status":"ok","fechaInstalacion":2012},
+  {"id":401,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Fix San","status":"durmiendo","fechaInstalacion":1998},
+  {"id":402,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Konklab","status":"baja batería","fechaInstalacion":2008},
+  {"id":403,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Fixflex","status":"baja batería","fechaInstalacion":2012},
+  {"id":404,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Fix San","status":"durmiendo","fechaInstalacion":2003},
+  {"id":405,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Tresom","status":"durmiendo","fechaInstalacion":1997},
+  {"id":406,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Alpha","status":"dañado","fechaInstalacion":1994},
+  {"id":407,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Fix San","status":"dañado","fechaInstalacion":2009},
+  {"id":408,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Bitwolf","status":"durmiendo","fechaInstalacion":2012},
+  {"id":409,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Fix San","status":"ok","fechaInstalacion":2006},
+  {"id":410,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Zontrax","status":"ok","fechaInstalacion":2010},
+  {"id":411,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Veribet","status":"ok","fechaInstalacion":1997},
+  {"id":412,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Fixflex","status":"durmiendo","fechaInstalacion":2007},
+  {"id":413,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Tresom","status":"durmiendo","fechaInstalacion":2008},
+  {"id":414,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Flexidy","status":"baja batería","fechaInstalacion":2009},
+  {"id":415,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Bitwolf","status":"dañado","fechaInstalacion":1995},
+  {"id":416,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Home Ing","status":"ok","fechaInstalacion":2001},
+  {"id":417,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Transcof","status":"durmiendo","fechaInstalacion":2001},
+  {"id":418,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Fintone","status":"dañado","fechaInstalacion":2006},
+  {"id":419,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Biodex","status":"durmiendo","fechaInstalacion":2003},
+  {"id":420,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Overhold","status":"dañado","fechaInstalacion":2004},
+  {"id":421,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Temp","status":"apagado","fechaInstalacion":1992},
+  {"id":422,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Konklux","status":"apagado","fechaInstalacion":1998},
+  {"id":423,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Tempsoft","status":"durmiendo","fechaInstalacion":1999},
+  {"id":424,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Duobam","status":"baja batería","fechaInstalacion":2004},
+  {"id":425,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Vagram","status":"apagado","fechaInstalacion":2011},
+  {"id":426,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Treeflex","status":"apagado","fechaInstalacion":1988},
+  {"id":427,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Keylex","status":"dañado","fechaInstalacion":1999},
+  {"id":428,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Latlux","status":"ok","fechaInstalacion":2011},
+  {"id":429,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Tres-Zap","status":"dañado","fechaInstalacion":1997},
+  {"id":430,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Zamit","status":"ok","fechaInstalacion":2009},
+  {"id":431,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Veribet","status":"dañado","fechaInstalacion":2005},
+  {"id":432,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Bitwolf","status":"baja batería","fechaInstalacion":1996},
+  {"id":433,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Fintone","status":"apagado","fechaInstalacion":2008},
+  {"id":434,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Konklab","status":"dañado","fechaInstalacion":2004},
+  {"id":435,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Fixflex","status":"durmiendo","fechaInstalacion":1999},
+  {"id":436,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Quo Lux","status":"dañado","fechaInstalacion":2004},
+  {"id":437,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Cookley","status":"dañado","fechaInstalacion":2002},
+  {"id":438,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Fix San","status":"durmiendo","fechaInstalacion":2009},
+  {"id":439,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Daltfresh","status":"ok","fechaInstalacion":1984},
+  {"id":440,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Holdlamis","status":"apagado","fechaInstalacion":1995},
+  {"id":441,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Wrapsafe","status":"baja batería","fechaInstalacion":2005},
+  {"id":442,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Keylex","status":"dañado","fechaInstalacion":1992},
+  {"id":443,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Alphazap","status":"ok","fechaInstalacion":1999},
+  {"id":444,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Bitchip","status":"dañado","fechaInstalacion":2003},
+  {"id":445,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Konklab","status":"ok","fechaInstalacion":2012},
+  {"id":446,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Cardguard","status":"ok","fechaInstalacion":1998},
+  {"id":447,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Regrant","status":"dañado","fechaInstalacion":2004},
+  {"id":448,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Stringtough","status":"apagado","fechaInstalacion":1985},
+  {"id":449,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Alphazap","status":"baja batería","fechaInstalacion":2004},
+  {"id":450,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Alpha","status":"durmiendo","fechaInstalacion":2011},
+  {"id":451,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Overhold","status":"apagado","fechaInstalacion":1999},
+  {"id":452,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Voyatouch","status":"baja batería","fechaInstalacion":2004},
+  {"id":453,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Alpha","status":"ok","fechaInstalacion":1988},
+  {"id":454,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Keylex","status":"apagado","fechaInstalacion":2006},
+  {"id":455,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Zamit","status":"ok","fechaInstalacion":1966},
+  {"id":456,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Y-find","status":"apagado","fechaInstalacion":2002},
+  {"id":457,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Flowdesk","status":"dañado","fechaInstalacion":2003},
+  {"id":458,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Andalax","status":"apagado","fechaInstalacion":1994},
+  {"id":459,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Rank","status":"dañado","fechaInstalacion":2012},
+  {"id":460,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Aerified","status":"apagado","fechaInstalacion":2006},
+  {"id":461,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Konklux","status":"dañado","fechaInstalacion":1998},
+  {"id":462,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Zontrax","status":"dañado","fechaInstalacion":2008},
+  {"id":463,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Aerified","status":"dañado","fechaInstalacion":2009},
+  {"id":464,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Solarbreeze","status":"ok","fechaInstalacion":1992},
+  {"id":465,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Lotstring","status":"apagado","fechaInstalacion":2001},
+  {"id":466,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Zamit","status":"apagado","fechaInstalacion":2000},
+  {"id":467,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Domainer","status":"durmiendo","fechaInstalacion":1992},
+  {"id":468,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Otcom","status":"durmiendo","fechaInstalacion":2001},
+  {"id":469,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Tin","status":"dañado","fechaInstalacion":2001},
+  {"id":470,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Fixflex","status":"apagado","fechaInstalacion":1994},
+  {"id":471,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Holdlamis","status":"durmiendo","fechaInstalacion":2008},
+  {"id":472,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Job","status":"ok","fechaInstalacion":1997},
+  {"id":473,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Tempsoft","status":"dañado","fechaInstalacion":2008},
+  {"id":474,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Tin","status":"apagado","fechaInstalacion":1993},
+  {"id":475,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Vagram","status":"baja batería","fechaInstalacion":2003},
+  {"id":476,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Lotlux","status":"dañado","fechaInstalacion":2008},
+  {"id":477,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Sonair","status":"apagado","fechaInstalacion":2012},
+  {"id":478,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Zontrax","status":"baja batería","fechaInstalacion":2000},
+  {"id":479,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Lotlux","status":"apagado","fechaInstalacion":2005},
+  {"id":480,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Ventosanzap","status":"dañado","fechaInstalacion":1987},
+  {"id":481,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Ronstring","status":"ok","fechaInstalacion":2013},
+  {"id":482,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Bigtax","status":"apagado","fechaInstalacion":2006},
+  {"id":483,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Cardify","status":"dañado","fechaInstalacion":2011},
+  {"id":484,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Duobam","status":"baja batería","fechaInstalacion":2004},
+  {"id":485,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Bytecard","status":"durmiendo","fechaInstalacion":2011},
+  {"id":486,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Asoka","status":"dañado","fechaInstalacion":2012},
+  {"id":487,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Temp","status":"ok","fechaInstalacion":1997},
+  {"id":488,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Lotlux","status":"dañado","fechaInstalacion":2006},
+  {"id":489,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Redhold","status":"dañado","fechaInstalacion":2003},
+  {"id":490,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Flowdesk","status":"ok","fechaInstalacion":2011},
+  {"id":491,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Asoka","status":"ok","fechaInstalacion":2001},
+  {"id":492,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Home Ing","status":"dañado","fechaInstalacion":2001},
+  {"id":493,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Hatity","status":"apagado","fechaInstalacion":2012},
+  {"id":494,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"apagado","fechaInstalacion":2012},
+  {"id":495,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Tin","status":"ok","fechaInstalacion":2009},
+  {"id":496,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Temp","status":"baja batería","fechaInstalacion":1988},
+  {"id":497,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Temp","status":"apagado","fechaInstalacion":1990},
+  {"id":498,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Stim","status":"ok","fechaInstalacion":2011},
+  {"id":499,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Bigtax","status":"apagado","fechaInstalacion":2000},
+  {"id":500,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Daltfresh","status":"baja batería","fechaInstalacion":2000},
+  {"id":501,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Regrant","status":"baja batería","fechaInstalacion":2010},
+  {"id":502,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Vagram","status":"apagado","fechaInstalacion":1989},
+  {"id":503,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Y-find","status":"apagado","fechaInstalacion":2010},
+  {"id":504,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Fix San","status":"apagado","fechaInstalacion":2008},
+  {"id":505,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Prodder","status":"apagado","fechaInstalacion":1990},
+  {"id":506,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"It","status":"baja batería","fechaInstalacion":1989},
+  {"id":507,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Gembucket","status":"dañado","fechaInstalacion":2012},
+  {"id":508,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Biodex","status":"dañado","fechaInstalacion":1998},
+  {"id":509,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Ventosanzap","status":"durmiendo","fechaInstalacion":1996},
+  {"id":510,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Y-Solowarm","status":"baja batería","fechaInstalacion":1995},
+  {"id":511,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Cardify","status":"durmiendo","fechaInstalacion":1986},
+  {"id":512,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Fix San","status":"apagado","fechaInstalacion":2001},
+  {"id":513,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Bigtax","status":"ok","fechaInstalacion":2008},
+  {"id":514,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Y-find","status":"ok","fechaInstalacion":1988},
+  {"id":515,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Asoka","status":"ok","fechaInstalacion":2008},
+  {"id":516,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Zamit","status":"apagado","fechaInstalacion":2009},
+  {"id":517,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Tresom","status":"baja batería","fechaInstalacion":2012},
+  {"id":518,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Cardify","status":"dañado","fechaInstalacion":2003},
+  {"id":519,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Cardify","status":"ok","fechaInstalacion":2004},
+  {"id":520,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Mat Lam Tam","status":"apagado","fechaInstalacion":1999},
+  {"id":521,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Konklux","status":"dañado","fechaInstalacion":2000},
+  {"id":522,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Tin","status":"ok","fechaInstalacion":2006},
+  {"id":523,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Zathin","status":"dañado","fechaInstalacion":2003},
+  {"id":524,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Ronstring","status":"durmiendo","fechaInstalacion":2004},
+  {"id":525,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Cardify","status":"baja batería","fechaInstalacion":1993},
+  {"id":526,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Zamit","status":"ok","fechaInstalacion":1993},
+  {"id":527,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Quo Lux","status":"apagado","fechaInstalacion":2009},
+  {"id":528,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Pannier","status":"baja batería","fechaInstalacion":1989},
+  {"id":529,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Fixflex","status":"dañado","fechaInstalacion":2000},
+  {"id":530,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Ronstring","status":"baja batería","fechaInstalacion":1998},
+  {"id":531,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Rank","status":"baja batería","fechaInstalacion":2012},
+  {"id":532,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Fix San","status":"durmiendo","fechaInstalacion":1990},
+  {"id":533,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Sonair","status":"dañado","fechaInstalacion":1999},
+  {"id":534,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Cookley","status":"apagado","fechaInstalacion":2002},
+  {"id":535,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Fix San","status":"ok","fechaInstalacion":2008},
+  {"id":536,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Bitwolf","status":"baja batería","fechaInstalacion":2006},
+  {"id":537,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Otcom","status":"baja batería","fechaInstalacion":1995},
+  {"id":538,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Duobam","status":"apagado","fechaInstalacion":1994},
+  {"id":539,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Voltsillam","status":"baja batería","fechaInstalacion":1980},
+  {"id":540,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Toughjoyfax","status":"baja batería","fechaInstalacion":1995},
+  {"id":541,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Trippledex","status":"apagado","fechaInstalacion":2010},
+  {"id":542,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Regrant","status":"baja batería","fechaInstalacion":2000},
+  {"id":543,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Temp","status":"baja batería","fechaInstalacion":1997},
+  {"id":544,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Veribet","status":"baja batería","fechaInstalacion":2000},
+  {"id":545,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Temp","status":"dañado","fechaInstalacion":2003},
+  {"id":546,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Subin","status":"ok","fechaInstalacion":1992},
+  {"id":547,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Y-Solowarm","status":"baja batería","fechaInstalacion":1995},
+  {"id":548,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Kanlam","status":"durmiendo","fechaInstalacion":2011},
+  {"id":549,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Span","status":"apagado","fechaInstalacion":2003},
+  {"id":550,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Viva","status":"dañado","fechaInstalacion":2009},
+  {"id":551,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Treeflex","status":"ok","fechaInstalacion":1999},
+  {"id":552,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Vagram","status":"apagado","fechaInstalacion":2009},
+  {"id":553,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Alpha","status":"ok","fechaInstalacion":1995},
+  {"id":554,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Opela","status":"dañado","fechaInstalacion":2004},
+  {"id":555,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"It","status":"durmiendo","fechaInstalacion":1994},
+  {"id":556,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Zoolab","status":"apagado","fechaInstalacion":2006},
+  {"id":557,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Tempsoft","status":"ok","fechaInstalacion":1990},
+  {"id":558,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Stringtough","status":"ok","fechaInstalacion":1996},
+  {"id":559,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Tampflex","status":"durmiendo","fechaInstalacion":1998},
+  {"id":560,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Zontrax","status":"ok","fechaInstalacion":2002},
+  {"id":561,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Ronstring","status":"apagado","fechaInstalacion":1998},
+  {"id":562,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Namfix","status":"baja batería","fechaInstalacion":2003},
+  {"id":563,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Tampflex","status":"baja batería","fechaInstalacion":2008},
+  {"id":564,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Redhold","status":"dañado","fechaInstalacion":2003},
+  {"id":565,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Zamit","status":"durmiendo","fechaInstalacion":1996},
+  {"id":566,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Veribet","status":"apagado","fechaInstalacion":2009},
+  {"id":567,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Otcom","status":"apagado","fechaInstalacion":2003},
+  {"id":568,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Tresom","status":"baja batería","fechaInstalacion":1997},
+  {"id":569,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Konklux","status":"ok","fechaInstalacion":1993},
+  {"id":570,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Hatity","status":"durmiendo","fechaInstalacion":1985},
+  {"id":571,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Solarbreeze","status":"dañado","fechaInstalacion":2006},
+  {"id":572,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Hatity","status":"dañado","fechaInstalacion":2010},
+  {"id":573,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Holdlamis","status":"durmiendo","fechaInstalacion":2000},
+  {"id":574,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Lotlux","status":"apagado","fechaInstalacion":2007},
+  {"id":575,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Flexidy","status":"ok","fechaInstalacion":1993},
+  {"id":576,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Flexidy","status":"durmiendo","fechaInstalacion":1993},
+  {"id":577,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Wrapsafe","status":"baja batería","fechaInstalacion":2007},
+  {"id":578,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Latlux","status":"ok","fechaInstalacion":2003},
+  {"id":579,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Otcom","status":"dañado","fechaInstalacion":2006},
+  {"id":580,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Stim","status":"durmiendo","fechaInstalacion":2006},
+  {"id":581,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Holdlamis","status":"ok","fechaInstalacion":1995},
+  {"id":582,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Andalax","status":"baja batería","fechaInstalacion":1989},
+  {"id":583,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Redhold","status":"baja batería","fechaInstalacion":1988},
+  {"id":584,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Bitwolf","status":"dañado","fechaInstalacion":1992},
+  {"id":585,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"dañado","fechaInstalacion":1995},
+  {"id":586,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Sub-Ex","status":"durmiendo","fechaInstalacion":2009},
+  {"id":587,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Prodder","status":"ok","fechaInstalacion":2012},
+  {"id":588,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Fintone","status":"apagado","fechaInstalacion":2012},
+  {"id":589,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Zoolab","status":"ok","fechaInstalacion":2002},
+  {"id":590,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Fix San","status":"durmiendo","fechaInstalacion":2007},
+  {"id":591,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Biodex","status":"ok","fechaInstalacion":1995},
+  {"id":592,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Toughjoyfax","status":"dañado","fechaInstalacion":2008},
+  {"id":593,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Bitchip","status":"ok","fechaInstalacion":2007},
+  {"id":594,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Redhold","status":"ok","fechaInstalacion":2003},
+  {"id":595,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Zoolab","status":"dañado","fechaInstalacion":2005},
+  {"id":596,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"ok","fechaInstalacion":1999},
+  {"id":597,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Rank","status":"dañado","fechaInstalacion":1988},
+  {"id":598,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Solarbreeze","status":"baja batería","fechaInstalacion":1991},
+  {"id":599,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Sonsing","status":"dañado","fechaInstalacion":1996},
+  {"id":600,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Mat Lam Tam","status":"apagado","fechaInstalacion":2010},
+  {"id":601,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Redhold","status":"apagado","fechaInstalacion":1995},
+  {"id":602,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Matsoft","status":"baja batería","fechaInstalacion":2003},
+  {"id":603,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Redhold","status":"ok","fechaInstalacion":2009},
+  {"id":604,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Stringtough","status":"ok","fechaInstalacion":2009},
+  {"id":605,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Mat Lam Tam","status":"durmiendo","fechaInstalacion":1989},
+  {"id":606,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Kanlam","status":"apagado","fechaInstalacion":2000},
+  {"id":607,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Cardify","status":"apagado","fechaInstalacion":1991},
+  {"id":608,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Ventosanzap","status":"baja batería","fechaInstalacion":1991},
+  {"id":609,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Lotlux","status":"baja batería","fechaInstalacion":2012},
+  {"id":610,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Overhold","status":"ok","fechaInstalacion":2010},
+  {"id":611,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Cardify","status":"durmiendo","fechaInstalacion":2007},
+  {"id":612,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Zamit","status":"dañado","fechaInstalacion":1993},
+  {"id":613,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Andalax","status":"durmiendo","fechaInstalacion":2001},
+  {"id":614,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Wrapsafe","status":"durmiendo","fechaInstalacion":2005},
+  {"id":615,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Otcom","status":"baja batería","fechaInstalacion":1997},
+  {"id":616,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Stronghold","status":"baja batería","fechaInstalacion":1998},
+  {"id":617,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Daltfresh","status":"durmiendo","fechaInstalacion":2012},
+  {"id":618,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Redhold","status":"dañado","fechaInstalacion":2007},
+  {"id":619,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Y-Solowarm","status":"durmiendo","fechaInstalacion":2004},
+  {"id":620,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Zontrax","status":"durmiendo","fechaInstalacion":1967},
+  {"id":621,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Bytecard","status":"baja batería","fechaInstalacion":1998},
+  {"id":622,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Holdlamis","status":"apagado","fechaInstalacion":1995},
+  {"id":623,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Quo Lux","status":"baja batería","fechaInstalacion":2011},
+  {"id":624,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Tempsoft","status":"durmiendo","fechaInstalacion":1974},
+  {"id":625,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Flowdesk","status":"ok","fechaInstalacion":2011},
+  {"id":626,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Pannier","status":"apagado","fechaInstalacion":2002},
+  {"id":627,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Stronghold","status":"ok","fechaInstalacion":2010},
+  {"id":628,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Otcom","status":"dañado","fechaInstalacion":2001},
+  {"id":629,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Fintone","status":"dañado","fechaInstalacion":1989},
+  {"id":630,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"It","status":"ok","fechaInstalacion":2011},
+  {"id":631,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Bamity","status":"ok","fechaInstalacion":1999},
+  {"id":632,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Solarbreeze","status":"dañado","fechaInstalacion":1988},
+  {"id":633,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Zathin","status":"dañado","fechaInstalacion":2009},
+  {"id":634,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Tres-Zap","status":"baja batería","fechaInstalacion":1993},
+  {"id":635,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Daltfresh","status":"dañado","fechaInstalacion":2007},
+  {"id":636,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Bitwolf","status":"baja batería","fechaInstalacion":1985},
+  {"id":637,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Y-find","status":"ok","fechaInstalacion":1997},
+  {"id":638,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Sonair","status":"durmiendo","fechaInstalacion":2004},
+  {"id":639,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Subin","status":"baja batería","fechaInstalacion":2010},
+  {"id":640,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Asoka","status":"baja batería","fechaInstalacion":2002},
+  {"id":641,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Viva","status":"dañado","fechaInstalacion":2011},
+  {"id":642,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Zathin","status":"baja batería","fechaInstalacion":1997},
+  {"id":643,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Solarbreeze","status":"ok","fechaInstalacion":2007},
+  {"id":644,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Holdlamis","status":"dañado","fechaInstalacion":2012},
+  {"id":645,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Stronghold","status":"durmiendo","fechaInstalacion":2003},
+  {"id":646,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Solarbreeze","status":"dañado","fechaInstalacion":2003},
+  {"id":647,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Voyatouch","status":"durmiendo","fechaInstalacion":1986},
+  {"id":648,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Trippledex","status":"durmiendo","fechaInstalacion":2012},
+  {"id":649,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Duobam","status":"baja batería","fechaInstalacion":1995},
+  {"id":650,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Greenlam","status":"ok","fechaInstalacion":1995},
+  {"id":651,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Quo Lux","status":"ok","fechaInstalacion":1992},
+  {"id":652,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Prodder","status":"apagado","fechaInstalacion":2008},
+  {"id":653,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Trippledex","status":"baja batería","fechaInstalacion":1998},
+  {"id":654,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Tampflex","status":"ok","fechaInstalacion":2012},
+  {"id":655,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Alpha","status":"baja batería","fechaInstalacion":2005},
+  {"id":656,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Overhold","status":"ok","fechaInstalacion":2009},
+  {"id":657,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Viva","status":"baja batería","fechaInstalacion":1994},
+  {"id":658,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Solarbreeze","status":"apagado","fechaInstalacion":2010},
+  {"id":659,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Zontrax","status":"baja batería","fechaInstalacion":1997},
+  {"id":660,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Span","status":"durmiendo","fechaInstalacion":2004},
+  {"id":661,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Pannier","status":"ok","fechaInstalacion":1995},
+  {"id":662,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Voyatouch","status":"dañado","fechaInstalacion":2009},
+  {"id":663,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Transcof","status":"ok","fechaInstalacion":2007},
+  {"id":664,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Cardify","status":"baja batería","fechaInstalacion":2006},
+  {"id":665,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Wrapsafe","status":"baja batería","fechaInstalacion":1996},
+  {"id":666,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Duobam","status":"apagado","fechaInstalacion":2006},
+  {"id":667,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Subin","status":"ok","fechaInstalacion":2002},
+  {"id":668,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Sonsing","status":"ok","fechaInstalacion":1990},
+  {"id":669,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Holdlamis","status":"durmiendo","fechaInstalacion":2002},
+  {"id":670,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Konklab","status":"baja batería","fechaInstalacion":1985},
+  {"id":671,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Flowdesk","status":"dañado","fechaInstalacion":2000},
+  {"id":672,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Subin","status":"dañado","fechaInstalacion":1994},
+  {"id":673,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Overhold","status":"durmiendo","fechaInstalacion":2010},
+  {"id":674,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Kanlam","status":"dañado","fechaInstalacion":2000},
+  {"id":675,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Andalax","status":"durmiendo","fechaInstalacion":1993},
+  {"id":676,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Hatity","status":"baja batería","fechaInstalacion":1998},
+  {"id":677,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Holdlamis","status":"apagado","fechaInstalacion":1963},
+  {"id":678,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Cardify","status":"baja batería","fechaInstalacion":2000},
+  {"id":679,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Home Ing","status":"ok","fechaInstalacion":2012},
+  {"id":680,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Regrant","status":"apagado","fechaInstalacion":2005},
+  {"id":681,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Fixflex","status":"apagado","fechaInstalacion":2008},
+  {"id":682,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Asoka","status":"dañado","fechaInstalacion":1993},
+  {"id":683,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Fixflex","status":"durmiendo","fechaInstalacion":2009},
+  {"id":684,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Tampflex","status":"ok","fechaInstalacion":1989},
+  {"id":685,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Voyatouch","status":"durmiendo","fechaInstalacion":2005},
+  {"id":686,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Stim","status":"durmiendo","fechaInstalacion":2009},
+  {"id":687,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Asoka","status":"ok","fechaInstalacion":1992},
+  {"id":688,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Job","status":"dañado","fechaInstalacion":1997},
+  {"id":689,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Ventosanzap","status":"durmiendo","fechaInstalacion":2007},
+  {"id":690,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Transcof","status":"apagado","fechaInstalacion":1964},
+  {"id":691,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Tempsoft","status":"durmiendo","fechaInstalacion":2012},
+  {"id":692,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Flexidy","status":"durmiendo","fechaInstalacion":2011},
+  {"id":693,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Cookley","status":"durmiendo","fechaInstalacion":1993},
+  {"id":694,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Vagram","status":"dañado","fechaInstalacion":2012},
+  {"id":695,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Cardify","status":"apagado","fechaInstalacion":1988},
+  {"id":696,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Stringtough","status":"apagado","fechaInstalacion":1986},
+  {"id":697,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Y-Solowarm","status":"dañado","fechaInstalacion":2005},
+  {"id":698,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Voyatouch","status":"apagado","fechaInstalacion":1996},
+  {"id":699,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Temp","status":"ok","fechaInstalacion":2003},
+  {"id":700,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Cardguard","status":"baja batería","fechaInstalacion":2010},
+  {"id":701,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Regrant","status":"ok","fechaInstalacion":2007},
+  {"id":702,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Stim","status":"dañado","fechaInstalacion":2001},
+  {"id":703,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Fixflex","status":"apagado","fechaInstalacion":2006},
+  {"id":704,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Asoka","status":"baja batería","fechaInstalacion":1992},
+  {"id":705,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Greenlam","status":"dañado","fechaInstalacion":2012},
+  {"id":706,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Temp","status":"durmiendo","fechaInstalacion":2003},
+  {"id":707,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Subin","status":"baja batería","fechaInstalacion":1997},
+  {"id":708,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Transcof","status":"baja batería","fechaInstalacion":2002},
+  {"id":709,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"baja batería","fechaInstalacion":2005},
+  {"id":710,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Biodex","status":"dañado","fechaInstalacion":2005},
+  {"id":711,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Tampflex","status":"apagado","fechaInstalacion":2004},
+  {"id":712,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Ronstring","status":"ok","fechaInstalacion":1996},
+  {"id":713,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Mat Lam Tam","status":"ok","fechaInstalacion":1998},
+  {"id":714,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Temp","status":"ok","fechaInstalacion":1995},
+  {"id":715,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Kanlam","status":"durmiendo","fechaInstalacion":2007},
+  {"id":716,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Job","status":"ok","fechaInstalacion":1988},
+  {"id":717,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Namfix","status":"durmiendo","fechaInstalacion":2010},
+  {"id":718,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Tempsoft","status":"baja batería","fechaInstalacion":1997},
+  {"id":719,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Opela","status":"baja batería","fechaInstalacion":1999},
+  {"id":720,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Wrapsafe","status":"dañado","fechaInstalacion":1997},
+  {"id":721,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Quo Lux","status":"durmiendo","fechaInstalacion":1992},
+  {"id":722,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Domainer","status":"durmiendo","fechaInstalacion":2008},
+  {"id":723,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Biodex","status":"durmiendo","fechaInstalacion":1993},
+  {"id":724,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Treeflex","status":"durmiendo","fechaInstalacion":2011},
+  {"id":725,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Tampflex","status":"durmiendo","fechaInstalacion":2002},
+  {"id":726,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Span","status":"apagado","fechaInstalacion":1995},
+  {"id":727,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Bigtax","status":"apagado","fechaInstalacion":2012},
+  {"id":728,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Span","status":"baja batería","fechaInstalacion":2007},
+  {"id":729,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Tres-Zap","status":"apagado","fechaInstalacion":1993},
+  {"id":730,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Flowdesk","status":"ok","fechaInstalacion":2009},
+  {"id":731,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Wrapsafe","status":"durmiendo","fechaInstalacion":1994},
+  {"id":732,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Bytecard","status":"dañado","fechaInstalacion":2007},
+  {"id":733,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Sonsing","status":"durmiendo","fechaInstalacion":1997},
+  {"id":734,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Daltfresh","status":"apagado","fechaInstalacion":1997},
+  {"id":735,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Bamity","status":"baja batería","fechaInstalacion":2002},
+  {"id":736,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Daltfresh","status":"dañado","fechaInstalacion":1995},
+  {"id":737,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Span","status":"ok","fechaInstalacion":2002},
+  {"id":738,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Wrapsafe","status":"apagado","fechaInstalacion":2001},
+  {"id":739,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Flowdesk","status":"durmiendo","fechaInstalacion":1993},
+  {"id":740,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"apagado","fechaInstalacion":1995},
+  {"id":741,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Konklux","status":"ok","fechaInstalacion":2000},
+  {"id":742,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Bytecard","status":"apagado","fechaInstalacion":2000},
+  {"id":743,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Ronstring","status":"ok","fechaInstalacion":2011},
+  {"id":744,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Regrant","status":"durmiendo","fechaInstalacion":1990},
+  {"id":745,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Zathin","status":"ok","fechaInstalacion":1994},
+  {"id":746,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Flexidy","status":"durmiendo","fechaInstalacion":1989},
+  {"id":747,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Pannier","status":"dañado","fechaInstalacion":1991},
+  {"id":748,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Flowdesk","status":"apagado","fechaInstalacion":2003},
+  {"id":749,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Asoka","status":"dañado","fechaInstalacion":1965},
+  {"id":750,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Span","status":"apagado","fechaInstalacion":2008},
+  {"id":751,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Flowdesk","status":"ok","fechaInstalacion":2004},
+  {"id":752,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Y-find","status":"durmiendo","fechaInstalacion":2009},
+  {"id":753,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Matsoft","status":"dañado","fechaInstalacion":2004},
+  {"id":754,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Rank","status":"dañado","fechaInstalacion":2007},
+  {"id":755,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Stronghold","status":"durmiendo","fechaInstalacion":1968},
+  {"id":756,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Cardguard","status":"apagado","fechaInstalacion":1997},
+  {"id":757,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Overhold","status":"ok","fechaInstalacion":2010},
+  {"id":758,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Pannier","status":"apagado","fechaInstalacion":2003},
+  {"id":759,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Viva","status":"ok","fechaInstalacion":2005},
+  {"id":760,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Fix San","status":"apagado","fechaInstalacion":1993},
+  {"id":761,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Zoolab","status":"durmiendo","fechaInstalacion":2009},
+  {"id":762,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Fixflex","status":"dañado","fechaInstalacion":2002},
+  {"id":763,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Duobam","status":"ok","fechaInstalacion":1999},
+  {"id":764,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Treeflex","status":"baja batería","fechaInstalacion":1985},
+  {"id":765,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Lotlux","status":"baja batería","fechaInstalacion":2012},
+  {"id":766,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Fix San","status":"apagado","fechaInstalacion":1987},
+  {"id":767,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Zamit","status":"baja batería","fechaInstalacion":1986},
+  {"id":768,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Pannier","status":"durmiendo","fechaInstalacion":1997},
+  {"id":769,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Tresom","status":"ok","fechaInstalacion":2004},
+  {"id":770,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Stringtough","status":"durmiendo","fechaInstalacion":2006},
+  {"id":771,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Konklab","status":"durmiendo","fechaInstalacion":2008},
+  {"id":772,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Redhold","status":"dañado","fechaInstalacion":1999},
+  {"id":773,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Tresom","status":"ok","fechaInstalacion":1985},
+  {"id":774,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Zontrax","status":"baja batería","fechaInstalacion":2002},
+  {"id":775,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Flexidy","status":"durmiendo","fechaInstalacion":2009},
+  {"id":776,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"baja batería","fechaInstalacion":2010},
+  {"id":777,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Transcof","status":"baja batería","fechaInstalacion":1998},
+  {"id":778,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Voltsillam","status":"durmiendo","fechaInstalacion":1992},
+  {"id":779,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Y-find","status":"apagado","fechaInstalacion":2007},
+  {"id":780,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Ronstring","status":"apagado","fechaInstalacion":2003},
+  {"id":781,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Alpha","status":"dañado","fechaInstalacion":2006},
+  {"id":782,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Ventosanzap","status":"dañado","fechaInstalacion":1992},
+  {"id":783,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Gembucket","status":"ok","fechaInstalacion":2007},
+  {"id":784,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Domainer","status":"baja batería","fechaInstalacion":2011},
+  {"id":785,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Trippledex","status":"apagado","fechaInstalacion":1991},
+  {"id":786,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Bitchip","status":"ok","fechaInstalacion":1996},
+  {"id":787,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Solarbreeze","status":"baja batería","fechaInstalacion":2012},
+  {"id":788,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Veribet","status":"apagado","fechaInstalacion":2010},
+  {"id":789,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Sonair","status":"apagado","fechaInstalacion":1999},
+  {"id":790,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Wrapsafe","status":"dañado","fechaInstalacion":2001},
+  {"id":791,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Zoolab","status":"ok","fechaInstalacion":1999},
+  {"id":792,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Konklux","status":"dañado","fechaInstalacion":2010},
+  {"id":793,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Toughjoyfax","status":"baja batería","fechaInstalacion":2010},
+  {"id":794,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Alphazap","status":"dañado","fechaInstalacion":2005},
+  {"id":795,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Asoka","status":"baja batería","fechaInstalacion":1989},
+  {"id":796,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Zaam-Dox","status":"apagado","fechaInstalacion":1995},
+  {"id":797,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Bitwolf","status":"dañado","fechaInstalacion":1999},
+  {"id":798,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Span","status":"apagado","fechaInstalacion":2007},
+  {"id":799,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Stringtough","status":"apagado","fechaInstalacion":1997},
+  {"id":800,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Ronstring","status":"dañado","fechaInstalacion":2002},
+  {"id":801,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Holdlamis","status":"apagado","fechaInstalacion":2011},
+  {"id":802,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Voltsillam","status":"baja batería","fechaInstalacion":2012},
+  {"id":803,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Zoolab","status":"ok","fechaInstalacion":2011},
+  {"id":804,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Zathin","status":"apagado","fechaInstalacion":1988},
+  {"id":805,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Tresom","status":"ok","fechaInstalacion":1966},
+  {"id":806,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Fix San","status":"apagado","fechaInstalacion":1999},
+  {"id":807,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Sub-Ex","status":"apagado","fechaInstalacion":2010},
+  {"id":808,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Lotstring","status":"durmiendo","fechaInstalacion":1992},
+  {"id":809,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Prodder","status":"baja batería","fechaInstalacion":2012},
+  {"id":810,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Andalax","status":"durmiendo","fechaInstalacion":2009},
+  {"id":811,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"ok","fechaInstalacion":2010},
+  {"id":812,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Cookley","status":"ok","fechaInstalacion":2006},
+  {"id":813,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Cardify","status":"apagado","fechaInstalacion":1997},
+  {"id":814,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Fintone","status":"ok","fechaInstalacion":2009},
+  {"id":815,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Voltsillam","status":"dañado","fechaInstalacion":1991},
+  {"id":816,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Matsoft","status":"baja batería","fechaInstalacion":2000},
+  {"id":817,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Job","status":"dañado","fechaInstalacion":2003},
+  {"id":818,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Sonsing","status":"dañado","fechaInstalacion":2002},
+  {"id":819,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Regrant","status":"dañado","fechaInstalacion":1989},
+  {"id":820,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Biodex","status":"durmiendo","fechaInstalacion":2008},
+  {"id":821,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Domainer","status":"dañado","fechaInstalacion":2003},
+  {"id":822,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Subin","status":"durmiendo","fechaInstalacion":2010},
+  {"id":823,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Mat Lam Tam","status":"dañado","fechaInstalacion":1993},
+  {"id":824,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Toughjoyfax","status":"dañado","fechaInstalacion":1999},
+  {"id":825,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Fintone","status":"ok","fechaInstalacion":2008},
+  {"id":826,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Prodder","status":"durmiendo","fechaInstalacion":1992},
+  {"id":827,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Matsoft","status":"baja batería","fechaInstalacion":2005},
+  {"id":828,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Konklab","status":"baja batería","fechaInstalacion":1992},
+  {"id":829,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Ronstring","status":"dañado","fechaInstalacion":1995},
+  {"id":830,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Zaam-Dox","status":"apagado","fechaInstalacion":1967},
+  {"id":831,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Alpha","status":"baja batería","fechaInstalacion":1977},
+  {"id":832,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Viva","status":"ok","fechaInstalacion":1997},
+  {"id":833,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Rank","status":"dañado","fechaInstalacion":2007},
+  {"id":834,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Asoka","status":"dañado","fechaInstalacion":1997},
+  {"id":835,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Flowdesk","status":"apagado","fechaInstalacion":1999},
+  {"id":836,"tipo":"Nivel","central":1,"subsistema":"Ventilacion","zona":"Tresom","status":"baja batería","fechaInstalacion":1992},
+  {"id":837,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Alpha","status":"apagado","fechaInstalacion":2012},
+  {"id":838,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Asoka","status":"baja batería","fechaInstalacion":2007},
+  {"id":839,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Bytecard","status":"durmiendo","fechaInstalacion":2011},
+  {"id":840,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Lotlux","status":"ok","fechaInstalacion":2004},
+  {"id":841,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Domainer","status":"baja batería","fechaInstalacion":2008},
+  {"id":842,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Asoka","status":"durmiendo","fechaInstalacion":2004},
+  {"id":843,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Lotstring","status":"baja batería","fechaInstalacion":1996},
+  {"id":844,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Alphazap","status":"baja batería","fechaInstalacion":2012},
+  {"id":845,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Viva","status":"durmiendo","fechaInstalacion":1988},
+  {"id":846,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Domainer","status":"apagado","fechaInstalacion":2006},
+  {"id":847,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Aerified","status":"dañado","fechaInstalacion":2007},
+  {"id":848,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Tin","status":"baja batería","fechaInstalacion":2006},
+  {"id":849,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Y-Solowarm","status":"baja batería","fechaInstalacion":2009},
+  {"id":850,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Veribet","status":"apagado","fechaInstalacion":1993},
+  {"id":851,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Voltsillam","status":"dañado","fechaInstalacion":1995},
+  {"id":852,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Voltsillam","status":"ok","fechaInstalacion":1990},
+  {"id":853,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Sonsing","status":"ok","fechaInstalacion":1968},
+  {"id":854,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Cardguard","status":"baja batería","fechaInstalacion":2006},
+  {"id":855,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Veribet","status":"ok","fechaInstalacion":2012},
+  {"id":856,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Ronstring","status":"baja batería","fechaInstalacion":2012},
+  {"id":857,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Kanlam","status":"apagado","fechaInstalacion":1991},
+  {"id":858,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Aerified","status":"dañado","fechaInstalacion":1982},
+  {"id":859,"tipo":"Nivel","central":2,"subsistema":"Iluminacion","zona":"Sonsing","status":"dañado","fechaInstalacion":1995},
+  {"id":860,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Zathin","status":"ok","fechaInstalacion":2012},
+  {"id":861,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Fintone","status":"durmiendo","fechaInstalacion":2006},
+  {"id":862,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Bitchip","status":"durmiendo","fechaInstalacion":1993},
+  {"id":863,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Transcof","status":"baja batería","fechaInstalacion":2000},
+  {"id":864,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Voyatouch","status":"ok","fechaInstalacion":1969},
+  {"id":865,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Cookley","status":"apagado","fechaInstalacion":1994},
+  {"id":866,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Hatity","status":"dañado","fechaInstalacion":1989},
+  {"id":867,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Regrant","status":"ok","fechaInstalacion":1994},
+  {"id":868,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Viva","status":"durmiendo","fechaInstalacion":1998},
+  {"id":869,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Redhold","status":"apagado","fechaInstalacion":2002},
+  {"id":870,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Biodex","status":"ok","fechaInstalacion":1972},
+  {"id":871,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Job","status":"ok","fechaInstalacion":2004},
+  {"id":872,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Span","status":"durmiendo","fechaInstalacion":1989},
+  {"id":873,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Trippledex","status":"dañado","fechaInstalacion":1987},
+  {"id":874,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Zaam-Dox","status":"durmiendo","fechaInstalacion":2001},
+  {"id":875,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Redhold","status":"apagado","fechaInstalacion":1999},
+  {"id":876,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Kanlam","status":"ok","fechaInstalacion":2006},
+  {"id":877,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Zathin","status":"baja batería","fechaInstalacion":2008},
+  {"id":878,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Zamit","status":"apagado","fechaInstalacion":1997},
+  {"id":879,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Zoolab","status":"apagado","fechaInstalacion":2012},
+  {"id":880,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Ventosanzap","status":"baja batería","fechaInstalacion":2012},
+  {"id":881,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Wrapsafe","status":"baja batería","fechaInstalacion":2001},
+  {"id":882,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Cardguard","status":"durmiendo","fechaInstalacion":1987},
+  {"id":883,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Bigtax","status":"apagado","fechaInstalacion":1996},
+  {"id":884,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Tampflex","status":"baja batería","fechaInstalacion":1991},
+  {"id":885,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Job","status":"apagado","fechaInstalacion":2009},
+  {"id":886,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Fix San","status":"durmiendo","fechaInstalacion":1995},
+  {"id":887,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Otcom","status":"dañado","fechaInstalacion":2008},
+  {"id":888,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Ventosanzap","status":"durmiendo","fechaInstalacion":2012},
+  {"id":889,"tipo":"Flujometro","central":2,"subsistema":"Iluminacion","zona":"Span","status":"ok","fechaInstalacion":2000},
+  {"id":890,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Hatity","status":"baja batería","fechaInstalacion":1999},
+  {"id":891,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Zamit","status":"apagado","fechaInstalacion":2008},
+  {"id":892,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Subin","status":"apagado","fechaInstalacion":2005},
+  {"id":893,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Alphazap","status":"ok","fechaInstalacion":2009},
+  {"id":894,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Span","status":"dañado","fechaInstalacion":2002},
+  {"id":895,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Sonsing","status":"durmiendo","fechaInstalacion":2012},
+  {"id":896,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Cardify","status":"apagado","fechaInstalacion":1995},
+  {"id":897,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Vagram","status":"baja batería","fechaInstalacion":2006},
+  {"id":898,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Hatity","status":"ok","fechaInstalacion":1969},
+  {"id":899,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Span","status":"durmiendo","fechaInstalacion":1978},
+  {"id":900,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Ventosanzap","status":"dañado","fechaInstalacion":1993},
+  {"id":901,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Biodex","status":"durmiendo","fechaInstalacion":2005},
+  {"id":902,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Toughjoyfax","status":"durmiendo","fechaInstalacion":2011},
+  {"id":903,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Temp","status":"durmiendo","fechaInstalacion":2007},
+  {"id":904,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Zamit","status":"baja batería","fechaInstalacion":2007},
+  {"id":905,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Prodder","status":"dañado","fechaInstalacion":1999},
+  {"id":906,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Lotstring","status":"apagado","fechaInstalacion":2006},
+  {"id":907,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Flexidy","status":"durmiendo","fechaInstalacion":1995},
+  {"id":908,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Transcof","status":"apagado","fechaInstalacion":1992},
+  {"id":909,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Stringtough","status":"baja batería","fechaInstalacion":1994},
+  {"id":910,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Treeflex","status":"durmiendo","fechaInstalacion":1990},
+  {"id":911,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Ronstring","status":"durmiendo","fechaInstalacion":2007},
+  {"id":912,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Stronghold","status":"ok","fechaInstalacion":1985},
+  {"id":913,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Temp","status":"baja batería","fechaInstalacion":1987},
+  {"id":914,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Otcom","status":"dañado","fechaInstalacion":1990},
+  {"id":915,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Lotlux","status":"apagado","fechaInstalacion":2003},
+  {"id":916,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Namfix","status":"apagado","fechaInstalacion":1960},
+  {"id":917,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Flexidy","status":"apagado","fechaInstalacion":2012},
+  {"id":918,"tipo":"Flujometro","central":2,"subsistema":"Ventilacion","zona":"Matsoft","status":"dañado","fechaInstalacion":2008},
+  {"id":919,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Rank","status":"dañado","fechaInstalacion":2007},
+  {"id":920,"tipo":"Flujometro","central":3,"subsistema":"Ventilacion","zona":"Bitchip","status":"apagado","fechaInstalacion":1999},
+  {"id":921,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Veribet","status":"dañado","fechaInstalacion":1991},
+  {"id":922,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Keylex","status":"apagado","fechaInstalacion":2007},
+  {"id":923,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Tin","status":"dañado","fechaInstalacion":1992},
+  {"id":924,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Opela","status":"apagado","fechaInstalacion":1996},
+  {"id":925,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Bitchip","status":"apagado","fechaInstalacion":1993},
+  {"id":926,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Daltfresh","status":"apagado","fechaInstalacion":1990},
+  {"id":927,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Zontrax","status":"dañado","fechaInstalacion":1999},
+  {"id":928,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Stim","status":"dañado","fechaInstalacion":2000},
+  {"id":929,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Holdlamis","status":"baja batería","fechaInstalacion":1998},
+  {"id":930,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Alphazap","status":"ok","fechaInstalacion":1998},
+  {"id":931,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Trippledex","status":"apagado","fechaInstalacion":2002},
+  {"id":932,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Tin","status":"baja batería","fechaInstalacion":2012},
+  {"id":933,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Bamity","status":"baja batería","fechaInstalacion":2005},
+  {"id":934,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Asoka","status":"apagado","fechaInstalacion":2003},
+  {"id":935,"tipo":"Nivel","central":1,"subsistema":"Iluminacion","zona":"Cardguard","status":"apagado","fechaInstalacion":2000},
+  {"id":936,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Bamity","status":"durmiendo","fechaInstalacion":2002},
+  {"id":937,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Pannier","status":"ok","fechaInstalacion":2008},
+  {"id":938,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Voyatouch","status":"dañado","fechaInstalacion":2013},
+  {"id":939,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Matsoft","status":"baja batería","fechaInstalacion":1996},
+  {"id":940,"tipo":"Nivel","central":3,"subsistema":"Ventilacion","zona":"Voyatouch","status":"apagado","fechaInstalacion":1992},
+  {"id":941,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Holdlamis","status":"apagado","fechaInstalacion":1984},
+  {"id":942,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Aerified","status":"dañado","fechaInstalacion":2001},
+  {"id":943,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Stringtough","status":"apagado","fechaInstalacion":1994},
+  {"id":944,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Tresom","status":"dañado","fechaInstalacion":2002},
+  {"id":945,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Voyatouch","status":"baja batería","fechaInstalacion":2002},
+  {"id":946,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Toughjoyfax","status":"durmiendo","fechaInstalacion":1993},
+  {"id":947,"tipo":"Termometro","central":2,"subsistema":"Iluminacion","zona":"Fixflex","status":"durmiendo","fechaInstalacion":1972},
+  {"id":948,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Otcom","status":"durmiendo","fechaInstalacion":2012},
+  {"id":949,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Gembucket","status":"dañado","fechaInstalacion":2001},
+  {"id":950,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Toughjoyfax","status":"dañado","fechaInstalacion":1994},
+  {"id":951,"tipo":"Flujometro","central":3,"subsistema":"Refrigeracion","zona":"Aerified","status":"ok","fechaInstalacion":1997},
+  {"id":952,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Aerified","status":"baja batería","fechaInstalacion":2003},
+  {"id":953,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Sonsing","status":"dañado","fechaInstalacion":2013},
+  {"id":954,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Sonsing","status":"durmiendo","fechaInstalacion":2000},
+  {"id":955,"tipo":"Flujometro","central":2,"subsistema":"Calefaccion","zona":"Trippledex","status":"ok","fechaInstalacion":2004},
+  {"id":956,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Greenlam","status":"ok","fechaInstalacion":1994},
+  {"id":957,"tipo":"Flujometro","central":1,"subsistema":"Refrigeracion","zona":"Kanlam","status":"durmiendo","fechaInstalacion":2000},
+  {"id":958,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Zathin","status":"durmiendo","fechaInstalacion":2005},
+  {"id":959,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Opela","status":"dañado","fechaInstalacion":1998},
+  {"id":960,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Prodder","status":"dañado","fechaInstalacion":2003},
+  {"id":961,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Redhold","status":"dañado","fechaInstalacion":2008},
+  {"id":962,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Overhold","status":"durmiendo","fechaInstalacion":1993},
+  {"id":963,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Temp","status":"ok","fechaInstalacion":2008},
+  {"id":964,"tipo":"Termometro","central":3,"subsistema":"Calefaccion","zona":"Trippledex","status":"ok","fechaInstalacion":2006},
+  {"id":965,"tipo":"Nivel","central":2,"subsistema":"Refrigeracion","zona":"Zamit","status":"durmiendo","fechaInstalacion":2011},
+  {"id":966,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Tampflex","status":"durmiendo","fechaInstalacion":1999},
+  {"id":967,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Zoolab","status":"ok","fechaInstalacion":2007},
+  {"id":968,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Vagram","status":"durmiendo","fechaInstalacion":2006},
+  {"id":969,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Bamity","status":"durmiendo","fechaInstalacion":1993},
+  {"id":970,"tipo":"Nivel","central":2,"subsistema":"Ventilacion","zona":"Wrapsafe","status":"baja batería","fechaInstalacion":2005},
+  {"id":971,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Duobam","status":"durmiendo","fechaInstalacion":1991},
+  {"id":972,"tipo":"Nivel","central":3,"subsistema":"Refrigeracion","zona":"Temp","status":"ok","fechaInstalacion":2004},
+  {"id":973,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Stronghold","status":"dañado","fechaInstalacion":1998},
+  {"id":974,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Namfix","status":"apagado","fechaInstalacion":1997},
+  {"id":975,"tipo":"Flujometro","central":2,"subsistema":"Refrigeracion","zona":"Sub-Ex","status":"apagado","fechaInstalacion":2009},
+  {"id":976,"tipo":"Termometro","central":1,"subsistema":"Iluminacion","zona":"Voyatouch","status":"durmiendo","fechaInstalacion":2010},
+  {"id":977,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Daltfresh","status":"apagado","fechaInstalacion":2009},
+  {"id":978,"tipo":"Nivel","central":3,"subsistema":"Iluminacion","zona":"Treeflex","status":"baja batería","fechaInstalacion":2011},
+  {"id":979,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Vagram","status":"apagado","fechaInstalacion":2002},
+  {"id":980,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Andalax","status":"dañado","fechaInstalacion":1991},
+  {"id":981,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Pannier","status":"apagado","fechaInstalacion":2012},
+  {"id":982,"tipo":"Termometro","central":2,"subsistema":"Ventilacion","zona":"Tempsoft","status":"durmiendo","fechaInstalacion":1999},
+  {"id":983,"tipo":"Nivel","central":1,"subsistema":"Calefaccion","zona":"Duobam","status":"ok","fechaInstalacion":2007},
+  {"id":984,"tipo":"Termometro","central":1,"subsistema":"Ventilacion","zona":"Cardify","status":"ok","fechaInstalacion":1996},
+  {"id":985,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Y-find","status":"baja batería","fechaInstalacion":1983},
+  {"id":986,"tipo":"Nivel","central":1,"subsistema":"Refrigeracion","zona":"Ventosanzap","status":"ok","fechaInstalacion":1985},
+  {"id":987,"tipo":"Termometro","central":1,"subsistema":"Refrigeracion","zona":"Duobam","status":"durmiendo","fechaInstalacion":2004},
+  {"id":988,"tipo":"Termometro","central":3,"subsistema":"Refrigeracion","zona":"Trippledex","status":"baja batería","fechaInstalacion":2010},
+  {"id":989,"tipo":"Flujometro","central":1,"subsistema":"Ventilacion","zona":"Namfix","status":"baja batería","fechaInstalacion":2009},
+  {"id":990,"tipo":"Flujometro","central":3,"subsistema":"Iluminacion","zona":"Wrapsafe","status":"apagado","fechaInstalacion":1989},
+  {"id":991,"tipo":"Termometro","central":2,"subsistema":"Calefaccion","zona":"Aerified","status":"durmiendo","fechaInstalacion":2003},
+  {"id":992,"tipo":"Flujometro","central":1,"subsistema":"Calefaccion","zona":"Y-Solowarm","status":"durmiendo","fechaInstalacion":1990},
+  {"id":993,"tipo":"Flujometro","central":3,"subsistema":"Calefaccion","zona":"Alphazap","status":"durmiendo","fechaInstalacion":2006},
+  {"id":994,"tipo":"Nivel","central":2,"subsistema":"Calefaccion","zona":"Quo Lux","status":"ok","fechaInstalacion":2006},
+  {"id":995,"tipo":"Termometro","central":2,"subsistema":"Refrigeracion","zona":"Flexidy","status":"ok","fechaInstalacion":2011},
+  {"id":996,"tipo":"Nivel","central":3,"subsistema":"Calefaccion","zona":"Home Ing","status":"baja batería","fechaInstalacion":2003},
+  {"id":997,"tipo":"Termometro","central":3,"subsistema":"Ventilacion","zona":"Tampflex","status":"ok","fechaInstalacion":2008},
+  {"id":998,"tipo":"Termometro","central":3,"subsistema":"Iluminacion","zona":"Sub-Ex","status":"ok","fechaInstalacion":1993},
+  {"id":999,"tipo":"Flujometro","central":1,"subsistema":"Iluminacion","zona":"Kanlam","status":"durmiendo","fechaInstalacion":1998},
+  {"id":1000,"tipo":"Termometro","central":1,"subsistema":"Calefaccion","zona":"Mat Lam Tam","status":"durmiendo","fechaInstalacion":1997}
 ]
-
 const devicesMethods = {
   getDevicesByCentralId : id => {
     const devices = devicesData.filter( device => {
@@ -7017,6 +1016,9 @@ const devicesMethods = {
     })
     console.log(newDevices)
     return newDevices
+  },
+  filterBySubsistem: ( subsistem, data = devicesData ) => {
+    return data.filter( device => device?.subsistema === subsistem )
   },
 }
 export default devicesMethods

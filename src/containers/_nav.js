@@ -51,19 +51,19 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Termómetros',
-        to: '/dispositivos/001000',
+        to: '/dispositivos/Termometro',
         icon: 'cil-burn',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Niveles',
-        to: '/dispositivos/002000',
+        to: '/dispositivos/Nivel',
         icon: 'cil-speedometer',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Flujómetros',
-        to: '/dispositivos/003000',
+        to: '/dispositivos/Flujometro',
         icon: 'cil-sync',
       },
     ]
