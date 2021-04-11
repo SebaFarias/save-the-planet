@@ -4,12 +4,6 @@ import { CDataTable, CBadge } from '@coreui/react'
 
 const DataTablePrimary = attributes => {
 
-  const DEFAULT_PROPS = {
-    fields: attributes?.fields,
-    itemSet: attributes?.items,
-    itemsPerPage: attributes?.itemsPerPage || 15,
-  }
-
   const getBadge = status => {
     switch (status) {
       case 'ok': return 'success'
