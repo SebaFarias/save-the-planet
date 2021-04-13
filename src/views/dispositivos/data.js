@@ -1014,11 +1014,16 @@ const devicesMethods = {
         centralId: device.central,
       }
     })
-    console.log(newDevices)
     return newDevices
+  },
+  getDeviceById: id => {
+    return devicesData.filter( device => device.id === parseInt(id))
   },
   filterBySubsistem: ( subsistem, data = devicesData ) => {
     return data.filter( device => device?.subsistema === subsistem )
   },
+  filterByType: ( type, data = devicesData ) => {
+    return data.filter( device => device?.tipo === type )
+  }
 }
 export default devicesMethods

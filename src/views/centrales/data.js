@@ -33,12 +33,24 @@ const centrales = {
     subsistems:{},
   },
 }
+
+
+
 const centralesMethods = {
   getCentralNameById : id => {
     return centrales[`00000${id}`]?.name
   },
   getCentralDataById: id => {
-    return centrales[id]
+    const longID = idString => {
+      const faltantes = 5 - idString.length
+      let newID = ''
+      for (let i = 0; i <= faltantes; i++) {
+        newID+='0'
+      }
+      return newID+idString
+    }
+    const normalizedId = (''+id).length<5? longID(id) : id
+    return centrales[normalizedId]
   },
 }
 export default centralesMethods

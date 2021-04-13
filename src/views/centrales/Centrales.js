@@ -3,14 +3,12 @@ import {
   CChartLine,
 } from '@coreui/react-chartjs'
 import { 
-  CBadge,
   CButton,
   CCard,
   CCardBody,
   CCardHeader,
   CCol,
   CCollapse,
-  CDataTable,
   CListGroup,
   CListGroupItem,
   CNav,
@@ -25,6 +23,7 @@ import CIcon from '@coreui/icons-react'
 import devicesMethods from '../dispositivos/data'
 import centralesMethods from '../centrales/data'
 import DataTablePrimary from '../base/tables/DataTablePrimary'
+import Construccion from '../base/Construction'
 
 const Centrales = ({match}) => {
   
@@ -35,16 +34,7 @@ const Centrales = ({match}) => {
     }
   },[match]) 
 
-  const getBadge = status => {
-    switch (status) {
-      case 'ok': return 'success'
-      case 'apagado': return 'secondary'
-      case 'durmiendo': return 'warning'
-      case 'dañado': return 'danger'
-      default: return 'primary'
-    }
-  }
-  const fields = ['id', 'tipo', 'central' , 'centralId','subsistema', 'zona' , 'status']
+  const fields = ['id', 'tipo', 'central' , 'centralId','subsistema', 'zona' , 'status', 'fechaInstalacion']
   const [ data, setData ] = useState(fetchCentralData(match.params.id))
   const [ active, setActive ] = useState(1)
   const [ accordion, setAccordion ] = useState(1)
@@ -108,30 +98,14 @@ useEffect( () => {
                   </CRow>
                 </CTabPane>
                 <CTabPane>
-                  <CDataTable
-                    items={data?.devices}
+                  <DataTablePrimary
+                    itemSet={data?.devices}
                     fields={fields}
-                    hover
-                    striped
-                    bordered
-                    size="sm"
-                    itemsPerPage={15}
-                    pagination
-                    scopedSlots = {{
-                      'status':
-                        (item)=>(
-                          <td>
-                            <CBadge color={getBadge(item.status)}>
-                              {item.status}
-                            </CBadge>
-                          </td>
-                        )
-                    }}
                   />
                 </CTabPane>
                 <CTabPane>
                   <CRow>
-                    <CCol sm="12" md="6">
+                    <CCol sm="12">
                       <CCard>
                       <CCardHeader>
                         {data.name}: Consumo Histório
@@ -199,111 +173,106 @@ useEffect( () => {
                       </CCardBody>
                     </CCard>
                     </CCol>
-                    <CCol sm="12" md="6">
-                    <CCard>
-          <CCardHeader>
-            Consumo Histório
-            <small> por subsistema </small>
-          </CCardHeader>
-          <CCardBody>
-            <div id="accordion">
-              <CCard className="mb-0">
-                <CCardHeader id="headingOne">
-                  <CButton 
-                    block 
-                    color="link" 
-                    className="text-left m-0 p-0" 
-                    onClick={() => setAccordion(accordion === 0 ? null : 0)}
-                  >
-                    <h5 className="m-0 p-0">Refrigeración</h5>
-                  </CButton>
-                </CCardHeader>
-                <CCollapse show={accordion === 0}>
-                  <CCardBody>
-                    <DataTablePrimary
-                      itemSet={devicesMethods.filterBySubsistem('Refrigeracion',data?.devices)}
-                      fields={fields}
-                      itemsPerPage={15}
-                    />
-                  </CCardBody>
-                </CCollapse>
-              </CCard>
-              <CCard className="mb-0">
-                <CCardHeader id="headingTwo">
-                  <CButton 
-                    block 
-                    color="link" 
-                    className="text-left m-0 p-0" 
-                    onClick={() => setAccordion(accordion === 1 ? null : 1)}
-                  >
-                    <h5 className="m-0 p-0">Calefacción</h5>
-                  </CButton>
-                </CCardHeader>
-                <CCollapse show={accordion === 1}>
-                  <CCardBody>
-                  <DataTablePrimary
-                      itemSet={devicesMethods.filterBySubsistem('Calefaccion',data?.devices)}
-                      fields={fields}
-                      itemsPerPage={15}
-                    />
-                  </CCardBody>
-                </CCollapse>
-              </CCard>
-              <CCard className="mb-0">
-                <CCardHeader id="headingThree">
-                  <CButton 
-                    block 
-                    color="link" 
-                    className="text-left m-0 p-0" 
-                    onClick={() => setAccordion(accordion === 2 ? null : 2)}
-                  >
-                    <h5 className="m-0 p-0">Iluminación</h5>
-                  </CButton>
-                </CCardHeader>
-                <CCollapse show={accordion === 2}>
-                  <CCardBody>
-                    <DataTablePrimary
-                        itemSet={devicesMethods.filterBySubsistem('Iluminacion',data?.devices)}
-                        fields={fields}
-                        itemsPerPage={15}
-                      />
-                  </CCardBody>
-                </CCollapse>
-              </CCard>
-              <CCard className="mb-0">
-                <CCardHeader id="headingThree">
-                  <CButton 
-                    block 
-                    color="link" 
-                    className="text-left m-0 p-0" 
-                    onClick={() => setAccordion(accordion === 3 ? null : 3)}
-                  >
-                    <h5 className="m-0 p-0">Ventilación</h5>
-                  </CButton>
-                </CCardHeader>
-                <CCollapse show={accordion === 3}>
-                  <CCardBody>
-                  <DataTablePrimary
-                      itemSet={devicesMethods.filterBySubsistem('Ventilacion',data?.devices)}
-                      fields={fields}
-                      itemsPerPage={15}
-                    />
-                  </CCardBody>
-                </CCollapse>
-              </CCard>
-            </div>
-          </CCardBody>
-        </CCard>
+                    <CCol sm="12">
+                      <CCard>
+                        <CCardHeader>
+                          Consumo Histório
+                          <small> por subsistema </small>
+                        </CCardHeader>
+                        <CCardBody>
+                          <div id="accordion">
+                            <CCard className="mb-0">
+                              <CCardHeader id="headingOne">
+                                <CButton 
+                                  block 
+                                  color="link" 
+                                  className="text-left m-0 p-0" 
+                                  onClick={() => setAccordion(accordion === 0 ? null : 0)}
+                                >
+                                  <h5 className="m-0 p-0">Refrigeración</h5>
+                                </CButton>
+                              </CCardHeader>
+                              <CCollapse show={accordion === 0}>
+                                <CCardBody>
+                                  <DataTablePrimary
+                                    itemSet={devicesMethods.filterBySubsistem('Refrigeracion',data?.devices)}
+                                    fields={fields}
+                                    itemsPerPage={15}
+                                  />
+                                </CCardBody>
+                              </CCollapse>
+                            </CCard>
+                            <CCard className="mb-0">
+                              <CCardHeader id="headingTwo">
+                                <CButton 
+                                  block 
+                                  color="link" 
+                                  className="text-left m-0 p-0" 
+                                  onClick={() => setAccordion(accordion === 1 ? null : 1)}
+                                >
+                                  <h5 className="m-0 p-0">Calefacción</h5>
+                                </CButton>
+                              </CCardHeader>
+                              <CCollapse show={accordion === 1}>
+                                <CCardBody>
+                                <DataTablePrimary
+                                    itemSet={devicesMethods.filterBySubsistem('Calefaccion',data?.devices)}
+                                    fields={fields}
+                                    itemsPerPage={15}
+                                  />
+                                </CCardBody>
+                              </CCollapse>
+                            </CCard>
+                            <CCard className="mb-0">
+                              <CCardHeader id="headingThree">
+                                <CButton 
+                                  block 
+                                  color="link" 
+                                  className="text-left m-0 p-0" 
+                                  onClick={() => setAccordion(accordion === 2 ? null : 2)}
+                                >
+                                  <h5 className="m-0 p-0">Iluminación</h5>
+                                </CButton>
+                              </CCardHeader>
+                              <CCollapse show={accordion === 2}>
+                                <CCardBody>
+                                  <DataTablePrimary
+                                      itemSet={devicesMethods.filterBySubsistem('Iluminacion',data?.devices)}
+                                      fields={fields}
+                                      itemsPerPage={15}
+                                    />
+                                </CCardBody>
+                              </CCollapse>
+                            </CCard>
+                            <CCard className="mb-0">
+                              <CCardHeader id="headingThree">
+                                <CButton 
+                                  block 
+                                  color="link" 
+                                  className="text-left m-0 p-0" 
+                                  onClick={() => setAccordion(accordion === 3 ? null : 3)}
+                                >
+                                  <h5 className="m-0 p-0">Ventilación</h5>
+                                </CButton>
+                              </CCardHeader>
+                              <CCollapse show={accordion === 3}>
+                                <CCardBody>
+                                <DataTablePrimary
+                                    itemSet={devicesMethods.filterBySubsistem('Ventilacion',data?.devices)}
+                                    fields={fields}
+                                    itemsPerPage={15}
+                                  />
+                                </CCardBody>
+                              </CCollapse>
+                            </CCard>
+                          </div>
+                        </CCardBody>
+                      </CCard>
                     </CCol>
-                  </CRow>
-                  
+                  </CRow>                  
                 </CTabPane>
                 <CTabPane>
-                <DataTablePrimary
-                  itemSet={data?.devices}
-                  fields={fields}
-                  itemsPerPage={15}
-                />
+                  <Construccion/>
                 </CTabPane>
               </CTabContent>
             </CTabs>
