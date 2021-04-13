@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
-import { CDataTable, CBadge } from '@coreui/react'
+//import { useHistory } from 'react-router-dom'
+import { CDataTable, CBadge, CLink } from '@coreui/react'
 
 
 const DataTablePrimary = attributes => {
+  //const history = useHistory()
 
   const getBadge = status => {
     switch (status) {
@@ -25,7 +27,8 @@ const DataTablePrimary = attributes => {
     bordered
     size="sm"
     itemsPerPage={attributes?.itemsPerPage || 15}
-    pagination
+    //onRowClick={(item) => history.push(item?.route||`/devices/${item?.id}`)}
+    pagination = {{align:"center"}}
     scopedSlots = {{
       'status':
         (item)=>(
@@ -34,7 +37,23 @@ const DataTablePrimary = attributes => {
               {item.status}
             </CBadge>
           </td>
-        )
+        ),
+      'id':
+      (item)=>(
+        <td>
+          <CLink to={`/dispositivos/${item.id}`}>
+            {item.id}
+          </CLink>
+        </td>
+      ),
+      'centralId':
+      (item)=>(
+        <td>
+          <CLink to={`/centrales/${item.centralId}`}>
+            {item.centralId}
+          </CLink>
+        </td>
+      ),
     }}
   />
 }

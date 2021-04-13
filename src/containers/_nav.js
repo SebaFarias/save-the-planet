@@ -75,7 +75,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Predecir',
-    route: '/Predecir',
+    to: '/Construction',
     icon: 'cil-audio-spectrum',
     badge:{
       color: 'success',
@@ -88,9 +88,12 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Reportes',
-    route:'reportes',
+    to:'/Construction',
     icon: 'cil-clipboard',
-
+    badge:{
+      color: 'danger',
+      text: 'ALPHA',
+    },
   },
   {
     _tag: 'CSidebarNavTitle',
@@ -99,20 +102,32 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Alertas',
-    route: '/alertas',
-    icon: 'cil-bullhorn',
+    to: '/Construction',
+    icon: 'cil-bullhorn',    
+    badge:{
+      color: 'danger',
+      text: 'ALPHA',
+    },
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Tareas',
-    route: '/tareas',
+    to: '/Construction',
     icon: 'cil-task',
+    badge:{
+      color: 'danger',
+      text: 'ALPHA',
+    },
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Gatillos',
-    route: '/gatillos',
+    to: '/Construction',
     icon: 'cil-functions',
+    badge:{
+      color: 'danger',
+      text: 'ALPHA',
+    },
   },
 ]
 
